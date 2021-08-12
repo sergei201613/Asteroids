@@ -8,6 +8,7 @@ public class SpaceshipGun : MonoBehaviour
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private GameObject _owner;
     [SerializeField] private int _bulletPoolSize = 10;
+    [SerializeField] private AudioSource _fireSound;
 
     private ISpaceshipInput _input;
     private float _lastTimeFired;
@@ -40,5 +41,7 @@ public class SpaceshipGun : MonoBehaviour
 
         if (bulletObj.TryGetComponent<Bullet>(out var bullet))
             bullet.Init(transform.position, _bulletSpeed * transform.up, _owner);
+
+        _fireSound.Play();
     }
 }
