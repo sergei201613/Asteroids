@@ -74,8 +74,8 @@ AudioSource:
   m_GameObject: {fileID: 3752223612719914691}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 37b77b02665eb764796e2f6705a35303, type: 3}
+  OutputAudioMixerGroup: {fileID: 5638471797973014786, guid: 653679069a8265b44b8da43ef4e3f940, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 709f56400a874e649951c4ee5ea5822b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -341,6 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gun: {fileID: 239770481039394609}
   _updateGunAimingRate: 0.35
+  _explosionSoundPrefab: {fileID: 5918858874820791994, guid: 3342c5bdef896ae49af6c96a474f863f, type: 3}
 --- !u!114 &8956670952008076939
 MonoBehaviour:
   m_ObjectHideFlags: 0

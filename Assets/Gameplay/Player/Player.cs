@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float _invulnerableFlashingRate = 0.5f;
     [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private PlayerInputData _inputData;
+    [SerializeField] private GameObject _explosionSoundPrefab;
 
     private GameMode _gameMode;
     private bool _isInvulnerable = true;
@@ -54,6 +55,10 @@ public class Player : MonoBehaviour
 
     private void OnGameOvered(int lives)
     {
+        Instantiate(_explosionSoundPrefab);
+
+        _isInvulnerable = true;
+
         Destroy(gameObject);
     }
 
@@ -72,6 +77,13 @@ public class Player : MonoBehaviour
 
             if (bullet.Owner != gameObject)
                 _gameMode.GameOver();
+        }
+
+        if (collision.TryGetComponent<UFO>(out var ufo))
+        {
+            if (_isInvulnerable) return;
+
+            _gameMode.GameOver();
         }
     }
 }

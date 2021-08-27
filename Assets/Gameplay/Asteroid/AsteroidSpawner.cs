@@ -1,6 +1,7 @@
 using UnityEngine;
 using MonoBehaviourExtensions;
 using System.Collections.Generic;
+using System.Collections;
 
 public class AsteroidSpawner : MonoBehaviour
 {
@@ -10,13 +11,13 @@ public class AsteroidSpawner : MonoBehaviour
     [SerializeField] int _asteroiPoolSize = 15;
     [SerializeField] float _asteroidSideOffset = 5f;
     [SerializeField] private BoxCollider2D _fieldCollider;
+    [SerializeField] private int _asteroidsSpawnCount = 2;
 
-    private int _asteroidsSpawnCount = 2;
     private float _waveDelay = 2;
     private Pool _pool;
     private List<Asteroid> _asteroids = new List<Asteroid>();
 
-    private void Start()
+    private void Awake()
     {
         _pool = new Pool(_asteroidPrefab, _asteroiPoolSize);
 

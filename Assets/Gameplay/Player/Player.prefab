@@ -234,6 +234,7 @@ MonoBehaviour:
   _invulnerableFlashingRate: 0.5
   _sprite: {fileID: 8863118753977250953}
   _inputData: {fileID: 11400000, guid: 8f80f08efcfe6224e900f2e1777874b5, type: 2}
+  _explosionSoundPrefab: {fileID: 5918858874820791994, guid: 3342c5bdef896ae49af6c96a474f863f, type: 3}
 --- !u!61 &3379717407427363585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -269,7 +270,7 @@ AudioSource:
   m_GameObject: {fileID: 8863118754813046811}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5638471797973014786, guid: 653679069a8265b44b8da43ef4e3f940, type: 2}
   m_audioClip: {fileID: 8300000, guid: 37b77b02665eb764796e2f6705a35303, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

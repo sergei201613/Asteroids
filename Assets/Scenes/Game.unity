@@ -658,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1378486709052513158, guid: b6b277798d15e9d479858c296a4f0888, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1378486709052513159, guid: b6b277798d15e9d479858c296a4f0888, type: 3}
       propertyPath: m_RootOrder
@@ -761,14 +761,6 @@ PrefabInstance:
       propertyPath: _fieldCollider
       value: 
       objectReference: {fileID: 519420030}
-    - target: {fileID: 4634059307803885117, guid: 80ef7e866deb94b40a73ecb4af4e02e8, type: 3}
-      propertyPath: _maxSpawnDelay
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4634059307803885117, guid: 80ef7e866deb94b40a73ecb4af4e02e8, type: 3}
-      propertyPath: _minSpawnDelay
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4634059307803885118, guid: 80ef7e866deb94b40a73ecb4af4e02e8, type: 3}
       propertyPath: m_Name
       value: UFOSpawner

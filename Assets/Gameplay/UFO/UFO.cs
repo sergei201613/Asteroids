@@ -4,6 +4,7 @@ public class UFO : MonoBehaviour
 {
     [SerializeField] private SpaceshipGun _gun;
     [SerializeField] private float _updateGunAimingRate = .2f;
+    [SerializeField] private GameObject _explosionSoundPrefab;
 
     private UFOSpawner _spawner;
     private UFOMovement _movement;
@@ -45,14 +46,11 @@ public class UFO : MonoBehaviour
         {
             if (bullet.Owner != gameObject)
             {
+                Instantiate(_explosionSoundPrefab);
+                
                 Destroy(gameObject);
                 _gameMode.AddScoreForUFO();
             }
-        }
-
-        if (collision.TryGetComponent<Asteroid>(out var asteroid))
-        {
-            Destroy(gameObject);
         }
     }
 }

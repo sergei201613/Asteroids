@@ -3,6 +3,7 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     [SerializeField] private AsteroidSizes _sizes;
+    [SerializeField] private GameObject _explosionSoundPrefab;
 
     private AsteroidType _type;
     private Vector2 _velocity;
@@ -82,15 +83,21 @@ public class Asteroid : MonoBehaviour
             }
 
             _gameMode.AddScoreForAsteroid(_type);
+
+            Instantiate(_explosionSoundPrefab);
         }
 
         if (collision.TryGetComponent<Player>(out var player))
         {
+            Instantiate(_explosionSoundPrefab);
+
             _poolObj.ReturnToPool();
         }
 
         if (collision.TryGetComponent<UFO>(out var ufo))
         {
+            Instantiate(_explosionSoundPrefab);
+
             _poolObj.ReturnToPool();
         }
     }

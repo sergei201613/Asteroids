@@ -9,6 +9,13 @@ public class ToggleControlButton : MonoBehaviour
 
     private int _inputType = 0;
 
+    private void Awake()
+    {
+        _inputType = (int)_inputData.Type;
+
+        UpdateText();
+    }
+
     public void ToggleControlType()
     {
         var inputTypesArray = Enum.GetValues(typeof(InputType));
@@ -18,6 +25,11 @@ public class ToggleControlButton : MonoBehaviour
 
         _inputData.Type = (InputType)_inputType;
 
+        UpdateText();
+    }
+
+    private void UpdateText()
+    {
         switch (_inputData.Type)
         {
             case InputType.Keyboard:
