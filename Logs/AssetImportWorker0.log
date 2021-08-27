@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2021.1/staging' branch; Version is '2021.1.15f1 (e767a7370072) revision 15165351'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1110; Version 2009; 64bit' Language: 'ru' Physical Memory: 16302 MB
+Built from '2021.1/staging' branch; Version is '2021.1.18f1 (25bdc3efbc2d) revision 2473411'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'ru' Physical Memory: 16302 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
- COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\2021.1.15f1\Editor\Unity.exe
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.18f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,14 +15,14 @@ A:/UnityProjects/Asteroids
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56184
+62881
 Successfully changed project path to: A:/UnityProjects/Asteroids
 A:/UnityProjects/Asteroids
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 66.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 76.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.1.15f1 (e767a7370072)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.1.15f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2021.1.18f1 (25bdc3efbc2d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path A:/UnityProjects/Asteroids/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
@@ -32,274 +32,95 @@ Direct3D:
     VRAM:     4075 MB
     Driver:   27.20.2001.9003
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/2021.1.15f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/2021.1.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/2021.1.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/2021.1.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/2021.1.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004161 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004686 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 63.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 73.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.877 seconds
+- Completed reload, in  2.411 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4877ms)
-		BeginReloadAssembly (93ms)
+	ReloadAssembly (2411ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (708ms)
-			LoadAssemblies (89ms)
+		EndReloadAssembly (761ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (264ms)
+			SetupTypeCache (293ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (305ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (327ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (64ms)
-				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (174ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018578 seconds.
+Registered in 0.004968 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 63.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 72.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.871 seconds
+- Completed reload, in  2.321 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1871ms)
-		BeginReloadAssembly (240ms)
+	ReloadAssembly (2323ms)
+		BeginReloadAssembly (318ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (1534ms)
-			LoadAssemblies (163ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1896ms)
+			LoadAssemblies (352ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (471ms)
+			SetupTypeCache (538ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (100ms)
-			SetupLoadedEditorAssemblies (637ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (757ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (63ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (429ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2138 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.7 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2588.
-Total: 3.225200 ms (FindLiveObjects: 0.206200 ms CreateObjectMapping: 0.115900 ms MarkObjects: 2.739900 ms  DeleteObjects: 0.161400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.35 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 53.6 MB.
-System memory in use after: 53.6 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2588.
-Total: 3.545500 ms (FindLiveObjects: 0.208000 ms CreateObjectMapping: 0.109600 ms MarkObjects: 3.103200 ms  DeleteObjects: 0.123200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Fonts
-  artifactKey: Guid(584000b6bdd4d2b43b679258172622d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts using Guid(584000b6bdd4d2b43b679258172622d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde0e58c166a847be012466ddfffc098') in 0.072114 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 49.662554 seconds.
-  path: Assets/Fonts/arial.ttf
-  artifactKey: Guid(09656acc68532be4ebe92ae9bddee337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/arial.ttf using Guid(09656acc68532be4ebe92ae9bddee337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366b654b9b7f61d7e5ed3bec615f195d') in 0.380935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.409482 seconds.
-  path: Assets/Fonts/arial.ttf
-  artifactKey: Guid(09656acc68532be4ebe92ae9bddee337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/arial.ttf using Guid(09656acc68532be4ebe92ae9bddee337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5254cbf20159e5828450982ad0b025') in 0.014711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 69.679514 seconds.
-  path: Assets/Gameplay/UI/MainMenu/MainMenuCanvas.prefab
-  artifactKey: Guid(1c6798cbadc6e924abf1e86337b28eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gameplay/UI/MainMenu/MainMenuCanvas.prefab using Guid(1c6798cbadc6e924abf1e86337b28eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a548da4ba8a3244f95b7dd2b28efbe') in 0.065572 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 53.450471 seconds.
-  path: Assets/Scenes/MainMenu.unity
-  artifactKey: Guid(8a19435a8183b16449dd717e6c249ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu.unity using Guid(8a19435a8183b16449dd717e6c249ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d7e0ba1aae69093ff69a4e6ceac8be') in 0.009841 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.765189 seconds.
-  path: Assets/Scenes/Game.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8cf9b2f8843259930ffcca61e32e5fc') in 0.009715 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 5.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 58.4 MB.
-System memory in use after: 58.4 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2636.
-Total: 6.575000 ms (FindLiveObjects: 0.259000 ms CreateObjectMapping: 0.128600 ms MarkObjects: 6.029100 ms  DeleteObjects: 0.156400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1711.769365 seconds.
-  path: Assets/Gameplay/UI/MainMenu/MainMenuCanvas.prefab
-  artifactKey: Guid(1c6798cbadc6e924abf1e86337b28eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gameplay/UI/MainMenu/MainMenuCanvas.prefab using Guid(1c6798cbadc6e924abf1e86337b28eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c1c774d92b1908c216429f52605240') in 0.018858 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.775400 seconds.
-  path: Assets/Gameplay/UI/MainMenu/MainMenuCanvasInGame.prefab
-  artifactKey: Guid(e1bcbdc8cbd0c464da7cdd9359b2ae6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gameplay/UI/MainMenu/MainMenuCanvasInGame.prefab using Guid(e1bcbdc8cbd0c464da7cdd9359b2ae6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c37332b217e302cdb7e01fbaae675c') in 0.017261 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.97 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 58.5 MB.
-System memory in use after: 58.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2636.
-Total: 5.005300 ms (FindLiveObjects: 0.231600 ms CreateObjectMapping: 0.127900 ms MarkObjects: 4.506500 ms  DeleteObjects: 0.137400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1168.690418 seconds.
-  path: Assets/Gameplay/Player/Player.cs
-  artifactKey: Guid(346a5bbd45fc6224d81d6e48df8b80d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gameplay/Player/Player.cs using Guid(346a5bbd45fc6224d81d6e48df8b80d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a020ade68027b68c090563ae772abee') in 0.016468 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 113.368605 seconds.
-  path: Assets/Gameplay/Player/Player.cs
-  artifactKey: Guid(346a5bbd45fc6224d81d6e48df8b80d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gameplay/Player/Player.cs using Guid(346a5bbd45fc6224d81d6e48df8b80d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c5fb1b50104d4186e75c025777fa26') in 0.002788 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005081 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.232 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2232ms)
-		BeginReloadAssembly (383ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (28ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (177ms)
-		EndReloadAssembly (1721ms)
-			LoadAssemblies (187ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (567ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (116ms)
-			SetupLoadedEditorAssemblies (648ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (500ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (536ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (29ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2134 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.7 MB.
-System memory in use after: 100.6 MB.
+Unloading 2145 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.1 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2667.
-Total: 3.681300 ms (FindLiveObjects: 0.232100 ms CreateObjectMapping: 0.125800 ms MarkObjects: 3.168200 ms  DeleteObjects: 0.152900 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2599.
+Total: 4.977500 ms (FindLiveObjects: 0.206100 ms CreateObjectMapping: 0.128100 ms MarkObjects: 4.562000 ms  DeleteObjects: 0.079600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -313,8 +134,871 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 950.804922 seconds.
-  path: Assets/Gameplay/Bullet/Bullet.png
-  artifactKey: Guid(b09bdacda4210714283f73528af679b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gameplay/Bullet/Bullet.png using Guid(b09bdacda4210714283f73528af679b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75230a8ec74db68409fb84008b6f9e5d') in 0.245797 seconds 
+  path: Assets/Plugins
+  artifactKey: Guid(ae4f9880a1d8afb4b8901a19625072f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(ae4f9880a1d8afb4b8901a19625072f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0fae06703469dadccdaa8acf96ad8b6') in 0.018636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.371609 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX
+  artifactKey: Guid(eeb6c8003ae1f024aaf350b897f8aaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX using Guid(eeb6c8003ae1f024aaf350b897f8aaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb453688a9003bbe7f222e526eafa57') in 0.010340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 143.033911 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesC.png
+  artifactKey: Guid(a20f2611a38ce254bb90c4bd2fd8729c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesC.png using Guid(a20f2611a38ce254bb90c4bd2fd8729c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '340c642a73e031de109b61b8bdcee5f8') in 0.307955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Gameplay/Player/Spaceship.png
+  artifactKey: Guid(90abbc7143daef44a9d73804afa4a04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/Player/Spaceship.png using Guid(90abbc7143daef44a9d73804afa4a04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9aba90218ab77689c2937dde0fd849') in 0.018427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_B.png
+  artifactKey: Guid(4a768765c5b6d694692677853039b856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_B.png using Guid(4a768765c5b6d694692677853039b856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b8a0460d50dfcbc3bf7a4a99ea1b51') in 0.019472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_medium.png
+  artifactKey: Guid(46d5ea3b99a68514c9cc07ad0eab6cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_medium.png using Guid(46d5ea3b99a68514c9cc07ad0eab6cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba570b87b518628671a73c7c8ec5ca4c') in 0.014361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_A.png
+  artifactKey: Guid(d6f476a8b3afb694380638b873fee463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_A.png using Guid(d6f476a8b3afb694380638b873fee463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1117fd5765cccf4febb60d43c43619b') in 0.014722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_tiny.png
+  artifactKey: Guid(d21bf640257006c44b2107de0d7ad301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_tiny.png using Guid(d21bf640257006c44b2107de0d7ad301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4880692b0cd804abeb3367672f179d2b') in 0.014897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_large.png
+  artifactKey: Guid(04bb99d8ff66c8f4485c43f0eaeb399e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_large.png using Guid(04bb99d8ff66c8f4485c43f0eaeb399e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba3c1e038180db03d1e99a940b26fb6') in 0.013655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesD.png
+  artifactKey: Guid(524a7c95408003942a0579a65bd77c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesD.png using Guid(524a7c95408003942a0579a65bd77c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef36bbfad2adedbefa6dc37b04465acb') in 0.018328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_small.png
+  artifactKey: Guid(ca484337b2148a84a938cdd85fc9466a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_small.png using Guid(ca484337b2148a84a938cdd85fc9466a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc278636ac07227ad812454ba3d7e49') in 0.013181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.623141 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_C.png
+  artifactKey: Guid(c8ef863685c4863419ad7ade5f644629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_C.png using Guid(c8ef863685c4863419ad7ade5f644629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984eb5ec0f41a1f525bb07d30438d221') in 0.017454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Gameplay/UFO/UFO.png
+  artifactKey: Guid(0eeed7c87a2d6f841b65b36cb836db4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/UFO/UFO.png using Guid(0eeed7c87a2d6f841b65b36cb836db4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6eefef99afc1badd26842cc62ccdfe4') in 0.019204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.128811 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_I.png
+  artifactKey: Guid(77444df4934a612498fcc59140027513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_I.png using Guid(77444df4934a612498fcc59140027513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91972b255a9fa33579d391de6759a955') in 0.016071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_K.png
+  artifactKey: Guid(808841eaf49613441adafb7b3c533a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_K.png using Guid(808841eaf49613441adafb7b3c533a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa79a766eb96d29d626b61d9839085f2') in 0.014566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesB.png
+  artifactKey: Guid(487583d5520d1c44d99622cd6bd5bf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesB.png using Guid(487583d5520d1c44d99622cd6bd5bf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277c61611ae3e306a225b25b8f86f115') in 0.014606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesA.png
+  artifactKey: Guid(5c736c4025c9df948a8b413406316d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesA.png using Guid(5c736c4025c9df948a8b413406316d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f393210c2bc5407b99c2509c1e6970de') in 0.019408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_H.png
+  artifactKey: Guid(6324f46cebf59f4499a7783cf6cb4815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_H.png using Guid(6324f46cebf59f4499a7783cf6cb4815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e3fdcadf498e9deead6f33d1a2b58c') in 0.019534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_F.png
+  artifactKey: Guid(083c5df5b7478f349af35250d7b16771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_F.png using Guid(083c5df5b7478f349af35250d7b16771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc912e31077e7d166a82f222b8c66ee') in 0.019228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_G.png
+  artifactKey: Guid(c6d102077df8f1b4d98e205f2fb7c9a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_G.png using Guid(c6d102077df8f1b4d98e205f2fb7c9a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0d251bcfe432020e5fcdd0b797eb89') in 0.017261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_E.png
+  artifactKey: Guid(4adae05b265ccfe448f90afe878006f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_E.png using Guid(4adae05b265ccfe448f90afe878006f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590a22016dca01a41ecebd3be70cee96') in 0.018188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_C.png
+  artifactKey: Guid(6107776a6ee1a1c4f8a5ca246a156144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_C.png using Guid(6107776a6ee1a1c4f8a5ca246a156144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a9c8ee4c49d735c19b2c5ea172da01f') in 0.017142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_A.png
+  artifactKey: Guid(48380a0c0940b0d439078165a86f168b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_A.png using Guid(48380a0c0940b0d439078165a86f168b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b15c6f7188946bed9d97723fe9cf77') in 0.016525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_D.png
+  artifactKey: Guid(019d6b84c313d0245981313cb6be60f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_D.png using Guid(019d6b84c313d0245981313cb6be60f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91f176eee41da9db6d7a49c73f60096') in 0.014797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareLarge.png
+  artifactKey: Guid(88f4698d5728ef841bcbbb2e428b952a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareLarge.png using Guid(88f4698d5728ef841bcbbb2e428b952a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72525ac15afd7ce24ef0d790d369a89') in 0.013568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedLarge.png
+  artifactKey: Guid(ebafa630e95b2b747a25279f09932526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedLarge.png using Guid(ebafa630e95b2b747a25279f09932526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b4da0d05afebdfcad72b62327cb5c5') in 0.013264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareSmall.png
+  artifactKey: Guid(76afae5b6ba00004490f8ad1c968520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareSmall.png using Guid(76afae5b6ba00004490f8ad1c968520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cec97c31e4f8dcdc03c27fed0f6132b') in 0.013836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedSmall.png
+  artifactKey: Guid(057e40772bf67aa4786718c5c42b5edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedSmall.png using Guid(057e40772bf67aa4786718c5c42b5edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c787fdb0a4dd83a835e32709049226') in 0.014733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_B.png
+  artifactKey: Guid(fa95c2665a965f14fa34c087489da97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_B.png using Guid(fa95c2665a965f14fa34c087489da97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb5e9f753a1d2068939f7846d121cae') in 0.013644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_B.png
+  artifactKey: Guid(3b524c75c713285479c2dacfff7b453f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_B.png using Guid(3b524c75c713285479c2dacfff7b453f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443eb26976d8471c5d1a711b5ca851de') in 0.014330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_L.png
+  artifactKey: Guid(75482933f8d1c4e42bec93332383a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_L.png using Guid(75482933f8d1c4e42bec93332383a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444575631a6da330e6f131294ac0d4ad') in 0.015119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_J.png
+  artifactKey: Guid(1af93e5f6e5b8b94889d03bbfee2a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_J.png using Guid(1af93e5f6e5b8b94889d03bbfee2a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2fff690c2a2efb001fb41a1ef48a59b') in 0.014187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_C.png
+  artifactKey: Guid(e4b20bca38ac06d448fc356abd45bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_C.png using Guid(e4b20bca38ac06d448fc356abd45bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b531c866876e9af7d8778b2c656203ca') in 0.012992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_D.png
+  artifactKey: Guid(5d7cbfcc604d18242aff84301894beb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_D.png using Guid(5d7cbfcc604d18242aff84301894beb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823cbd5b7f1e04d4515f22323a363065') in 0.014041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_A.png
+  artifactKey: Guid(5874ed58f4f38954b93a171057846a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_A.png using Guid(5874ed58f4f38954b93a171057846a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed721eba17229bcb7ceca58167fc8487') in 0.014406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.023953 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_crossSmall.png
+  artifactKey: Guid(8e1cdda307270634d877cd563eccd254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_crossSmall.png using Guid(8e1cdda307270634d877cd563eccd254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c998a1132431ab2035ede005364fa399') in 0.016484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000466 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_plusSmall.png
+  artifactKey: Guid(a42612007041971498c9d4c95a4ae7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_plusSmall.png using Guid(a42612007041971498c9d4c95a4ae7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304454d3808730f0eec2cf4ff02b44ba') in 0.014496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_small.png
+  artifactKey: Guid(9f95abac6115cb043b3fe1e338e742d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_small.png using Guid(9f95abac6115cb043b3fe1e338e742d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921fc01fbeddff08be84846b7110a402') in 0.014542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_exclamationSmall.png
+  artifactKey: Guid(50395e4dfcb8fda46a24c60f591b5616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_exclamationSmall.png using Guid(50395e4dfcb8fda46a24c60f591b5616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e44f5c170d3a7d2825de1fd774c7c5c7') in 0.013407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_plusLarge.png
+  artifactKey: Guid(91a56abb2b5399749b541c17060224a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_plusLarge.png using Guid(91a56abb2b5399749b541c17060224a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7de98c7466d2c8e2d0f2bc917a7bcb0') in 0.013588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_large.png
+  artifactKey: Guid(0baccd8fc51bc5c488dd6f0c7527ffab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_large.png using Guid(0baccd8fc51bc5c488dd6f0c7527ffab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acba393933534186c1dece643f60ffa7') in 0.014109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_detailedSmall.png
+  artifactKey: Guid(1d6a68a17d7051b4d87d8648c9174961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_detailedSmall.png using Guid(1d6a68a17d7051b4d87d8648c9174961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bcb1d42ea56a26f6f40cd33b739042c') in 0.013245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_exclamationLarge.png
+  artifactKey: Guid(d120c53707d18f34faf8d2937c7fd35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_exclamationLarge.png using Guid(d120c53707d18f34faf8d2937c7fd35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5138c551f9539a242b942ad6004631c4') in 0.014556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_detailedLarge.png
+  artifactKey: Guid(7f74d7bfc0a160a4f865baa9548f2d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_detailedLarge.png using Guid(7f74d7bfc0a160a4f865baa9548f2d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23cba673d5e341c846bb4decb3749abf') in 0.012832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_crossLarge.png
+  artifactKey: Guid(e0ebdaf3f557c3c4f9a8284bec4492ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_crossLarge.png using Guid(e0ebdaf3f557c3c4f9a8284bec4492ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbef00e3ab8a13349a13b0889a1d6308') in 0.014156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.570870 seconds.
+  path: Assets/Gameplay/Asteroid/Asteroid.png
+  artifactKey: Guid(7255f9a198f02ad458b2d49708094d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/Asteroid/Asteroid.png using Guid(7255f9a198f02ad458b2d49708094d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cee791c2020e8066c6f233021f9b4f') in 0.031350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000452 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_B.png
+  artifactKey: Guid(40efac98eb9de7846a09f37be1b5262d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_B.png using Guid(40efac98eb9de7846a09f37be1b5262d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d9ece7e87ef50a46e2784594af6082') in 0.017646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/effect_yellow.png
+  artifactKey: Guid(9830d6c270b34e7439a90871280510c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/effect_yellow.png using Guid(9830d6c270b34e7439a90871280510c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc13e67d51688804cb30c0dc106f252f') in 0.042785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_E.png
+  artifactKey: Guid(b2aac61c52fa1914abf9394bc5a7aa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_E.png using Guid(b2aac61c52fa1914abf9394bc5a7aa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3b85503822c592202931168bb3df7b') in 0.015246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/effect_purple.png
+  artifactKey: Guid(83f8c1402a076054a8e3adda3e49b0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/effect_purple.png using Guid(83f8c1402a076054a8e3adda3e49b0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e442f5ee3055d9b66e8dba0e5ceae5e8') in 0.013603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_C.png
+  artifactKey: Guid(09b869b19c7323240989533ba80b6f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_C.png using Guid(09b869b19c7323240989533ba80b6f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be88a4d7c6bfdb0849c880050fc94d10') in 0.015854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_A.png
+  artifactKey: Guid(a5c6ec507cffefe4690d3c13b9d3d962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_A.png using Guid(a5c6ec507cffefe4690d3c13b9d3d962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f0015e0dff56e1d0d2872929c8ea3ae') in 0.013050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_D.png
+  artifactKey: Guid(4feef992aaefbc646a3d64e82731bd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_D.png using Guid(4feef992aaefbc646a3d64e82731bd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c391045c52820af9b45e34b0b4dc4ea1') in 0.016419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.484586 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_crossSmall.png
+  artifactKey: Guid(8e1cdda307270634d877cd563eccd254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_crossSmall.png using Guid(8e1cdda307270634d877cd563eccd254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f664e04c9dd6e2c3fd26911db14ab4a') in 0.019694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_C.png
+  artifactKey: Guid(6107776a6ee1a1c4f8a5ca246a156144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_C.png using Guid(6107776a6ee1a1c4f8a5ca246a156144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f5e3d448e4e6bf76d6841359ead595') in 0.015966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_K.png
+  artifactKey: Guid(808841eaf49613441adafb7b3c533a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_K.png using Guid(808841eaf49613441adafb7b3c533a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f751f7dac0f2a069921b96719c4f9775') in 0.014144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_plusSmall.png
+  artifactKey: Guid(a42612007041971498c9d4c95a4ae7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_plusSmall.png using Guid(a42612007041971498c9d4c95a4ae7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4630729189d631c4ef2352cea4205471') in 0.014010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_medium.png
+  artifactKey: Guid(46d5ea3b99a68514c9cc07ad0eab6cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_medium.png using Guid(46d5ea3b99a68514c9cc07ad0eab6cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9edba0d5629cacb69ae903f7b2cf4c2') in 0.017344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_C.png
+  artifactKey: Guid(c8ef863685c4863419ad7ade5f644629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_C.png using Guid(c8ef863685c4863419ad7ade5f644629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a422df941629355101f9195d5f13ba0') in 0.014962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_small.png
+  artifactKey: Guid(9f95abac6115cb043b3fe1e338e742d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_small.png using Guid(9f95abac6115cb043b3fe1e338e742d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0831753d4a945b0fcdf88fc9b8f98f78') in 0.018667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_H.png
+  artifactKey: Guid(6324f46cebf59f4499a7783cf6cb4815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_H.png using Guid(6324f46cebf59f4499a7783cf6cb4815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7bbcf032c12a8df4260bcd5514c978f') in 0.014729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesA.png
+  artifactKey: Guid(5c736c4025c9df948a8b413406316d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesA.png using Guid(5c736c4025c9df948a8b413406316d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4ec213a10a6a2686ab3145ef9dabb2') in 0.015851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesB.png
+  artifactKey: Guid(487583d5520d1c44d99622cd6bd5bf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesB.png using Guid(487583d5520d1c44d99622cd6bd5bf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98acb7d259fb5555fe16aea6ae2c3f7') in 0.015675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_A.png
+  artifactKey: Guid(d6f476a8b3afb694380638b873fee463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_A.png using Guid(d6f476a8b3afb694380638b873fee463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced174d7b2862e27a2dddd6f2befc806') in 0.017659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_exclamationSmall.png
+  artifactKey: Guid(50395e4dfcb8fda46a24c60f591b5616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_exclamationSmall.png using Guid(50395e4dfcb8fda46a24c60f591b5616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93930e58b520bb6ade61f6883704f642') in 0.013941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_tiny.png
+  artifactKey: Guid(d21bf640257006c44b2107de0d7ad301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_tiny.png using Guid(d21bf640257006c44b2107de0d7ad301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e1eb305f74e746cf3113d8a5b4752a') in 0.014461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_F.png
+  artifactKey: Guid(083c5df5b7478f349af35250d7b16771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_F.png using Guid(083c5df5b7478f349af35250d7b16771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a331fbea57c527b4310616f54b121c76') in 0.016791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_G.png
+  artifactKey: Guid(c6d102077df8f1b4d98e205f2fb7c9a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_G.png using Guid(c6d102077df8f1b4d98e205f2fb7c9a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3831146a3357718b9eb0e1aeacb2f68e') in 0.016150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_B.png
+  artifactKey: Guid(4a768765c5b6d694692677853039b856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_B.png using Guid(4a768765c5b6d694692677853039b856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b621761d0da6a3d9f3ed5c498dc7b8a6') in 0.019223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_A.png
+  artifactKey: Guid(48380a0c0940b0d439078165a86f168b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_A.png using Guid(48380a0c0940b0d439078165a86f168b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf76ddc6a21a26882e1d87a7c40d21b') in 0.016716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_E.png
+  artifactKey: Guid(4adae05b265ccfe448f90afe878006f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_E.png using Guid(4adae05b265ccfe448f90afe878006f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60fba6d7f62b6f64abc3f4e4adcf8649') in 0.014526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareLarge.png
+  artifactKey: Guid(88f4698d5728ef841bcbbb2e428b952a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareLarge.png using Guid(88f4698d5728ef841bcbbb2e428b952a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee0493a04a36a9a0c0d068c0d95a5dd') in 0.018596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedLarge.png
+  artifactKey: Guid(ebafa630e95b2b747a25279f09932526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedLarge.png using Guid(ebafa630e95b2b747a25279f09932526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c7c7969051da89456de45894683b26') in 0.021101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_plusLarge.png
+  artifactKey: Guid(91a56abb2b5399749b541c17060224a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_plusLarge.png using Guid(91a56abb2b5399749b541c17060224a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e86add1d81d27a19789325e06aec91') in 0.017584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedSmall.png
+  artifactKey: Guid(057e40772bf67aa4786718c5c42b5edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedSmall.png using Guid(057e40772bf67aa4786718c5c42b5edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9a94c3268050305992d44748cd5758b') in 0.015698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_D.png
+  artifactKey: Guid(019d6b84c313d0245981313cb6be60f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_D.png using Guid(019d6b84c313d0245981313cb6be60f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128d20743019be45ac99531e24904c3f') in 0.014054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_B.png
+  artifactKey: Guid(fa95c2665a965f14fa34c087489da97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_B.png using Guid(fa95c2665a965f14fa34c087489da97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc8420656b638140c6740ae4c722744') in 0.016629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareSmall.png
+  artifactKey: Guid(76afae5b6ba00004490f8ad1c968520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareSmall.png using Guid(76afae5b6ba00004490f8ad1c968520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6daca498f0595346d3a8c01ae217f8d0') in 0.014108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_large.png
+  artifactKey: Guid(0baccd8fc51bc5c488dd6f0c7527ffab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_large.png using Guid(0baccd8fc51bc5c488dd6f0c7527ffab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c43d178ba3c9ae35802b741eb4b7782') in 0.014439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_B.png
+  artifactKey: Guid(3b524c75c713285479c2dacfff7b453f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_B.png using Guid(3b524c75c713285479c2dacfff7b453f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd265585f1aee5a497b84481ec6aab45c') in 0.013314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_C.png
+  artifactKey: Guid(e4b20bca38ac06d448fc356abd45bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_C.png using Guid(e4b20bca38ac06d448fc356abd45bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caecbc06cef00cd789804363836dd7c9') in 0.014131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_J.png
+  artifactKey: Guid(1af93e5f6e5b8b94889d03bbfee2a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_J.png using Guid(1af93e5f6e5b8b94889d03bbfee2a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f583345591f139a1642abeee8be9639') in 0.016883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_L.png
+  artifactKey: Guid(75482933f8d1c4e42bec93332383a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_L.png using Guid(75482933f8d1c4e42bec93332383a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da897169dad29c5ee15357600f2c933') in 0.015008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_detailedSmall.png
+  artifactKey: Guid(1d6a68a17d7051b4d87d8648c9174961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_detailedSmall.png using Guid(1d6a68a17d7051b4d87d8648c9174961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44873202ff6e057a70ae01e9cd0e8833') in 0.015350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_D.png
+  artifactKey: Guid(5d7cbfcc604d18242aff84301894beb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_D.png using Guid(5d7cbfcc604d18242aff84301894beb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07123ff4bcf0340fd0ba09d83336fd6c') in 0.015727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesC.png
+  artifactKey: Guid(a20f2611a38ce254bb90c4bd2fd8729c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesC.png using Guid(a20f2611a38ce254bb90c4bd2fd8729c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f368b8b7902264b8bce1e2bd6ad3267') in 0.014769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesD.png
+  artifactKey: Guid(524a7c95408003942a0579a65bd77c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesD.png using Guid(524a7c95408003942a0579a65bd77c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf57c9cc249ef433ba0010b013fdface') in 0.015842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_I.png
+  artifactKey: Guid(77444df4934a612498fcc59140027513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_I.png using Guid(77444df4934a612498fcc59140027513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf219d62c0076dc4c1fab92fa258412d') in 0.017671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_small.png
+  artifactKey: Guid(ca484337b2148a84a938cdd85fc9466a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_small.png using Guid(ca484337b2148a84a938cdd85fc9466a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150a2a8f4bff958f083adc0fb76a0d6a') in 0.014158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_A.png
+  artifactKey: Guid(5874ed58f4f38954b93a171057846a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_A.png using Guid(5874ed58f4f38954b93a171057846a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b257a11728592fdcb5143c362f198cd') in 0.013392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_exclamationLarge.png
+  artifactKey: Guid(d120c53707d18f34faf8d2937c7fd35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_exclamationLarge.png using Guid(d120c53707d18f34faf8d2937c7fd35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900774d70c50f4f50eade05cfba94015') in 0.014781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_large.png
+  artifactKey: Guid(04bb99d8ff66c8f4485c43f0eaeb399e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_large.png using Guid(04bb99d8ff66c8f4485c43f0eaeb399e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a4c9c8b650d3b535fa352aed017549') in 0.014956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_detailedLarge.png
+  artifactKey: Guid(7f74d7bfc0a160a4f865baa9548f2d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_detailedLarge.png using Guid(7f74d7bfc0a160a4f865baa9548f2d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a236b769e70a5a0ee6992d2343a7b2') in 0.014633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.047107 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_I.png
+  artifactKey: Guid(77444df4934a612498fcc59140027513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_I.png using Guid(77444df4934a612498fcc59140027513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a0f1f9836103737cdf9a706fe26ae1') in 0.014302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.647537 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_I.png
+  artifactKey: Guid(77444df4934a612498fcc59140027513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_I.png using Guid(77444df4934a612498fcc59140027513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e1067650e4831fb27039713e92d70f') in 0.013369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.830906 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/effect_purple.png
+  artifactKey: Guid(83f8c1402a076054a8e3adda3e49b0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/effect_purple.png using Guid(83f8c1402a076054a8e3adda3e49b0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '574a85780f50c8a17d6fbdebb68f3d2a') in 0.014344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.147880 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_E.png
+  artifactKey: Guid(b2aac61c52fa1914abf9394bc5a7aa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_E.png using Guid(b2aac61c52fa1914abf9394bc5a7aa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aca198a975d302fbd1cbaa06f27470a') in 0.025291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.337880 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_E.png
+  artifactKey: Guid(b2aac61c52fa1914abf9394bc5a7aa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_E.png using Guid(b2aac61c52fa1914abf9394bc5a7aa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd597419b767e005e9227a420660660') in 0.022804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.629567 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_crossSmall.png
+  artifactKey: Guid(8e1cdda307270634d877cd563eccd254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_crossSmall.png using Guid(8e1cdda307270634d877cd563eccd254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc78c2a243427a12cae4694b9fffb28a') in 0.011550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_C.png
+  artifactKey: Guid(6107776a6ee1a1c4f8a5ca246a156144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_C.png using Guid(6107776a6ee1a1c4f8a5ca246a156144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4637f0810305f38429335229967944a4') in 0.014836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_K.png
+  artifactKey: Guid(808841eaf49613441adafb7b3c533a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_K.png using Guid(808841eaf49613441adafb7b3c533a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ea853bfe0fb7b07f0089c373f076b2') in 0.010167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_plusSmall.png
+  artifactKey: Guid(a42612007041971498c9d4c95a4ae7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_plusSmall.png using Guid(a42612007041971498c9d4c95a4ae7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce154e60a2c2040c35d7e9a8c45e28a') in 0.014713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_medium.png
+  artifactKey: Guid(46d5ea3b99a68514c9cc07ad0eab6cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_medium.png using Guid(46d5ea3b99a68514c9cc07ad0eab6cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f387b5e34531fbafa894fce13ff340') in 0.010275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_C.png
+  artifactKey: Guid(c8ef863685c4863419ad7ade5f644629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_C.png using Guid(c8ef863685c4863419ad7ade5f644629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6674e54a048dc2a460698ecb79418a31') in 0.015503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_small.png
+  artifactKey: Guid(9f95abac6115cb043b3fe1e338e742d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_small.png using Guid(9f95abac6115cb043b3fe1e338e742d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee8106349ea95352029beb787e1fb01') in 0.018065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_H.png
+  artifactKey: Guid(6324f46cebf59f4499a7783cf6cb4815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_H.png using Guid(6324f46cebf59f4499a7783cf6cb4815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c479c406a107f332a09efafd4af7565a') in 0.015683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesA.png
+  artifactKey: Guid(5c736c4025c9df948a8b413406316d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesA.png using Guid(5c736c4025c9df948a8b413406316d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9af5f59fdc7f909ed19510dd26649a9') in 0.010930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesB.png
+  artifactKey: Guid(487583d5520d1c44d99622cd6bd5bf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesB.png using Guid(487583d5520d1c44d99622cd6bd5bf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae7ed28320aa8c0c829df8f6e895720') in 0.016876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_A.png
+  artifactKey: Guid(d6f476a8b3afb694380638b873fee463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_A.png using Guid(d6f476a8b3afb694380638b873fee463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5e99a6f5325132d7de3b444ad3dc79') in 0.020519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_exclamationSmall.png
+  artifactKey: Guid(50395e4dfcb8fda46a24c60f591b5616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_exclamationSmall.png using Guid(50395e4dfcb8fda46a24c60f591b5616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b497c129c6727806b9a0415fecac5b') in 0.011972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_tiny.png
+  artifactKey: Guid(d21bf640257006c44b2107de0d7ad301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_tiny.png using Guid(d21bf640257006c44b2107de0d7ad301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059f6145bae3c84871fd29e174a57072') in 0.014709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_F.png
+  artifactKey: Guid(083c5df5b7478f349af35250d7b16771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_F.png using Guid(083c5df5b7478f349af35250d7b16771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b971fdc854d29cbb3a490d5f8c7b5942') in 0.017247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_G.png
+  artifactKey: Guid(c6d102077df8f1b4d98e205f2fb7c9a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_G.png using Guid(c6d102077df8f1b4d98e205f2fb7c9a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c849b168de15966b30c918176c6743b0') in 0.011319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/station_B.png
+  artifactKey: Guid(4a768765c5b6d694692677853039b856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/station_B.png using Guid(4a768765c5b6d694692677853039b856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca22d49889e47cbfda56f51aabf1283d') in 0.018922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_A.png
+  artifactKey: Guid(48380a0c0940b0d439078165a86f168b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_A.png using Guid(48380a0c0940b0d439078165a86f168b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fefb3c7dcd652e64436003498d12959') in 0.010255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_E.png
+  artifactKey: Guid(4adae05b265ccfe448f90afe878006f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_E.png using Guid(4adae05b265ccfe448f90afe878006f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f85a70e98eae4cf711db88d670b904') in 0.010914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareLarge.png
+  artifactKey: Guid(88f4698d5728ef841bcbbb2e428b952a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareLarge.png using Guid(88f4698d5728ef841bcbbb2e428b952a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb7f654199e47fff50974016608980a') in 0.015003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedLarge.png
+  artifactKey: Guid(ebafa630e95b2b747a25279f09932526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedLarge.png using Guid(ebafa630e95b2b747a25279f09932526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cf8ab9341f0d56b508341163d53010') in 0.016085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_plusLarge.png
+  artifactKey: Guid(91a56abb2b5399749b541c17060224a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_plusLarge.png using Guid(91a56abb2b5399749b541c17060224a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcef0be10cb34d2785ffde1b6dccf70') in 0.010612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedSmall.png
+  artifactKey: Guid(057e40772bf67aa4786718c5c42b5edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareDetailedSmall.png using Guid(057e40772bf67aa4786718c5c42b5edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbdfc4e9bd28038eeeed714996a10b99') in 0.010307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_D.png
+  artifactKey: Guid(019d6b84c313d0245981313cb6be60f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_D.png using Guid(019d6b84c313d0245981313cb6be60f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '508e609e927243978d0913105eac229e') in 0.013934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_B.png
+  artifactKey: Guid(fa95c2665a965f14fa34c087489da97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_B.png using Guid(fa95c2665a965f14fa34c087489da97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a183d496121a69162e5f60b64e40ccf9') in 0.010195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_squareSmall.png
+  artifactKey: Guid(76afae5b6ba00004490f8ad1c968520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_squareSmall.png using Guid(76afae5b6ba00004490f8ad1c968520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c389c21a3e88a1add94f2dd7672298') in 0.011048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_large.png
+  artifactKey: Guid(0baccd8fc51bc5c488dd6f0c7527ffab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_large.png using Guid(0baccd8fc51bc5c488dd6f0c7527ffab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a116dbd63c44cb0ed97a04cf1a8d31f7') in 0.010902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_B.png
+  artifactKey: Guid(3b524c75c713285479c2dacfff7b453f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_B.png using Guid(3b524c75c713285479c2dacfff7b453f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1053949f47109756675fac921f7caf') in 0.010307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_C.png
+  artifactKey: Guid(e4b20bca38ac06d448fc356abd45bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_C.png using Guid(e4b20bca38ac06d448fc356abd45bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ee6a3fdf3015394a50fd6da4b8d1d8') in 0.010126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_J.png
+  artifactKey: Guid(1af93e5f6e5b8b94889d03bbfee2a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_J.png using Guid(1af93e5f6e5b8b94889d03bbfee2a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99961358fd9e8438261e8e7d76c26a40') in 0.014080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_L.png
+  artifactKey: Guid(75482933f8d1c4e42bec93332383a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_L.png using Guid(75482933f8d1c4e42bec93332383a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484cf752f5b9e9eea9db1991cfeefabe') in 0.010139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_detailedSmall.png
+  artifactKey: Guid(1d6a68a17d7051b4d87d8648c9174961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_detailedSmall.png using Guid(1d6a68a17d7051b4d87d8648c9174961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6fefb8179755267d76d2131c8b12ba') in 0.014734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_D.png
+  artifactKey: Guid(5d7cbfcc604d18242aff84301894beb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_D.png using Guid(5d7cbfcc604d18242aff84301894beb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f0e478f7d76a2a16716282003ae888') in 0.010790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesC.png
+  artifactKey: Guid(a20f2611a38ce254bb90c4bd2fd8729c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesC.png using Guid(a20f2611a38ce254bb90c4bd2fd8729c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea39ee3bb79a5c166df8738e81a4bd8') in 0.010214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/ship_sidesD.png
+  artifactKey: Guid(524a7c95408003942a0579a65bd77c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/ship_sidesD.png using Guid(524a7c95408003942a0579a65bd77c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3519c8ae617452f05f7eda7708a2328b') in 0.011743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_small.png
+  artifactKey: Guid(ca484337b2148a84a938cdd85fc9466a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_small.png using Guid(ca484337b2148a84a938cdd85fc9466a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd074c9e31029bbe26df5cfd07ba29f04') in 0.015606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/satellite_A.png
+  artifactKey: Guid(5874ed58f4f38954b93a171057846a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/satellite_A.png using Guid(5874ed58f4f38954b93a171057846a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33572a7ede2e76c360071bea83441c6e') in 0.011735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_exclamationLarge.png
+  artifactKey: Guid(d120c53707d18f34faf8d2937c7fd35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_exclamationLarge.png using Guid(d120c53707d18f34faf8d2937c7fd35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b94a1c6f2bee3816c66f2074d0a8838') in 0.010509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/star_large.png
+  artifactKey: Guid(04bb99d8ff66c8f4485c43f0eaeb399e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/star_large.png using Guid(04bb99d8ff66c8f4485c43f0eaeb399e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af980a23dde122072d88d4aa755e9fc') in 0.010303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/meteor_detailedLarge.png
+  artifactKey: Guid(7f74d7bfc0a160a4f865baa9548f2d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/meteor_detailedLarge.png using Guid(7f74d7bfc0a160a4f865baa9548f2d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0015d4823e188a7129c3b459897b3a') in 0.016113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 114.371946 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/effect_purple.png
+  artifactKey: Guid(83f8c1402a076054a8e3adda3e49b0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/effect_purple.png using Guid(83f8c1402a076054a8e3adda3e49b0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7a77f428a20ad4813bd7f148f49452') in 0.013936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_B.png
+  artifactKey: Guid(40efac98eb9de7846a09f37be1b5262d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_B.png using Guid(40efac98eb9de7846a09f37be1b5262d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5bac112182544e55aa39ac45dfb7df1') in 0.015941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/effect_yellow.png
+  artifactKey: Guid(9830d6c270b34e7439a90871280510c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/effect_yellow.png using Guid(9830d6c270b34e7439a90871280510c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256e386331e4f6ae92468605476d19c3') in 0.013832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_C.png
+  artifactKey: Guid(09b869b19c7323240989533ba80b6f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_C.png using Guid(09b869b19c7323240989533ba80b6f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c056a9a9c685c0fc9b7a17036bfed72') in 0.015629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_A.png
+  artifactKey: Guid(a5c6ec507cffefe4690d3c13b9d3d962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_A.png using Guid(a5c6ec507cffefe4690d3c13b9d3d962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0b0c15889c3061e49c3a870263b619') in 0.018576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/enemy_D.png
+  artifactKey: Guid(4feef992aaefbc646a3d64e82731bd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/enemy_D.png using Guid(4feef992aaefbc646a3d64e82731bd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610f47dc8acb6c7d221640ee023cc5fe') in 0.015290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Plugins/SimpleSpaceGFX/icon_crossLarge.png
+  artifactKey: Guid(e0ebdaf3f557c3c4f9a8284bec4492ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SimpleSpaceGFX/icon_crossLarge.png using Guid(e0ebdaf3f557c3c4f9a8284bec4492ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea6a3bd2bcd9271cebea906ad1af3adf') in 0.014269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 105.402439 seconds.
+  path: Assets/Gameplay/UFO/UFO.prefab
+  artifactKey: Guid(d2f65e0fb3813ea4383022112753c312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/UFO/UFO.prefab using Guid(d2f65e0fb3813ea4383022112753c312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb083cc80fb4bc198545ae2e8b367204') in 0.048349 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
