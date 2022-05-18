@@ -3,24 +3,26 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class Flashing : MonoBehaviour
 {
-    private SpriteRenderer _sprite;
+    private SpriteRenderer[] _sprites;
     private float _repeatRate;
 
-    public void Init(SpriteRenderer sprite, float repeatRate)
+    public void Init(SpriteRenderer[] sprites, float repeatRate)
     {
         _repeatRate = repeatRate;
-        _sprite = sprite;
+        _sprites = sprites;
 
         InvokeRepeating(nameof(Flash), 0f, _repeatRate);
     }
 
     private void Flash()
     {
-        _sprite.enabled = !_sprite.enabled;
+        foreach (var sprite in _sprites)
+            sprite.enabled = !sprite.enabled;
     }
 
     private void OnDestroy()
     {
-        _sprite.enabled = true;
+        foreach (var sprite in _sprites)
+            sprite.enabled = true;
     }
 }

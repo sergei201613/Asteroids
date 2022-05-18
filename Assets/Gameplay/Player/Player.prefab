@@ -119,6 +119,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8863118753977250950}
+  - {fileID: 3439279944741060479}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -185,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fireRate: 3
   _bulletSpeed: 20
-  _bulletPrefab: {fileID: 4942121267479637422, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}
+  _bulletPrefab: {fileID: 570334635514157637, guid: fbcb3dc8fc38c814f8294de3a311805b, type: 3}
   _owner: {fileID: 8863118754813046811}
   _bulletPoolSize: 5
   _fireSound: {fileID: 9129201856298111793}
@@ -201,8 +202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346a5bbd45fc6224d81d6e48df8b80d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _invulnerableFlashingRate: 0.5
-  _sprite: {fileID: 8863118753977250953}
+  _invulnerableFlashingRate: 0.35
+  _sprites:
+  - {fileID: 8863118753977250953}
+  - {fileID: 2993702891024393909}
   _inputData: {fileID: 11400000, guid: 8f80f08efcfe6224e900f2e1777874b5, type: 2}
   _explosionSoundPrefab: {fileID: 5918858874820791994, guid: 3342c5bdef896ae49af6c96a474f863f, type: 3}
 --- !u!61 &3379717407427363585
@@ -353,3 +356,70 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &2323985145756570436
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8863118754813046810}
+    m_Modifications:
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.978
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827504059311090041, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+      propertyPath: m_Name
+      value: TurbineFire
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+--- !u!4 &3439279944741060479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+  m_PrefabInstance: {fileID: 2323985145756570436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2993702891024393909 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 705852132448499185, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+  m_PrefabInstance: {fileID: 2323985145756570436}
+  m_PrefabAsset: {fileID: 0}

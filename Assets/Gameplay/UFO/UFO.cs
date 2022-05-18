@@ -49,7 +49,6 @@ public class UFO : MonoBehaviour
                 Instantiate(_explosionSoundPrefab);
                 
                 Destroy(gameObject);
-                _gameMode.AddScoreForUFO();
             }
         }
     }

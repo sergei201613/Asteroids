@@ -3,7 +3,11 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     [SerializeField] private AsteroidSizes _sizes;
+    [SerializeField] private AsteroidSprites _sprites;
+    [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private GameObject _explosionSoundPrefab;
+
+    public AsteroidType Type => _type;
 
     private AsteroidType _type;
     private Vector2 _velocity;
@@ -21,10 +25,13 @@ public class Asteroid : MonoBehaviour
 
     public void Init(AsteroidType type, Vector2 position, Vector2 velocity, AsteroidSpawner spawner)
     {
-        _type = type;
         transform.position = position;
+
+        _type = type;
         _velocity = velocity;
         _spawner = spawner;
+
+        _sprite.sprite = _sprites.Sprites[Random.Range(0, _sprites.Sprites.Length)];
 
         float scale = 1;
 
@@ -81,8 +88,6 @@ public class Asteroid : MonoBehaviour
                 default:
                     break;
             }
-
-            _gameMode.AddScoreForAsteroid(_type);
 
             Instantiate(_explosionSoundPrefab);
         }

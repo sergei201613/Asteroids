@@ -10,7 +10,7 @@ public class GameMode : MonoBehaviour
     [SerializeField] private MainMenu _menu;
     [SerializeField] private UFOSpawner _ufoSpawner;
     [SerializeField] private AsteroidSpawner _asteroidSpawner;
-    [SerializeField] PlayerInputData _inputData;
+    [SerializeField] private PlayerInputData _inputData;
     [SerializeField] private int _lives = 4;
 
     public int Lives => _lives;
@@ -18,7 +18,7 @@ public class GameMode : MonoBehaviour
     public GameState GameState => _gameState;
     public Player Player => _player;
 
-    public event System.Action<int> GameOvered;
+    public event System.Action<int, int, bool> PlayerDied;
     public event System.Action<int> ScoreUpdated;
     
     private Player _player;
@@ -46,7 +46,12 @@ public class GameMode : MonoBehaviour
                 SceneManager.LoadScene("MainMenu");
         });
 
-        GameOvered?.Invoke(--_lives);
+        bool isRecord = !PlayerPrefs.HasKey("Record") || _score > PlayerPrefs.GetInt("Record");
+
+        if (isRecord && _lives == 1)
+            PlayerPrefs.SetInt("Record", _score);
+
+        PlayerDied?.Invoke(--_lives, _score, isRecord);
     }
 
     public void TogglePause()
@@ -59,27 +64,36 @@ public class GameMode : MonoBehaviour
         _menu.gameObject.SetActive(isPaused);
     }
 
-    public void AddScoreForAsteroid(AsteroidType type)
+    public int AddScoreForAsteroid(AsteroidType type)
     {
+        int score = 0;
+
         switch (type)
         {
             case AsteroidType.Large:
-                AddScore(20);
+                score = 20;
                 break;
             case AsteroidType.Medium:
-                AddScore(50);
+                score = 50;
                 break;
             case AsteroidType.Small:
-                AddScore(100);
+                score = 100;
                 break;
             default:
                 break;
         }
+
+        AddScore(score);
+
+        return score;
     }
 
-    public void AddScoreForUFO()
+    public int AddScoreForUFO()
     {
-        AddScore(200);
+        int score = 200;
+        AddScore(score);
+
+        return score;
     }
 
     private void AddScore(int value)

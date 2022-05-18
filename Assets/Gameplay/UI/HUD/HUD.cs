@@ -6,6 +6,7 @@ public class HUD : MonoBehaviour
 {
     [SerializeField] private Text _scoreText;
     [SerializeField] private PlayerLives _lives;
+    [SerializeField] private Text _newRecordText;
 
     private GameMode _gameMode;
 
@@ -17,18 +18,21 @@ public class HUD : MonoBehaviour
     private void OnEnable()
     {
         _gameMode.ScoreUpdated += OnScoreUpdated;
-        _gameMode.GameOvered += OnGameOvered;
+        _gameMode.PlayerDied += OnPlayerDied;
     }
 
     private void OnDisable()
     {
         _gameMode.ScoreUpdated -= OnScoreUpdated;
-        _gameMode.GameOvered -= OnGameOvered;
+        _gameMode.PlayerDied -= OnPlayerDied;
     }
 
-    private void OnGameOvered(int lives)
+    private void OnPlayerDied(int lives, int score, bool isRecord)
     {
         _lives.Refresh(lives);
+
+        if (lives == 0 && isRecord)
+            _newRecordText.text = "Новый рекорд: " + score + "!";
     }
 
     private void OnScoreUpdated(int score)

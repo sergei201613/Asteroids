@@ -132,6 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sizes: {fileID: 11400000, guid: 74ee8909c37828d42b5f5d00ed928329, type: 2}
+  _sprites: {fileID: 11400000, guid: 6be01322f64ad6b408b98d11dbaac938, type: 2}
+  _sprite: {fileID: 7706962077328308362}
   _explosionSoundPrefab: {fileID: 5918858874820791994, guid: a79203433fdd0f54a9ace98b34fa523a, type: 3}
 --- !u!50 &7235400060107800587
 Rigidbody2D:

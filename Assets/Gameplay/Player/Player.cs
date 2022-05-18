@@ -7,7 +7,7 @@ using MonoBehaviourExtensions;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _invulnerableFlashingRate = 0.5f;
-    [SerializeField] private SpriteRenderer _sprite;
+    [SerializeField] private SpriteRenderer[] _sprites;
     [SerializeField] private PlayerInputData _inputData;
     [SerializeField] private GameObject _explosionSoundPrefab;
 
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
                 break;
         }
 
-        gameObject.AddComponent<Flashing>().Init(_sprite, _invulnerableFlashingRate);
+        gameObject.AddComponent<Flashing>().Init(_sprites, _invulnerableFlashingRate);
 
         this.Delay(3f, () =>
         {
@@ -45,15 +45,15 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
-        _gameMode.GameOvered += OnGameOvered;
+        _gameMode.PlayerDied += OnPlayerDied;
     }
 
     private void OnDisable()
     {
-        _gameMode.GameOvered -= OnGameOvered;
+        _gameMode.PlayerDied -= OnPlayerDied;
     }
 
-    private void OnGameOvered(int lives)
+    private void OnPlayerDied(int lives, int score, bool isRecord)
     {
         Instantiate(_explosionSoundPrefab);
 
