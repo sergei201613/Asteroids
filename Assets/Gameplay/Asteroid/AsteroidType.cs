@@ -1,4 +1,4 @@
 ﻿public enum AsteroidType
 {
-    Large, Medium, Small
+    Big, Medium, Small
 }

@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
+    [field: SerializeField]
+    public AsteroidType Type { get; private set; } = AsteroidType.Big;
+
     [SerializeField] private AsteroidSizes _sizes;
     [SerializeField] private AsteroidSprites _sprites;
     [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private GameObject _explosionSoundPrefab;
 
-    public AsteroidType Type => _type;
-
-    private AsteroidType _type;
     private Vector2 _velocity;
     private Rigidbody2D _rb;
     private AsteroidSpawner _spawner;
@@ -27,7 +27,7 @@ public class Asteroid : MonoBehaviour
     {
         transform.position = position;
 
-        _type = type;
+        Type = type;
         _velocity = velocity;
         _spawner = spawner;
 
@@ -35,9 +35,9 @@ public class Asteroid : MonoBehaviour
 
         float scale = 1;
 
-        switch (_type)
+        switch (Type)
         {
-            case AsteroidType.Large:
+            case AsteroidType.Big:
                 scale = _sizes.AsteroidLargeScale;
                 break;
             case AsteroidType.Medium:
@@ -75,9 +75,9 @@ public class Asteroid : MonoBehaviour
             if (_poolObj != null)
                 _poolObj.ReturnToPool();
 
-            switch (_type)
+            switch (Type)
             {
-                case AsteroidType.Large:
+                case AsteroidType.Big:
                     _spawner.SpawnPieces(AsteroidType.Medium, transform.position, _velocity.normalized);
                     break;
                 case AsteroidType.Medium:

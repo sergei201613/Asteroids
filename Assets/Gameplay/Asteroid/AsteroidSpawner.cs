@@ -1,7 +1,6 @@
 using UnityEngine;
 using MonoBehaviourExtensions;
 using System.Collections.Generic;
-using System.Collections;
 
 public class AsteroidSpawner : MonoBehaviour
 {
@@ -15,7 +14,7 @@ public class AsteroidSpawner : MonoBehaviour
 
     private float _waveDelay = 2;
     private Pool _pool;
-    private List<Asteroid> _asteroids = new List<Asteroid>();
+    private List<Asteroid> _asteroids = new();
 
     private void Awake()
     {
@@ -117,7 +116,7 @@ public class AsteroidSpawner : MonoBehaviour
 
         if (asteroidObj.TryGetComponent<Asteroid>(out var asteroid))
         {
-            asteroid.Init(AsteroidType.Large, position, velocity, this);
+            asteroid.Init(AsteroidType.Big, position, velocity, this);
             _asteroids.Add(asteroid);
         }
     }

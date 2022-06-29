@@ -13,7 +13,23 @@ MonoBehaviour:
   m_Name: AsteroiSprites
   m_EditorClassIdentifier: 
   Sprites:
-  - {fileID: 21300000, guid: 7f74d7bfc0a160a4f865baa9548f2d4a, type: 3}
-  - {fileID: 21300000, guid: 0baccd8fc51bc5c488dd6f0c7527ffab, type: 3}
-  - {fileID: 21300000, guid: ebafa630e95b2b747a25279f09932526, type: 3}
-  - {fileID: 21300000, guid: 88f4698d5728ef841bcbbb2e428b952a, type: 3}
+  - {fileID: 21300000, guid: 590bdc5ef72fccf4aa2dd5809e73cbb6, type: 3}
+  - {fileID: 21300000, guid: b61952ff28ea0ee499afd3e6f16664c1, type: 3}
+  - {fileID: 21300000, guid: f51780b70dc5e354c80272a255075554, type: 3}
+  - {fileID: 21300000, guid: 1575d223cd5e52a42ac503ff2900e4f0, type: 3}
+  - {fileID: 21300000, guid: d51da06508b361946bef458487399809, type: 3}
+  - {fileID: 21300000, guid: 2a855546d6d9e7f40a2043cc8d2d452c, type: 3}
+  - {fileID: 21300000, guid: 3f91bce168a53b04c9e02f3cc089de27, type: 3}
+  - {fileID: 21300000, guid: d446c9771fd5fe141b479eedf8cb781a, type: 3}
+  - {fileID: 21300000, guid: d3e93d20d718b044c9826b071b095140, type: 3}
+  - {fileID: 21300000, guid: fa00cfcde78e1ee4c95dabb1587a301b, type: 3}
+  - {fileID: 21300000, guid: 7c884b6761fd616449ec7c960bfca916, type: 3}
+  - {fileID: 21300000, guid: 200e82749973ff74fa5c6f38f89999bc, type: 3}
+  - {fileID: 21300000, guid: 0b8c3d28742132245a0d0416621711de, type: 3}
+  - {fileID: 21300000, guid: 7004b15d267e53643b854bb22a4d06c9, type: 3}
+  - {fileID: 21300000, guid: fc74087350dd4dc49a1ab0712a9bcf7d, type: 3}
+  - {fileID: 21300000, guid: 82842ee5dbf49e5488f9ad08feca0acc, type: 3}
+  - {fileID: 21300000, guid: 5b975a872448b9a47b395cf35f70ae6a, type: 3}
+  - {fileID: 21300000, guid: 4f837cb7a49934a47b351bb907a133ad, type: 3}
+  - {fileID: 21300000, guid: cd14f032c52dc3d4a96294a524ec46b8, type: 3}
+  - {fileID: 21300000, guid: 9c2f0edce2de2c647b9cf4b21cd50ed3, type: 3}

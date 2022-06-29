@@ -70,7 +70,7 @@ public class GameMode : MonoBehaviour
 
         switch (type)
         {
-            case AsteroidType.Large:
+            case AsteroidType.Big:
                 score = 20;
                 break;
             case AsteroidType.Medium:
