@@ -15,7 +15,7 @@ public class HitScoreAddition : MonoBehaviour
     {
         if (collision.TryGetComponent<Asteroid>(out var asteroid))
         {
-            int scoreAdded = _gameMode.AddScoreForAsteroid(asteroid.Type);
+            int scoreAdded = _gameMode.AddScoreForAsteroid(asteroid.Size);
 
             Instantiate(_scoreAddingEffect, transform.position, Quaternion.identity).Init(scoreAdded);
         }

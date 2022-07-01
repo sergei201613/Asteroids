@@ -64,19 +64,19 @@ public class GameMode : MonoBehaviour
         _menu.gameObject.SetActive(isPaused);
     }
 
-    public int AddScoreForAsteroid(AsteroidType type)
+    public int AddScoreForAsteroid(AsteroidSize type)
     {
         int score = 0;
 
         switch (type)
         {
-            case AsteroidType.Big:
+            case AsteroidSize.Big:
                 score = 20;
                 break;
-            case AsteroidType.Medium:
+            case AsteroidSize.Medium:
                 score = 50;
                 break;
-            case AsteroidType.Small:
+            case AsteroidSize.Small:
                 score = 100;
                 break;
             default:

@@ -1,26 +1,53 @@
 using UnityEngine;
 using MonoBehaviourExtensions;
 using System.Collections.Generic;
+using UnityEngine.Serialization;
+using System;
+using Random = UnityEngine.Random;
 
 public class AsteroidSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject _asteroidPrefab;
+    [FormerlySerializedAs("_asteroidPrefab")]
+    [SerializeField] Asteroids _prefabs;
     [SerializeField] float _minAsteroidSpeed = 4f;
     [SerializeField] float _maxAsteroidSpeed = 6f;
-    [SerializeField] int _asteroiPoolSize = 15;
     [SerializeField] float _asteroidSideOffset = 5f;
     [SerializeField] private BoxCollider2D _fieldCollider;
     [SerializeField] private int _asteroidsSpawnCount = 2;
+    [SerializeField] private float _waveDelay = 2;
 
-    private float _waveDelay = 2;
-    private Pool _pool;
-    private List<Asteroid> _asteroids = new();
+    private const int AsteroidPoolsCapacity = 4;
+    private const int AsteroidsCapacity = 16;
+
+    private readonly List<Pool> _bigAsteroidPools = 
+        new(AsteroidPoolsCapacity);
+    private readonly List<Pool> _mediumAsteroidPools = 
+        new(AsteroidPoolsCapacity);
+    private readonly List<Pool> _smallAsteroidPools = 
+        new(AsteroidPoolsCapacity);
+
+    private readonly List<Asteroid> _asteroids = new(AsteroidsCapacity);
 
     private void Awake()
     {
-        _pool = new Pool(_asteroidPrefab, _asteroiPoolSize);
+        CreatePools();
 
-        this.Delay(_waveDelay, () => { SpawnWave(); });
+        this.Delay(_waveDelay, () => 
+        { 
+            SpawnWave(); 
+        });
+    }
+
+    private void CreatePools()
+    {
+        foreach (var prefab in _prefabs.BigAsteroids)
+            _bigAsteroidPools.Add(new Pool(prefab.gameObject, 2));
+
+        foreach (var prefab in _prefabs.MediumAsteroids)
+            _mediumAsteroidPools.Add(new Pool(prefab.gameObject, 2));
+
+        foreach (var prefab in _prefabs.SmallAsteroids)
+            _smallAsteroidPools.Add(new Pool(prefab.gameObject, 2));
     }
 
     public void Remove(Asteroid asteroid)
@@ -31,10 +58,10 @@ public class AsteroidSpawner : MonoBehaviour
             this.Delay(_waveDelay, () => { SpawnWave(); });
     }
 
-    public void SpawnPieces(AsteroidType type, Vector2 position, Vector2 dir)
+    public void SpawnPieces(AsteroidSize size, Vector2 position, Vector2 dir)
     {
-        GameObject piece1 = _pool.GetObject();
-        GameObject piece2 = _pool.GetObject();
+        GameObject piece1 = GetRandomPool(size).GetObject();
+        GameObject piece2 = GetRandomPool(size).GetObject();
 
         Vector2 dir1 = dir;
         Vector2 dir2 = dir;
@@ -61,20 +88,21 @@ public class AsteroidSpawner : MonoBehaviour
 
         if (piece1.TryGetComponent<Asteroid>(out var asteroid1))
         {
-            asteroid1.Init(type, position, dir1 * speed, this);
+            // TODO: Change type
+            asteroid1.Init(position, dir1 * speed, this);
             _asteroids.Add(asteroid1);
         }
 
         if (piece2.TryGetComponent<Asteroid>(out var asteroid2))
         {
-            asteroid2.Init(type, position, dir2 * speed, this);
+            asteroid2.Init(position, dir2 * speed, this);
             _asteroids.Add(asteroid2);
         }
     }
 
     private void Spawn()
     {
-        GameObject asteroidObj = _pool.GetObject();
+        GameObject asteroidObj = GetRandomPool(AsteroidSize.Big).GetObject();
 
         int side = Random.Range(0, 4);
         Vector2 position = _fieldCollider.bounds.min;
@@ -116,7 +144,7 @@ public class AsteroidSpawner : MonoBehaviour
 
         if (asteroidObj.TryGetComponent<Asteroid>(out var asteroid))
         {
-            asteroid.Init(AsteroidType.Big, position, velocity, this);
+            asteroid.Init(position, velocity, this);
             _asteroids.Add(asteroid);
         }
     }
@@ -127,5 +155,26 @@ public class AsteroidSpawner : MonoBehaviour
             this.Delay(i, () => { Spawn(); });
 
         _asteroidsSpawnCount++;
+    }
+
+    private Pool GetRandomPool(AsteroidSize type)
+    {
+        int idx;
+
+        switch (type)
+        {
+            case AsteroidSize.Big:
+                idx = Random.Range(0, _bigAsteroidPools.Count);
+                return _bigAsteroidPools[idx];
+            case AsteroidSize.Medium:
+                idx = Random.Range(0, _mediumAsteroidPools.Count);
+                return _mediumAsteroidPools[idx];
+            case AsteroidSize.Small:
+                idx = Random.Range(0, _smallAsteroidPools.Count);
+                return _smallAsteroidPools[idx];
+            default:
+                throw new ArgumentException("Can't find pool by type: " 
+                    + type.ToString());
+        }
     }
 }

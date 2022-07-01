@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Asteroid : MonoBehaviour
 {
+    [field: FormerlySerializedAs("<Type>k__BackingField")]
     [field: SerializeField]
-    public AsteroidType Type { get; private set; } = AsteroidType.Big;
+    public AsteroidSize Size { get; private set; } = AsteroidSize.Big;
+    public AsteroidSize Color { get; private set; } = AsteroidSize.Big;
 
-    [SerializeField] private AsteroidSizes _sizes;
-    [SerializeField] private AsteroidSprites _sprites;
     [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private GameObject _explosionSoundPrefab;
 
@@ -14,43 +15,19 @@ public class Asteroid : MonoBehaviour
     private Rigidbody2D _rb;
     private AsteroidSpawner _spawner;
     private PoolObject _poolObj;
-    private GameMode _gameMode;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-
-        _gameMode = FindObjectOfType<GameMode>();
     }
 
-    public void Init(AsteroidType type, Vector2 position, Vector2 velocity, AsteroidSpawner spawner)
+    public void Init(Vector2 position, Vector2 velocity, 
+        AsteroidSpawner spawner)
     {
         transform.position = position;
 
-        Type = type;
         _velocity = velocity;
         _spawner = spawner;
-
-        _sprite.sprite = _sprites.Sprites[Random.Range(0, _sprites.Sprites.Length)];
-
-        float scale = 1;
-
-        switch (Type)
-        {
-            case AsteroidType.Big:
-                scale = _sizes.AsteroidLargeScale;
-                break;
-            case AsteroidType.Medium:
-                scale = _sizes.AsteroidMediumScale;
-                break;
-            case AsteroidType.Small:
-                scale = _sizes.AsteroidSmallScale;
-                break;
-            default:
-                break;
-        }
-
-        transform.localScale = new Vector3(scale, scale, scale);
 
         if (_poolObj == null) 
             _poolObj = GetComponent<PoolObject>();
@@ -58,7 +35,8 @@ public class Asteroid : MonoBehaviour
 
     private void OnDisable()
     {
-        if (_spawner == null) return;
+        if (_spawner == null) 
+            return;
 
         _spawner.Remove(this);
     }
@@ -75,15 +53,17 @@ public class Asteroid : MonoBehaviour
             if (_poolObj != null)
                 _poolObj.ReturnToPool();
 
-            switch (Type)
+            switch (Size)
             {
-                case AsteroidType.Big:
-                    _spawner.SpawnPieces(AsteroidType.Medium, transform.position, _velocity.normalized);
+                case AsteroidSize.Big:
+                    _spawner.SpawnPieces(AsteroidSize.Medium, transform.position, 
+                        _velocity.normalized);
                     break;
-                case AsteroidType.Medium:
-                    _spawner.SpawnPieces(AsteroidType.Small, transform.position, _velocity.normalized);
+                case AsteroidSize.Medium:
+                    _spawner.SpawnPieces(AsteroidSize.Small, transform.position, 
+                        _velocity.normalized);
                     break;
-                case AsteroidType.Small:
+                case AsteroidSize.Small:
                     break;
                 default:
                     break;
@@ -95,14 +75,12 @@ public class Asteroid : MonoBehaviour
         if (collision.TryGetComponent<Player>(out var player))
         {
             Instantiate(_explosionSoundPrefab);
-
             _poolObj.ReturnToPool();
         }
 
         if (collision.TryGetComponent<UFO>(out var ufo))
         {
             Instantiate(_explosionSoundPrefab);
-
             _poolObj.ReturnToPool();
         }
     }
