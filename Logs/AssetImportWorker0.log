@@ -1,0 +1,458 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.2f1 (d6360bedb9a0) revision 14038539'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ru' Physical Memory: 16302 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/UnityProjects/Asteroids
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54585
+Successfully changed project path to: D:/UnityProjects/Asteroids
+D:/UnityProjects/Asteroids
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 78.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Asteroids/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 570 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     4075 MB
+    Driver:   30.0.14011.2006
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.016370 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 73.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.027 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1028ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (710ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (170ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (411ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (98ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006371 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 71.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.735 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1736ms)
+		BeginReloadAssembly (291ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (135ms)
+		EndReloadAssembly (1254ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (318ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (639ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (345ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2505 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (56.0 KB). Loaded Objects now: 2971.
+Memory consumption went from 112.2 MB to 112.1 MB.
+Total: 4.539700 ms (FindLiveObjects: 0.285000 ms CreateObjectMapping: 0.147500 ms MarkObjects: 4.010600 ms  DeleteObjects: 0.095000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 257209.237200 seconds.
+  path: Assets/Gameplay/ScoreAddingEffect.cs
+  artifactKey: Guid(d93179f849bd9ae43a3a70989dd69c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/ScoreAddingEffect.cs using Guid(d93179f849bd9ae43a3a70989dd69c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb7e8d56ebef72f4e40a50efd929e5b') in 0.043340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.229234 seconds.
+  path: Assets/Gameplay/GameMode.cs
+  artifactKey: Guid(c06d4307e2f452d45af9e5fb96aa7e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/GameMode.cs using Guid(c06d4307e2f452d45af9e5fb96aa7e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf8f4130aa3f946d37f89c98d800b2e') in 0.009116 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006030 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.486 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1487ms)
+		BeginReloadAssembly (193ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1130ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (300ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (557ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (38ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (339ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (24.6 KB). Loaded Objects now: 2974.
+Memory consumption went from 110.2 MB to 110.1 MB.
+Total: 4.202200 ms (FindLiveObjects: 0.243000 ms CreateObjectMapping: 0.114400 ms MarkObjects: 3.823100 ms  DeleteObjects: 0.020400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 58.279735 seconds.
+  path: Assets/Gameplay/ScoreAddingEffect.prefab
+  artifactKey: Guid(e2b85f9e1c7093f44a49d33032253689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/ScoreAddingEffect.prefab using Guid(e2b85f9e1c7093f44a49d33032253689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638184da1c585be862b6d784eebf5041') in 0.104378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.595898 seconds.
+  path: Assets/TeaGames/Common/Audio
+  artifactKey: Guid(8e99a2c91bd3910408e39948ac4e87c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Common/Audio using Guid(8e99a2c91bd3910408e39948ac4e87c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10fd7b42d7c0ffee381709a97b3d688c') in 0.009367 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005806 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.493 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1494ms)
+		BeginReloadAssembly (194ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1139ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (309ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (556ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (38ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (24.7 KB). Loaded Objects now: 2977.
+Memory consumption went from 110.2 MB to 110.2 MB.
+Total: 4.194200 ms (FindLiveObjects: 0.242400 ms CreateObjectMapping: 0.114700 ms MarkObjects: 3.817800 ms  DeleteObjects: 0.017800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 128.094625 seconds.
+  path: Assets/TeaGames/Asteroid/Sprites
+  artifactKey: Guid(5bf7c6586780afd44abe7699a1fdd2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Asteroid/Sprites using Guid(5bf7c6586780afd44abe7699a1fdd2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be248bd654b6b144b100db923dcd0e1f') in 0.011487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.090953 seconds.
+  path: Assets/TeaGames/Asteroid/explosionCrunch_000.ogg
+  artifactKey: Guid(fa9a232002d9a654da544eb0dd3a26b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Asteroid/explosionCrunch_000.ogg using Guid(fa9a232002d9a654da544eb0dd3a26b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b93843cdaf957c42fcbf994f0fa775c9') in 0.207516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.615373 seconds.
+  path: Assets/TeaGames/Asteroid/Audio
+  artifactKey: Guid(7e4ddd75593c51c458881cc7cd33770e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Asteroid/Audio using Guid(7e4ddd75593c51c458881cc7cd33770e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ea4cca41683e2e16d33e3dadb29bcf') in 0.006835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.567314 seconds.
+  path: Assets/Gameplay/Bullet
+  artifactKey: Guid(6ce080cf515214e4ab813bbd630c6d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/Bullet using Guid(6ce080cf515214e4ab813bbd630c6d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95495b478636b6524d84695adbaf7b3c') in 0.008970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.554511 seconds.
+  path: Assets/Gameplay/GameField
+  artifactKey: Guid(e1549df71dbe46b46946adafe9f3e088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/GameField using Guid(e1549df71dbe46b46946adafe9f3e088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43254ea1d06799bcd603b93f65fee60e') in 0.009331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.046340 seconds.
+  path: Assets/Gameplay/UI/MainMenu
+  artifactKey: Guid(df911e2a4c8ee1742970a6f2e27327d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/UI/MainMenu using Guid(df911e2a4c8ee1742970a6f2e27327d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db8720da2689b83b5aea8e249296fa2b') in 0.009255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.125464 seconds.
+  path: Assets/Gameplay/Input/PlayerInputData.asset
+  artifactKey: Guid(8f80f08efcfe6224e900f2e1777874b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/Input/PlayerInputData.asset using Guid(8f80f08efcfe6224e900f2e1777874b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bde65bed8b2db8a71e6093c01f2f8d1') in 0.012916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.037239 seconds.
+  path: Assets/Gameplay/Player/PlayerKeyboardAndMouseInput.cs
+  artifactKey: Guid(1e6165c9069b35e4785854e26bd05b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/Player/PlayerKeyboardAndMouseInput.cs using Guid(1e6165c9069b35e4785854e26bd05b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b77118df2f92803dd16b3d980073858d') in 0.009289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.780750 seconds.
+  path: Assets/Gameplay/UFO
+  artifactKey: Guid(95c74dc72a710084f96ba74f1a6fe25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/UFO using Guid(95c74dc72a710084f96ba74f1a6fe25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c613922c174b4eb2629a5162dcdcf62') in 0.009203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.335697 seconds.
+  path: Assets/Gameplay/UI
+  artifactKey: Guid(8dad51977d6d3c5468056209928fe0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gameplay/UI using Guid(8dad51977d6d3c5468056209928fe0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fbe911fc3a6382a1f9e8705526a2e8e') in 0.009182 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005889 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.481 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1482ms)
+		BeginReloadAssembly (193ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1128ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (310ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (554ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (38ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (334ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (24.7 KB). Loaded Objects now: 2988.
+Memory consumption went from 114.1 MB to 114.0 MB.
+Total: 4.311000 ms (FindLiveObjects: 0.280600 ms CreateObjectMapping: 0.117400 ms MarkObjects: 3.888600 ms  DeleteObjects: 0.022500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 326.492273 seconds.
+  path: Assets/TeaGames/Asteroid/Sprites/Asteroid.png
+  artifactKey: Guid(7255f9a198f02ad458b2d49708094d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Asteroid/Sprites/Asteroid.png using Guid(7255f9a198f02ad458b2d49708094d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c303b0fee411490864136690ebf1273e') in 0.107465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.322226 seconds.
+  path: Assets/TeaGames/Bullet/Bullet Base.prefab
+  artifactKey: Guid(7f3b98f26b2e3e54eaccc5f487df29db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Bullet/Bullet Base.prefab using Guid(7f3b98f26b2e3e54eaccc5f487df29db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd9de1427a5f22b3f865134f6356995') in 0.057713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.500259 seconds.
+  path: Assets/TeaGames/Bullet/Bullet Enemy.prefab
+  artifactKey: Guid(a553af192b0882945977bbd077b3cd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Bullet/Bullet Enemy.prefab using Guid(a553af192b0882945977bbd077b3cd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b492da215d57ed2328e2610cfaf925c4') in 0.019817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 511.261081 seconds.
+  path: Assets/TeaGames/Player/Player.prefab
+  artifactKey: Guid(87b5ae3e4c00d2a4dbd6437c88cfa1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Player/Player.prefab using Guid(87b5ae3e4c00d2a4dbd6437c88cfa1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: 'fd6be349f2a059695d5c26ce702f5f7a') in 0.139309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.871413 seconds.
+  path: Assets/TeaGames/Common/Animations/ScoreAdding.anim
+  artifactKey: Guid(6521afc3642158c418997947170c4e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Common/Animations/ScoreAdding.anim using Guid(6521afc3642158c418997947170c4e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280dd07172dd3281fa83d38cef3f56f4') in 0.014276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.826460 seconds.
+  path: Assets/TeaGames/Common/Animations/ScoreAddingController.controller
+  artifactKey: Guid(24f5fdb97254e16448c5b9d5136480a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Common/Animations/ScoreAddingController.controller using Guid(24f5fdb97254e16448c5b9d5136480a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f520bce321cc0677790c663b57783f5') in 0.012004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.704349 seconds.
+  path: Assets/TeaGames/Spaceship/TurbineFire/TurbineActivation.anim
+  artifactKey: Guid(fa5a0fdc91bb31d468b1ad6504ad7e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TeaGames/Spaceship/TurbineFire/TurbineActivation.anim using Guid(fa5a0fdc91bb31d468b1ad6504ad7e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84580a7719e19c2a06bd69ed42c4e887') in 0.010942 seconds 
