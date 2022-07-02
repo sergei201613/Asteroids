@@ -4,5 +4,5 @@ public interface ISpaceshipInput
 {
     float GetDeltaRotation();
     float GetDeltaMovement();
-    bool IsFireKeyDown();
+    bool IsFire();
 }

@@ -236,9 +236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008830a7b8333574fbd8a700897625ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotationSpeed: 200
-  _maxMovementSpeed: 5
-  _acceleration: 10
+  _rotationSpeed: 300
+  _maxMovementSpeed: 7.5
+  _acceleration: 12
 --- !u!114 &5574512113667714139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,10 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346a5bbd45fc6224d81d6e48df8b80d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _invulnerableFlashingRate: 0.35
+  _invulnerableFlashingRate: 0.25
   _sprites:
   - {fileID: 8863118753977250953}
   - {fileID: 2993702891024393909}
+  - {fileID: 5020559470948845161}
   _inputData: {fileID: 11400000, guid: 8f80f08efcfe6224e900f2e1777874b5, type: 2}
   _explosionSoundPrefab: {fileID: 5918858874820791994, guid: 3342c5bdef896ae49af6c96a474f863f, type: 3}
 --- !u!61 &3379717407427363585
@@ -598,5 +599,10 @@ PrefabInstance:
 --- !u!4 &4872224322965135267 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
+  m_PrefabInstance: {fileID: 5505418527326761880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &5020559470948845161 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 705852132448499185, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
   m_PrefabInstance: {fileID: 5505418527326761880}
   m_PrefabAsset: {fileID: 0}

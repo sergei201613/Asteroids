@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/TeaGames/Common/Scenes/MainMenu.unity
     guid: 8a19435a8183b16449dd717e6c249ac9
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/TeaGames/Common/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

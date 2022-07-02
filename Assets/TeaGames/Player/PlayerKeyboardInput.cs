@@ -17,8 +17,8 @@ public class PlayerKeyboardInput : MonoBehaviour, ISpaceshipInput
         return deltaRotation;
     }
 
-    public bool IsFireKeyDown()
+    public bool IsFire()
     {
-        return Input.GetKeyDown(KeyCode.Space);
+        return Input.GetKey(KeyCode.Space);
     }
 }

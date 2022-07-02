@@ -28,7 +28,7 @@ public class SpaceshipGun : MonoBehaviour
 
     private void Update()
     {
-        if (_input.IsFireKeyDown() && CanFire)
+        if (_input.IsFire() && CanFire)
         {
             Fire();
             _lastTimeFired = Time.timeSinceLevelLoad;

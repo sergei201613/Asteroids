@@ -27,7 +27,7 @@ public class UFOInput : MonoBehaviour, ISpaceshipInput
         return 0f;
     }
 
-    public bool IsFireKeyDown()
+    public bool IsFire()
     {
         if (Time.timeSinceLevelLoad > _lastTimeFired + _fireDelay && _gameMode.Player != null)
         {

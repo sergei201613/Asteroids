@@ -22,8 +22,8 @@ public class PlayerKeyboardAndMouseInput : MonoBehaviour, ISpaceshipInput
         return Mathf.Clamp(Vector3.Dot(transform.right, dir.normalized) * -4, -1, 1);
     }
 
-    public bool IsFireKeyDown()
+    public bool IsFire()
     {
-        return Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0);
+        return Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0);
     }
 }
