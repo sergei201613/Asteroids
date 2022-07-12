@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7449656130978604800}
   m_Layer: 0
-  m_Name: TurbinFirePivot (1)
+  m_Name: TurbinFirePivot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5815376149431851970}
   m_Layer: 0
-  m_Name: TurbinFirePivot
+  m_Name: TurbinFirePivot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,6 +64,68 @@ Transform:
   m_Father: {fileID: 8863118754813046810}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7840798642974991513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5206027890242937485}
+  m_Layer: 0
+  m_Name: BulletSpanwPosition_1
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5206027890242937485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840798642974991513}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.577, y: 0.625, z: 0.4834658}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8863118754813046810}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8441584926133175005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105508857659570956}
+  m_Layer: 0
+  m_Name: BulletSpanwPosition_2
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2105508857659570956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8441584926133175005}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.577, y: 0.625, z: 0.4834658}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8863118754813046810}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8863118753977250951
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,7 +137,7 @@ GameObject:
   - component: {fileID: 8863118753977250950}
   - component: {fileID: 8863118753977250953}
   m_Layer: 0
-  m_Name: Spaceship Sprite
+  m_Name: SpaceshipSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,6 +249,8 @@ Transform:
   - {fileID: 8863118753977250950}
   - {fileID: 5815376149431851970}
   - {fileID: 7449656130978604800}
+  - {fileID: 5206027890242937485}
+  - {fileID: 2105508857659570956}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -254,6 +318,9 @@ MonoBehaviour:
   _fireRate: 3
   _bulletSpeed: 20
   _bulletPrefab: {fileID: 570334635514157637, guid: fbcb3dc8fc38c814f8294de3a311805b, type: 3}
+  _bulletSpawnPositions:
+  - {fileID: 5206027890242937485}
+  - {fileID: 2105508857659570956}
   _owner: {fileID: 8863118754813046811}
   _bulletPoolSize: 5
   _fireSound: {fileID: 9129201856298111793}
