@@ -520,7 +520,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5246177682431600331, guid: 7dca267e04751864a8f2c19568f17cc7, type: 3}
       propertyPath: m_Name
-      value: Background1
+      value: BackgroundBlack
       objectReference: {fileID: 0}
     - target: {fileID: 5246177682431600437, guid: 7dca267e04751864a8f2c19568f17cc7, type: 3}
       propertyPath: m_RootOrder

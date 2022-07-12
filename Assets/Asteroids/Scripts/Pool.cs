@@ -13,7 +13,10 @@ public class Pool
         _parent = parent;
 
         for (int i = 0; i < size; i++)
-            CreateObject();
+        {
+            var obj = CreateObject();
+            AddObject(obj);
+        }
     }
 
     public GameObject GetObject()
@@ -21,11 +24,14 @@ public class Pool
         GameObject freeObj;
 
         if (_pool.Count > 0)
+        {
             freeObj = _pool.Pop();
+            freeObj.SetActive(true);
+        }
         else
+        {
             freeObj = CreateObject();
-
-        freeObj.SetActive(true);
+        }
 
         return freeObj;
     }
@@ -53,9 +59,6 @@ public class Pool
             obj = Object.Instantiate(_prefab);
 
         obj.AddComponent<PoolObject>().Init(this);
-        obj.SetActive(false);
-
-        _pool.Push(obj);
 
         return obj;
     }
