@@ -15,7 +15,7 @@ D:/UnityProjects/Asteroids
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49592
+57198
 Successfully changed project path to: D:/UnityProjects/Asteroids
 D:/UnityProjects/Asteroids
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/UnityProjects/Asteroids
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 76.16 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 77.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -63,53 +63,207 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.453410 seconds.
+Registered in 0.017347 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 76.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 72.69 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.858 seconds
+- Completed reload, in  1.029 seconds
 Domain Reload Profiling:
-	ReloadAssembly (6859ms)
-		BeginReloadAssembly (4430ms)
+	ReloadAssembly (1030ms)
+		BeginReloadAssembly (125ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1519ms)
-			LoadAssemblies (4432ms)
+		EndReloadAssembly (714ms)
+			LoadAssemblies (120ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (962ms)
+			SetupTypeCache (167ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (417ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (413ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (97ms)
+				InitializePlatformSupportModulesInManaged (99ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (76ms)
+				RefreshPlugins (73ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (162ms)
-				ProcessInitializeOnLoadMethodAttributes (79ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006145 seconds.
-Android Extension - Scanning For ADB Devices 6258 ms
+Registered in 0.006171 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 71.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 71.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.719 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1721ms)
+		BeginReloadAssembly (285ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (132ms)
+		EndReloadAssembly (1246ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (311ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (651ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (348ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2503 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (56.0 KB). Loaded Objects now: 2969.
+Memory consumption went from 112.1 MB to 112.1 MB.
+Total: 4.523200 ms (FindLiveObjects: 0.285200 ms CreateObjectMapping: 0.141600 ms MarkObjects: 3.990300 ms  DeleteObjects: 0.104500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 232440.353910 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitYellow_3.png
+  artifactKey: Guid(887dbeeea31fff945b208bfd9f076e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitYellow_3.png using Guid(887dbeeea31fff945b208bfd9f076e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53303b6a57999b04326e709e340d115') in 0.193645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/enemy_B.png
+  artifactKey: Guid(40efac98eb9de7846a09f37be1b5262d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/enemy_B.png using Guid(40efac98eb9de7846a09f37be1b5262d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62056334fb939c21e854bb6e5dfcc068') in 0.068924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyBlue2.png
+  artifactKey: Guid(63ab0ebe84910e549aadbef9cd579056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyBlue2.png using Guid(63ab0ebe84910e549aadbef9cd579056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f472763b94037cc6a3f1735c41982d') in 0.051136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/effect_yellow.png
+  artifactKey: Guid(9830d6c270b34e7439a90871280510c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/effect_yellow.png using Guid(9830d6c270b34e7439a90871280510c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748f7231ec2285a06322683dae40d8c2') in 0.018538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/enemy_E.png
+  artifactKey: Guid(b2aac61c52fa1914abf9394bc5a7aa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/enemy_E.png using Guid(b2aac61c52fa1914abf9394bc5a7aa73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f44ef6ec995156d1f2bf8cfb3e0b66') in 0.018771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/enemy_C.png
+  artifactKey: Guid(09b869b19c7323240989533ba80b6f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/enemy_C.png using Guid(09b869b19c7323240989533ba80b6f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '341ff5612c97cf77655609f6d6fd7b8a') in 0.062710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyBlack2.png
+  artifactKey: Guid(fb7f6bf6d811ee347acd6c0ca620a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyBlack2.png using Guid(fb7f6bf6d811ee347acd6c0ca620a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4663685f5cd02e34ed2c943d2178c434') in 0.032000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyBlack1.png
+  artifactKey: Guid(ebd17c053a8d46043b7d91a56fefefb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyBlack1.png using Guid(ebd17c053a8d46043b7d91a56fefefb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ceb6af44245e5934df51250993a59c') in 0.040328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyGreen1.png
+  artifactKey: Guid(789a9d9e3dc6658469ae7f4ffbd6a46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyGreen1.png using Guid(789a9d9e3dc6658469ae7f4ffbd6a46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda1c537b626d2ca5362f95390c6b082') in 0.037341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitYellow_6.png
+  artifactKey: Guid(c16a23d63d658b7469a9331f507b3647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitYellow_6.png using Guid(c16a23d63d658b7469a9331f507b3647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1cd31cc4c888781ed059d693dfa4e1') in 0.033122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/enemy_D.png
+  artifactKey: Guid(4feef992aaefbc646a3d64e82731bd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/enemy_D.png using Guid(4feef992aaefbc646a3d64e82731bd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b024e480db288b569f53dc6ed75599') in 0.058797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/Backgrounds/darkPurple.png
+  artifactKey: Guid(bbd41b67b5d464b4a9f57bfebeb386f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/Backgrounds/darkPurple.png using Guid(bbd41b67b5d464b4a9f57bfebeb386f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7a45b24d7598c4ca72ea7fb687a0a7') in 0.053170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyBlack5.png
+  artifactKey: Guid(1cbddc971eef5c241ba4f55928ca7583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyBlack5.png using Guid(1cbddc971eef5c241ba4f55928ca7583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83a0722ba42e870a45d1b9a4f5c96e9') in 0.046763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.910672 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyGreen3.png
+  artifactKey: Guid(6aaf9e3086078fe439ec7266d030f6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyGreen3.png using Guid(6aaf9e3086078fe439ec7266d030f6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4d73a9a2085d542783d2593a8dd76d') in 0.042080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyRed3.png
+  artifactKey: Guid(b35c27c799b433b488ddaed1733acfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyRed3.png using Guid(b35c27c799b433b488ddaed1733acfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d698bc57dffccf784c78d34aa827fa0') in 0.035595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyRed4.png
+  artifactKey: Guid(ed46dabaabcf78f408d3f8fb9d014006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyRed4.png using Guid(ed46dabaabcf78f408d3f8fb9d014006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bca0bd36b72a385d885bb98126fd051') in 0.039108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyRed5.png
+  artifactKey: Guid(e9a01c413abf57546be2da31c1c65ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Enemies/enemyRed5.png using Guid(e9a01c413abf57546be2da31c1c65ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66fb9c13184f1a7ad4a982e833d09d6') in 0.034811 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

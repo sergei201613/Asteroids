@@ -31,15 +31,15 @@ public class Bullet : MonoBehaviour
     {
         _rb.position += _velocity * Time.fixedDeltaTime;
 
-        UpadteRotation();
+        UpdateRotation();
 
         _prevPos = transform.position;
     }
 
-    private void UpadteRotation()
+    private void UpdateRotation()
     {
         Vector2 pos = transform.position;
-        _dir = (pos - _prevPos).normalized;
+        _dir = (_prevPos - pos).normalized;
 
         float angle = Mathf.Atan2(_dir.y, _dir.x) * Mathf.Rad2Deg;
         angle += 90f;

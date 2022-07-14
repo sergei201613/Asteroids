@@ -29,7 +29,8 @@ public class UfoInput : MonoBehaviour, ISpaceshipInput
 
     public bool IsFire()
     {
-        if (Time.timeSinceLevelLoad > _lastTimeFired + _fireDelay && _gameMode.Player != null)
+        if (Time.timeSinceLevelLoad > _lastTimeFired + _fireDelay 
+            && _gameMode.Player != null)
         {
             _fireDelay = Random.Range(_minFireDelay, _maxFireDelay);
             _lastTimeFired = Time.timeSinceLevelLoad;
