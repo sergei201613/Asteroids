@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabs: {fileID: 11400000, guid: cc6e4634b158f4441b2ca44d8d1192b9, type: 2}
+  _asteroidColors: 000000000000000001000000
   _minAsteroidSpeed: 3
   _maxAsteroidSpeed: 5
   _asteroidSideOffset: 2

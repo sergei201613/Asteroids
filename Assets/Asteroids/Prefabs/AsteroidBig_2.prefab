@@ -77,8 +77,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7235400060107800584, guid: 2468982278aabb54a82823c3385bdf23, type: 3}
       propertyPath: m_Name
-      value: AsteroidBigGrey_2
+      value: AsteroidBig_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7235400060107800585, guid: 2468982278aabb54a82823c3385bdf23, type: 3}
+      propertyPath: _greySprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 200e82749973ff74fa5c6f38f89999bc, type: 3}
+    - target: {fileID: 7235400060107800585, guid: 2468982278aabb54a82823c3385bdf23, type: 3}
+      propertyPath: _brownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61952ff28ea0ee499afd3e6f16664c1, type: 3}
     - target: {fileID: 7235400060107800586, guid: 2468982278aabb54a82823c3385bdf23, type: 3}
       propertyPath: m_RootOrder
       value: 0

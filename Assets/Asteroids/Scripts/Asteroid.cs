@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -6,9 +7,12 @@ public class Asteroid : MonoBehaviour
     [field: FormerlySerializedAs("<Type>k__BackingField")]
     [field: SerializeField]
     public AsteroidSize Size { get; private set; } = AsteroidSize.Big;
-    public AsteroidSize Color { get; private set; } = AsteroidSize.Big;
+    public AsteroidColor Color { get; private set; } = AsteroidColor.Grey;
 
-    [SerializeField] private SpriteRenderer _sprite;
+    [FormerlySerializedAs("_sprite")]
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private Sprite _greySprite;
+    [SerializeField] private Sprite _brownSprite;
     [SerializeField] private GameObject _explosionSoundPrefab;
 
     private Vector2 _velocity;
@@ -22,15 +26,26 @@ public class Asteroid : MonoBehaviour
     }
 
     public void Init(Vector2 position, Vector2 velocity, 
-        AsteroidSpawner spawner)
+        AsteroidColor color, AsteroidSpawner spawner)
     {
         transform.position = position;
-
         _velocity = velocity;
+        Color = color;
         _spawner = spawner;
+        _spriteRenderer.sprite = GetSpriteByColor(color);
 
         if (_poolObj == null) 
             _poolObj = GetComponent<PoolObject>();
+    }
+
+    private Sprite GetSpriteByColor(AsteroidColor color)
+    {
+        return color switch
+        {
+            AsteroidColor.Grey => _greySprite,
+            AsteroidColor.Brown => _brownSprite,
+            _ => throw new ArgumentException("Not valid color!"),
+        };
     }
 
     private void OnDisable()
@@ -56,11 +71,11 @@ public class Asteroid : MonoBehaviour
             switch (Size)
             {
                 case AsteroidSize.Big:
-                    _spawner.SpawnPieces(AsteroidSize.Medium, transform.position, 
+                    _spawner.SpawnPieces(this, AsteroidSize.Medium, 
                         _velocity.normalized);
                     break;
                 case AsteroidSize.Medium:
-                    _spawner.SpawnPieces(AsteroidSize.Small, transform.position, 
+                    _spawner.SpawnPieces(this, AsteroidSize.Small, 
                         _velocity.normalized);
                     break;
                 case AsteroidSize.Small:

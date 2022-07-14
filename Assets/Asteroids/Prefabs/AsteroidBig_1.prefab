@@ -9,8 +9,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7235400060107800584, guid: 2468982278aabb54a82823c3385bdf23, type: 3}
       propertyPath: m_Name
-      value: Asteroid_1
+      value: AsteroidBig_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7235400060107800585, guid: 2468982278aabb54a82823c3385bdf23, type: 3}
+      propertyPath: _greySprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7c884b6761fd616449ec7c960bfca916, type: 3}
+    - target: {fileID: 7235400060107800585, guid: 2468982278aabb54a82823c3385bdf23, type: 3}
+      propertyPath: _brownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 590bdc5ef72fccf4aa2dd5809e73cbb6, type: 3}
     - target: {fileID: 7235400060107800586, guid: 2468982278aabb54a82823c3385bdf23, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -15,16 +15,18 @@ public class HitScoreAddition : MonoBehaviour
     {
         if (collision.TryGetComponent<Asteroid>(out var asteroid))
         {
-            int scoreAdded = _gameMode.AddScoreForAsteroid(asteroid.Size);
+            int scoreAdded = _gameMode.AddScoreForAsteroid(asteroid);
 
-            Instantiate(_scoreAddingEffect, transform.position, Quaternion.identity).Init(scoreAdded);
+            Instantiate(_scoreAddingEffect, transform.position, 
+                Quaternion.identity).Init(scoreAdded);
         }
 
         if (collision.TryGetComponent<Ufo>(out var ufo))
         {
             int scoreAdded = _gameMode.AddScoreForUFO();
 
-            Instantiate(_scoreAddingEffect, transform.position, Quaternion.identity).Init(scoreAdded);
+            Instantiate(_scoreAddingEffect, transform.position, 
+                Quaternion.identity).Init(scoreAdded);
         }
     }
 }

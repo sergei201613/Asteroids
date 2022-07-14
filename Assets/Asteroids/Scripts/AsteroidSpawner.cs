@@ -9,6 +9,7 @@ public class AsteroidSpawner : MonoBehaviour
 {
     [FormerlySerializedAs("_asteroidPrefab")]
     [SerializeField] Asteroids _prefabs;
+    [SerializeField] List<AsteroidColor> _asteroidColors = new();
     [SerializeField] float _minAsteroidSpeed = 4f;
     [SerializeField] float _maxAsteroidSpeed = 6f;
     [SerializeField] float _asteroidSideOffset = 5f;
@@ -58,7 +59,7 @@ public class AsteroidSpawner : MonoBehaviour
             this.Delay(_waveDelay, () => { SpawnWave(); });
     }
 
-    public void SpawnPieces(AsteroidSize size, Vector2 position, Vector2 dir)
+    public void SpawnPieces(Asteroid ast, AsteroidSize size, Vector2 dir)
     {
         GameObject piece1 = GetRandomPool(size).GetObject();
         GameObject piece2 = GetRandomPool(size).GetObject();
@@ -85,17 +86,17 @@ public class AsteroidSpawner : MonoBehaviour
         piece2.GetComponent<PoolObject>().IgnorePoolArea = true;
 
         float speed = Random.Range(_minAsteroidSpeed, _maxAsteroidSpeed);
+        Vector2 position = ast.transform.position;
 
         if (piece1.TryGetComponent<Asteroid>(out var asteroid1))
         {
-            // TODO: Change type
-            asteroid1.Init(position, dir1 * speed, this);
+            asteroid1.Init(position, dir1 * speed, ast.Color, this);
             _asteroids.Add(asteroid1);
         }
 
         if (piece2.TryGetComponent<Asteroid>(out var asteroid2))
         {
-            asteroid2.Init(position, dir2 * speed, this);
+            asteroid2.Init(position, dir2 * speed, ast.Color, this);
             _asteroids.Add(asteroid2);
         }
     }
@@ -144,9 +145,16 @@ public class AsteroidSpawner : MonoBehaviour
 
         if (asteroidObj.TryGetComponent<Asteroid>(out var asteroid))
         {
-            asteroid.Init(position, velocity, this);
+            asteroid.Init(position, velocity, GetRandomColor(), this);
             _asteroids.Add(asteroid);
         }
+    }
+
+    private AsteroidColor GetRandomColor()
+    {
+        int len = _asteroidColors.Count;
+        int idx = Random.Range(0, len);
+        return _asteroidColors[idx];
     }
 
     private void SpawnWave()
