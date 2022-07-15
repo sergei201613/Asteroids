@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -17,14 +18,17 @@ public class Bullet : MonoBehaviour
 
     public void Init(Vector2 position, Vector2 velocity, GameObject owner)
     {
-        _velocity = velocity;
-        _prevPos = transform.position;
-
-        transform.position = position;
         Owner = owner;
+        transform.position = position;
+
+        _prevPos = transform.position;
+        _velocity = velocity;
+        _dir = _velocity.normalized;
 
         if (_poolObj == null)
             _poolObj = GetComponent<PoolObject>();
+
+        LookAtDir(_dir);
     }
 
     private void FixedUpdate()
@@ -38,10 +42,12 @@ public class Bullet : MonoBehaviour
 
     private void UpdateRotation()
     {
-        Vector2 pos = transform.position;
-        _dir = (_prevPos - pos).normalized;
+        LookAtDir(-_velocity.normalized);
+    }
 
-        float angle = Mathf.Atan2(_dir.y, _dir.x) * Mathf.Rad2Deg;
+    private void LookAtDir(Vector2 dir)
+    {
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         angle += 90f;
 
         transform.eulerAngles = new Vector3(0, 0, angle);

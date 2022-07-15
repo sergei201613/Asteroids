@@ -32,7 +32,10 @@ public class AsteroidSpawner : MonoBehaviour
     private void Awake()
     {
         CreatePools();
+    }
 
+    private void OnEnable()
+    {
         this.Delay(_waveDelay, () => 
         { 
             SpawnWave(); 

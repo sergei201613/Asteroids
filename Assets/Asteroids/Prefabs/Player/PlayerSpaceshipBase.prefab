@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285033172743719066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0.32, y: -1.529, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -56,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4821175351547777931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31, y: 0.25, z: 0}
+  m_LocalPosition: {x: -0.32, y: -1.529, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 2519945856367947326}
   - component: {fileID: 9129201856298111793}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerSpaceshipBase
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -498,25 +498,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5815376149431851970}
     m_Modifications:
-    - target: {fileID: 705852132448499185, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 63c5eb89497970a47a9adf05f3ef9f28, type: 3}
     - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.49999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.49999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.49999997
       objectReference: {fileID: 0}
     - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -558,17 +542,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1151429254348581947, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4827504059311090041, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
       propertyPath: m_Name
       value: TurbineFire
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827504059311090041, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 035562af8ff3aa54ba9f43998547c54a, type: 3}

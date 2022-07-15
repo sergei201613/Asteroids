@@ -23,7 +23,7 @@ public class HitScoreAddition : MonoBehaviour
 
         if (collision.TryGetComponent<Ufo>(out var ufo))
         {
-            int scoreAdded = _gameMode.AddScoreForUFO();
+            int scoreAdded = _gameMode.AddScoreForUfo();
 
             Instantiate(_scoreAddingEffect, transform.position, 
                 Quaternion.identity).Init(scoreAdded);

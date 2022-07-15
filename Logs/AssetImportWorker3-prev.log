@@ -1,0 +1,851 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.2f1 (d6360bedb9a0) revision 14038539'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ru' Physical Memory: 16302 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/UnityProjects/Asteroids
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+50291
+Successfully changed project path to: D:/UnityProjects/Asteroids
+D:/UnityProjects/Asteroids
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 89.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Asteroids/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 570 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     4075 MB
+    Driver:   30.0.14011.2006
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.019074 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 73.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.055 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1056ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (725ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (173ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (419ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (101ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (167ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007687 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 71.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.772 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1773ms)
+		BeginReloadAssembly (293ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (134ms)
+		EndReloadAssembly (1288ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (328ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (662ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (354ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2503 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (55.9 KB). Loaded Objects now: 2969.
+Memory consumption went from 112.1 MB to 112.1 MB.
+Total: 5.842400 ms (FindLiveObjects: 0.314100 ms CreateObjectMapping: 0.143500 ms MarkObjects: 5.269000 ms  DeleteObjects: 0.114000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 266306.153213 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitGreen_0.png
+  artifactKey: Guid(4eea95c7251de8045948a85085498d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitGreen_0.png using Guid(4eea95c7251de8045948a85085498d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a75edb5897f815d4418d42961d53d5') in 0.207773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire01.png
+  artifactKey: Guid(c92182eae1513e34ba1cd68a1967e11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire01.png using Guid(c92182eae1513e34ba1cd68a1967e11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db24ee8114b89d92765e0178ad68467') in 0.041860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire11.png
+  artifactKey: Guid(1dbe38706ae37734e9de6ad1427ee2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire11.png using Guid(1dbe38706ae37734e9de6ad1427ee2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b553de8fe7ac3f205c332f0ed6eb81b0') in 0.021165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire17.png
+  artifactKey: Guid(ba592a3cef11b3c4baf3aeb7018e1530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire17.png using Guid(ba592a3cef11b3c4baf3aeb7018e1530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1fd6601fc65a760b254e7526abc1a99') in 0.025927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire09.png
+  artifactKey: Guid(5c3928cc1aa13964f8425bba262e733a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire09.png using Guid(5c3928cc1aa13964f8425bba262e733a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf99e5e00db98ca6bf2d666882a757c') in 0.034016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitGreen_3.png
+  artifactKey: Guid(d8f53e361647e7c4294e82045ccf6d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitGreen_3.png using Guid(d8f53e361647e7c4294e82045ccf6d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f41e89115ce8df1a225278f7ec5e2d45') in 0.051675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/engine1.png
+  artifactKey: Guid(a487412b6c2f4ae4b8a43c2cfa85056a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/engine1.png using Guid(a487412b6c2f4ae4b8a43c2cfa85056a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14a60f54769140734ec46263b471f8b') in 0.034101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/engine4.png
+  artifactKey: Guid(04d17191733d44d4d8282dc6262604a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/engine4.png using Guid(04d17191733d44d4d8282dc6262604a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c478ab26247004825e866bfe00887f40') in 0.023311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/gun02.png
+  artifactKey: Guid(2def145ccd68c9245b35c905f2032f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/gun02.png using Guid(2def145ccd68c9245b35c905f2032f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549503e93224c9651c1c8c0171632fda') in 0.038181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/engine5.png
+  artifactKey: Guid(2d5fa9bc69bc84247a79d0d90e6ea915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/engine5.png using Guid(2d5fa9bc69bc84247a79d0d90e6ea915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '995aec05d8976418aa7299cd27183f98') in 0.031074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitYellow_1.png
+  artifactKey: Guid(6912026f1934f1c4592dd801a935e844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitYellow_1.png using Guid(6912026f1934f1c4592dd801a935e844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ee2b11833edfab2b5965c0cde18e46a') in 0.041304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitYellow_0.png
+  artifactKey: Guid(10f81f1ea8256e14caf5080a1965683c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/cockpitYellow_0.png using Guid(10f81f1ea8256e14caf5080a1965683c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daaa32b2a636cab94113141b87a9d8df') in 0.036166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire05.png
+  artifactKey: Guid(3519409c35f00634cb2377398d7fff0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/fire05.png using Guid(3519409c35f00634cb2377398d7fff0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c26c85123248a021526382af03aaf1e') in 0.036570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.187069 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/gun08.png
+  artifactKey: Guid(ab2531ab1e6276e49a0a08c960886bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/gun08.png using Guid(ab2531ab1e6276e49a0a08c960886bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ce513e56b49c1e6d8b45eb5837e085') in 0.035511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.477536 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/icon_exclamationLarge.png
+  artifactKey: Guid(d120c53707d18f34faf8d2937c7fd35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/icon_exclamationLarge.png using Guid(d120c53707d18f34faf8d2937c7fd35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec7f0c62b74e0dd1893840ef9e139c6') in 0.084556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.486140 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserBlue04.png
+  artifactKey: Guid(d0f4d69e98a92f845bd093a07df3e6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserBlue04.png using Guid(d0f4d69e98a92f845bd093a07df3e6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b438a293e748876dcf2a8191d36670') in 0.031755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserBlue06.png
+  artifactKey: Guid(221d919e9321b91408a8bfb3f359e007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserBlue06.png using Guid(221d919e9321b91408a8bfb3f359e007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b6a6532a650a4983f04267c9d8f4e2') in 0.020672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.687203 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserBlue10.png
+  artifactKey: Guid(4679b4970e0274c4683b034c4ba08ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserBlue10.png using Guid(4679b4970e0274c4683b034c4ba08ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937d515cbb70ee2861f08c30577fd996') in 0.054684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserBlue13.png
+  artifactKey: Guid(cc463b98b706b8b47b53a75d7b383ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserBlue13.png using Guid(cc463b98b706b8b47b53a75d7b383ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ee133565cb7a8bce3392bc6831e00c') in 0.036478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserGreen01.png
+  artifactKey: Guid(9209ccfd5b618b44db0a65e0786ae2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserGreen01.png using Guid(9209ccfd5b618b44db0a65e0786ae2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd9493738950e70b97aead4ef8e21e1d') in 0.032251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.498201 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserGreen08.png
+  artifactKey: Guid(c51fe1407d986034ea347a9b955d003e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserGreen08.png using Guid(c51fe1407d986034ea347a9b955d003e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b95ffe65510b4e471d4b75275accb6') in 0.035908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserGreen09.png
+  artifactKey: Guid(b3baf75372374644e83508f742552c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserGreen09.png using Guid(b3baf75372374644e83508f742552c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf4213b2901d56cf8cc012212f4e0d5') in 0.038787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.466104 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserGreen15.png
+  artifactKey: Guid(e9717011a34d82e48aab2dc2db87b87d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserGreen15.png using Guid(e9717011a34d82e48aab2dc2db87b87d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d84784b2788d32ea7f3855900aff3f') in 0.035038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserRed02.png
+  artifactKey: Guid(4ed440cc95cc8114e800dc66321148ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserRed02.png using Guid(4ed440cc95cc8114e800dc66321148ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbf72a8df4e0a6265d5f2e3293c6490') in 0.024824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.021282 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserRed06.png
+  artifactKey: Guid(2d8b25fead4b860458427771eb672047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserRed06.png using Guid(2d8b25fead4b860458427771eb672047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c8cbb7cc4442d6d03af6aa50a30c0f') in 0.039349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.409734 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserRed13.png
+  artifactKey: Guid(0ffaaba713b4396478ef2e412c86cdd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserRed13.png using Guid(0ffaaba713b4396478ef2e412c86cdd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd9c4ccba3a2895bc27b6bfc770c131') in 0.031193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserRed16.png
+  artifactKey: Guid(556321339d305a6438263ba4c4a719d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Lasers/laserRed16.png using Guid(556321339d305a6438263ba4c4a719d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968906e1b5183853f80c1d9b33d7e79a') in 0.036023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.192937 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/UI/playerLife1_orange.png
+  artifactKey: Guid(e4afce7a6fdbaad44966e4cff029ae04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/UI/playerLife1_orange.png using Guid(e4afce7a6fdbaad44966e4cff029ae04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf384ca999cb2cd42103076d03988ab4') in 0.030164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/UI/playerLife2_green.png
+  artifactKey: Guid(1229b1419f973cd4eac877c8f2d72286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/UI/playerLife2_green.png using Guid(1229b1419f973cd4eac877c8f2d72286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c02096a148e3559ff55635084842ca3b') in 0.024708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.660839 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/UI/playerLife3_green.png
+  artifactKey: Guid(b68b088ef37f7844998619b346e71956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/UI/playerLife3_green.png using Guid(b68b088ef37f7844998619b346e71956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac584605c150cef3b7ed23ce2c18438f') in 0.060294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip1_blue.png
+  artifactKey: Guid(196033df17c2302448429adf206c90b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip1_blue.png using Guid(196033df17c2302448429adf206c90b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea13d449d78ba3e05be2dff06d9d23a') in 0.039005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.946890 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip1_green.png
+  artifactKey: Guid(d11e04c75c4a06f47a7b462ccd182df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip1_green.png using Guid(d11e04c75c4a06f47a7b462ccd182df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c78b8a1e594e9038d5f3747529e62b4') in 0.043063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip1_orange.png
+  artifactKey: Guid(a21a2a48e3371f14d91f3627a787e5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip1_orange.png using Guid(a21a2a48e3371f14d91f3627a787e5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabd5fad8d34464238b6b2277d7208a4') in 0.028010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.622697 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip2_green.png
+  artifactKey: Guid(8a2647d32f566dd4fa35ae5eecd5e308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip2_green.png using Guid(8a2647d32f566dd4fa35ae5eecd5e308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351665ce727dd37a16e199de14e793ab') in 0.059938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.245600 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip3_green.png
+  artifactKey: Guid(2382499e2982a904ead05e802b9787b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip3_green.png using Guid(2382499e2982a904ead05e802b9787b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d72173fbdfe1b4c68a3ef83b9be78ff') in 0.044069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip3_red.png
+  artifactKey: Guid(d16262eb0e1347240a3d14b4a1d99aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/playerShip3_red.png using Guid(d16262eb0e1347240a3d14b4a1d99aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab762a4116584308062be764ccfee7b') in 0.036422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.892245 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/powerupGreen.png
+  artifactKey: Guid(1d28148953fae1b4eaaecd6a33c79079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/powerupGreen.png using Guid(1d28148953fae1b4eaaecd6a33c79079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1438753f875747def9cc00842e23a5c') in 0.058423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.594319 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/powerupRed_star.png
+  artifactKey: Guid(457a970e4425fa44098b556c2b4a0059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/powerupRed_star.png using Guid(457a970e4425fa44098b556c2b4a0059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0601bc10d74453626ce3e5a5a328810b') in 0.036161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/powerupYellow.png
+  artifactKey: Guid(0eb02004cd548634cb7b6f7713490f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/powerupYellow.png using Guid(0eb02004cd548634cb7b6f7713490f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85f60061ba4ad9d5b8de05458903ae6') in 0.033246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.611482 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/sample.png
+  artifactKey: Guid(eaa7d8a03e52b034d898afe35108c8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/sample.png using Guid(eaa7d8a03e52b034d898afe35108c8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb90615a8d6fb4cee7c89d7b7641d571') in 0.069755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/satellite_A.png
+  artifactKey: Guid(5874ed58f4f38954b93a171057846a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/satellite_A.png using Guid(5874ed58f4f38954b93a171057846a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9473e351d28e56c804a9e4c21cfb32c') in 0.029417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.587542 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/scratch3.png
+  artifactKey: Guid(a954d380929e8374a897dc2c32ee16a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/scratch3.png using Guid(a954d380929e8374a897dc2c32ee16a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0937f0f6134ae88318fdcc9a1f1c3a') in 0.059232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/shield1.png
+  artifactKey: Guid(0edf3989f3dc2c24f977bc3bf80549a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/shield1.png using Guid(0edf3989f3dc2c24f977bc3bf80549a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb2353545872db545298bf790d31aa54') in 0.028726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.512728 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/ship_A.png
+  artifactKey: Guid(48380a0c0940b0d439078165a86f168b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/ship_A.png using Guid(48380a0c0940b0d439078165a86f168b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1faa101ec019eb6ac91ccb5e9aec8f1') in 0.062366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.210194 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/ship_G.png
+  artifactKey: Guid(c6d102077df8f1b4d98e205f2fb7c9a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/ship_G.png using Guid(c6d102077df8f1b4d98e205f2fb7c9a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d63b0622518695fce29304045be53d0') in 0.051763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/ship_H.png
+  artifactKey: Guid(6324f46cebf59f4499a7783cf6cb4815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/ship_H.png using Guid(6324f46cebf59f4499a7783cf6cb4815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055c3e103ca511c3e81e6698e4cff354') in 0.037350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.415926 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/ship_sidesB.png
+  artifactKey: Guid(487583d5520d1c44d99622cd6bd5bf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/ship_sidesB.png using Guid(487583d5520d1c44d99622cd6bd5bf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6bff016eca17d06f03c022042d32e07') in 0.055162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_001.png
+  artifactKey: Guid(a9b60b2e35bf66740a71531cb2d8d6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_001.png using Guid(a9b60b2e35bf66740a71531cb2d8d6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408e1c8422059097b383488800c801f3') in 0.030343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.445349 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_005.png
+  artifactKey: Guid(c9bb66c48468c76419b25069b751fcfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_005.png using Guid(c9bb66c48468c76419b25069b751fcfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855686a0a14ade86680b630507a76cdd') in 0.040677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_006.png
+  artifactKey: Guid(7530354497fddf14f8786a2c7b3a6c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_006.png using Guid(7530354497fddf14f8786a2c7b3a6c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcedd50788a9a374e2d0b61c6fe2737') in 0.034083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.459403 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_012.png
+  artifactKey: Guid(141097889b3151945949e4028a0e74cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_012.png using Guid(141097889b3151945949e4028a0e74cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a868edfb54d96dc974874b7f650bb1') in 0.036631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_013.png
+  artifactKey: Guid(c987b2730121d7840b943626bebab9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Astronauts/spaceAstronauts_013.png using Guid(c987b2730121d7840b943626bebab9e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da11ad9f43e6501175c30a7eaccb3e1') in 0.025290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.763988 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_001.png
+  artifactKey: Guid(67e8d69a7fd5e33499ae0f121aa7c3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_001.png using Guid(67e8d69a7fd5e33499ae0f121aa7c3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3193b5005d90a58e9da7fb80875cc5ea') in 0.040011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.826726 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_008.png
+  artifactKey: Guid(d0976f5568f7db9429d38dc5ea4e925a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_008.png using Guid(d0976f5568f7db9429d38dc5ea4e925a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b18470744221d9a9c9984400432fd36a') in 0.075376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.239190 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_015.png
+  artifactKey: Guid(b430ed32882a3d3418aa3a41d8dc4cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_015.png using Guid(b430ed32882a3d3418aa3a41d8dc4cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ec0a291a1d7dc1247c190da3008058') in 0.034078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_016.png
+  artifactKey: Guid(30779c23429f2ef43820093dab899c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_016.png using Guid(30779c23429f2ef43820093dab899c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3651900f23abc1ca77892e07b9f9b745') in 0.042637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.877109 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_022.png
+  artifactKey: Guid(b5e31c6ffff1af74e87b3c06900038c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Building/spaceBuilding_022.png using Guid(b5e31c6ffff1af74e87b3c06900038c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b9748a19515bc5f54959ac3c19dd59') in 0.033550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.122221 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Effects/spaceEffects_004.png
+  artifactKey: Guid(6b9790ca8c3e7524daba413ba7205ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Effects/spaceEffects_004.png using Guid(6b9790ca8c3e7524daba413ba7205ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7f482d301d54ae3a888e9018b0fdee') in 0.043864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Effects/spaceEffects_007.png
+  artifactKey: Guid(63c5eb89497970a47a9adf05f3ef9f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Effects/spaceEffects_007.png using Guid(63c5eb89497970a47a9adf05f3ef9f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e25338b6e257ff9160c20a739fe5d15') in 0.016876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.521395 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Effects/spaceEffects_011.png
+  artifactKey: Guid(a0895a603b3b3bb47ba50612b2f49376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Effects/spaceEffects_011.png using Guid(a0895a603b3b3bb47ba50612b2f49376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da9f2376411c32ef3e9093ad4804a4a') in 0.024817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Effects/spaceEffects_012.png
+  artifactKey: Guid(2b13c15257b8a3c41a388bf84a573989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Effects/spaceEffects_012.png using Guid(2b13c15257b8a3c41a388bf84a573989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '369faf6fc84bb877ec1ba933d866ff4c') in 0.037830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.485689 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_020.png
+  artifactKey: Guid(24fdd35599660434c85e435c4544c93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_020.png using Guid(24fdd35599660434c85e435c4544c93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ab6481c78ba4c1f36ba4d8950e44b2') in 0.070950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_021.png
+  artifactKey: Guid(0532df3314b1c9549810359ca82f0a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_021.png using Guid(0532df3314b1c9549810359ca82f0a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6523ae849566b68945115f34202399d7') in 0.023134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.742149 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_026.png
+  artifactKey: Guid(5ed05c2b20c593846868dfda901137f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_026.png using Guid(5ed05c2b20c593846868dfda901137f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d690acf4a026eb7dfdb7eaca120de29') in 0.041324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_029.png
+  artifactKey: Guid(c0d95a424570ed8438675d9a3e537e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_029.png using Guid(c0d95a424570ed8438675d9a3e537e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19fb60e11bb3193caf7ceb776a4ed5c') in 0.042664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038375 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_033.png
+  artifactKey: Guid(37649a182d207f54b80ba4bcef767367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_033.png using Guid(37649a182d207f54b80ba4bcef767367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039926e4a644d01997a1f4e38babae48') in 0.036585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_036.png
+  artifactKey: Guid(6bc0a52e85d627f46949cb60cb753e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_036.png using Guid(6bc0a52e85d627f46949cb60cb753e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b45a3034f5aca9018e9413aa456bbd') in 0.031047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.433173 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_040.png
+  artifactKey: Guid(c411d0cff8426284480eb937969c8a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_040.png using Guid(c411d0cff8426284480eb937969c8a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceab42d6b259d1bd4a5818406ebf9d9d') in 0.044979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.397686 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_047.png
+  artifactKey: Guid(cb98a4fe1eab7c54293e5bd573baa9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_047.png using Guid(cb98a4fe1eab7c54293e5bd573baa9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d729f3c0f09ca13540540941214b6a') in 0.047561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.979171 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_054.png
+  artifactKey: Guid(faf5e67fcf6dceb47baf5b8d80a00928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_054.png using Guid(faf5e67fcf6dceb47baf5b8d80a00928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ff2c34d9d5397da31006001f3cef40') in 0.032406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_057.png
+  artifactKey: Guid(2aac5083f6266814ea4d3ad1724c0ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_057.png using Guid(2aac5083f6266814ea4d3ad1724c0ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ea7d4d3ee511e5c330c6ce41077e55') in 0.042083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.581162 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_061.png
+  artifactKey: Guid(6aaa1141fa6af0642a563c92e02fb965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_061.png using Guid(6aaa1141fa6af0642a563c92e02fb965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9f271d728f883e757b5117c5096593') in 0.024404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_063.png
+  artifactKey: Guid(2ec5aa72db6f67141abb7f4c95bc7ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_063.png using Guid(2ec5aa72db6f67141abb7f4c95bc7ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb35fc1b8bc63703f45c9805efe60ac6') in 0.039764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.637898 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_068.png
+  artifactKey: Guid(3705be7416ff7404db279b163d5646db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_068.png using Guid(3705be7416ff7404db279b163d5646db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed891fd82b6d546eb00e04f32fdd0799') in 0.039243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_070.png
+  artifactKey: Guid(3e7e26e4a57efd043aabad9375fbfdb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_070.png using Guid(3e7e26e4a57efd043aabad9375fbfdb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4f0171f221591fb81c1d84795670e8') in 0.028625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.396423 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_075.png
+  artifactKey: Guid(8fbf9ddd81dccb3499f132691866b354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_075.png using Guid(8fbf9ddd81dccb3499f132691866b354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01c9248067e215d51324b9f4f816dea') in 0.034785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_076.png
+  artifactKey: Guid(8a1fea2ab45ffdf419d061c23e20a62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_076.png using Guid(8a1fea2ab45ffdf419d061c23e20a62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd756eb30ffef99e6d1a72ecf7be9b974') in 0.030953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.379403 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_082.png
+  artifactKey: Guid(20fc42010ef0b3b409af3d4289f8395d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_082.png using Guid(20fc42010ef0b3b409af3d4289f8395d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832edf832ed37e5cfdcd76d2595cc74b') in 0.033820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_084.png
+  artifactKey: Guid(d0ccc566ad25feb458e4778e2ef934af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_084.png using Guid(d0ccc566ad25feb458e4778e2ef934af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7a7551325df7931ced2d6421ac1c78') in 0.026451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012254 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_089.png
+  artifactKey: Guid(1df6d5310a652804087799bb881f853c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_089.png using Guid(1df6d5310a652804087799bb881f853c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af82a1e15c141b22b8e6093d633625b') in 0.054026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.603755 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_096.png
+  artifactKey: Guid(b2a0bfa43f0d38e4d9bbd9a2dc5b2ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_096.png using Guid(b2a0bfa43f0d38e4d9bbd9a2dc5b2ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '136cb381aaf66eda391fe92cd3a60f92') in 0.048191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_098.png
+  artifactKey: Guid(3b54ca29628794645b469b33a78d6703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Parts/spaceParts_098.png using Guid(3b54ca29628794645b469b33a78d6703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a65bbf04410e81c0653f139602a4b30') in 0.030616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.778409 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_005.png
+  artifactKey: Guid(20ce1cefedb874840a6d60cf3a8ff7a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_005.png using Guid(20ce1cefedb874840a6d60cf3a8ff7a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01b7806d38fe3256687f802515c0bd2') in 0.044721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_008.png
+  artifactKey: Guid(8f2707734344e20429ce53aa6a9469ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_008.png using Guid(8f2707734344e20429ce53aa6a9469ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3554d0cfa3b8d1b9ea4232ba0968e18e') in 0.031753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.788331 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_012.png
+  artifactKey: Guid(8516e4db50c73cd4581bb42f296b21ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_012.png using Guid(8516e4db50c73cd4581bb42f296b21ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1c10db6cc2424dfcd68edc89b6deca') in 0.057949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_013.png
+  artifactKey: Guid(da6db65c6293e5f4b8d241a1e1eaa6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_013.png using Guid(da6db65c6293e5f4b8d241a1e1eaa6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e592690f6acfe2545c863236dfdfd0') in 0.022023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.058382 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_019.png
+  artifactKey: Guid(d44978709f32f6c448ddfb899b3b3c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_019.png using Guid(d44978709f32f6c448ddfb899b3b3c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b8a98c5abcffccfa05d1c6f7218186') in 0.029446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_021.png
+  artifactKey: Guid(87d36f521d437b440bd32eab1dbdf559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_021.png using Guid(87d36f521d437b440bd32eab1dbdf559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60797b7d71f995d0a5df1cd4263afbbf') in 0.038780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.834301 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_026.png
+  artifactKey: Guid(0d0d45820072ba44b8bd904abdb001b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_026.png using Guid(0d0d45820072ba44b8bd904abdb001b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449f11fe45ec45db37dcb284be80af06') in 0.027571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_029.png
+  artifactKey: Guid(03b2833d5667f1a4f9f6abde465fafdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rocket parts/spaceRocketParts_029.png using Guid(03b2833d5667f1a4f9f6abde465fafdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7952632d3c34b7ee1b0539cc2d7dbbb') in 0.036920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.561997 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rockets/spaceRockets_002.png
+  artifactKey: Guid(346521967a787ec49a8eb60f8b332377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rockets/spaceRockets_002.png using Guid(346521967a787ec49a8eb60f8b332377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f00bfd0dccb5ac0b325060d9872d7b') in 0.049959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Rockets/spaceRockets_004.png
+  artifactKey: Guid(73df1094a3971ca4b9da72b87ddaff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Rockets/spaceRockets_004.png using Guid(73df1094a3971ca4b9da72b87ddaff2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6154d79cd0fc23e14858d7b2c47109b') in 0.038228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.023582 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Ships/spaceShips_005.png
+  artifactKey: Guid(c45b8e4e8cf5b8a46bf8f7998b423a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Ships/spaceShips_005.png using Guid(c45b8e4e8cf5b8a46bf8f7998b423a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8a0df40446b1d997a9250a0b206aace') in 0.036620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Ships/spaceShips_007.png
+  artifactKey: Guid(6b79d37311b77f4488212d1f618e77e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Ships/spaceShips_007.png using Guid(6b79d37311b77f4488212d1f618e77e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0a78588922130e3bd11e109e784cd7') in 0.049168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.330128 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_003.png
+  artifactKey: Guid(7262f0cec73c7f14387795cfac838dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_003.png using Guid(7262f0cec73c7f14387795cfac838dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f13599826b27601be164cc4c25fafac2') in 0.065594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.392321 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_010.png
+  artifactKey: Guid(06072a24471352b4aa0d1d47d5d5313d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_010.png using Guid(06072a24471352b4aa0d1d47d5d5313d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac73eb30201b77400ad57cf6351c1393') in 0.027055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_011.png
+  artifactKey: Guid(c570f83cce5035c4d8685f7b2449fcd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_011.png using Guid(c570f83cce5035c4d8685f7b2449fcd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300ebb9eb5bc4f9a320bb5cb79b504b9') in 0.082441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_016.png
+  artifactKey: Guid(9b26706ec68af534d9b0167301cb5d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_016.png using Guid(9b26706ec68af534d9b0167301cb5d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452903e202271cacd4e57471540334b1') in 0.031116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_018.png
+  artifactKey: Guid(f780396eff7b4884c80bd633dc3af9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_018.png using Guid(f780396eff7b4884c80bd633dc3af9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96945cc4156575e2ddf0a63d1185bd5') in 0.043323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_017.png
+  artifactKey: Guid(863d4ab007fd2f64694383b1a9888bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_017.png using Guid(863d4ab007fd2f64694383b1a9888bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a847f802cba338f9e61ca50d3c4008b8') in 0.034349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.051296 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_024.png
+  artifactKey: Guid(9bf012047e85c614b993fee5e1801bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_024.png using Guid(9bf012047e85c614b993fee5e1801bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '205adaa59f53517442e550879329cb7d') in 0.078776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_026.png
+  artifactKey: Guid(94657de67efe573478dbb702ddfbd96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_026.png using Guid(94657de67efe573478dbb702ddfbd96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fdc2c527ef17eaec7d614eb94913dd') in 0.075933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.252454 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_031.png
+  artifactKey: Guid(542458cc189b24445b89e5504b26102f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooterExtension/Station/spaceStation_031.png using Guid(542458cc189b24445b89e5504b26102f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd539ec1feed418409cf44aaeecbcd8d4') in 0.040867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/star1.png
+  artifactKey: Guid(9371d25ff2aadd343b9490a8eab2efe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Effects/star1.png using Guid(9371d25ff2aadd343b9490a8eab2efe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f21941cf3928f6ce42ebf04f37938a') in 0.032713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.221914 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/star_silver.png
+  artifactKey: Guid(49ed252a6e912e642b03e3dd6ec1ef29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/star_silver.png using Guid(49ed252a6e912e642b03e3dd6ec1ef29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dedef866af7736398a31239603d02da') in 0.025618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.083942 seconds.
+  path: Assets/ThirdParty/SimpleSpaceGFX/station_C.png
+  artifactKey: Guid(c8ef863685c4863419ad7ade5f644629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/SimpleSpaceGFX/station_C.png using Guid(c8ef863685c4863419ad7ade5f644629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6379bb5d4028bca4aed4cf3073e06bfe') in 0.065369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.784511 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/ufoRed.png
+  artifactKey: Guid(b4d9e3762bd85fa489c5f95376eef692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/ufoRed.png using Guid(b4d9e3762bd85fa489c5f95376eef692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd354846e91bdef874cdfbd82a5abc9e2') in 0.047621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.273686 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingBlue_4.png
+  artifactKey: Guid(198e828f16d3c28428a8074aec704475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingBlue_4.png using Guid(198e828f16d3c28428a8074aec704475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247ef0eef042f8d6ade0ff89b5a81cde') in 0.041139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.479412 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingGreen_3.png
+  artifactKey: Guid(c280f1404a2139d4faf3e2bcedb3fa2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingGreen_3.png using Guid(c280f1404a2139d4faf3e2bcedb3fa2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca4ba6f708262fe42217377ce54ecfd') in 0.036931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingGreen_4.png
+  artifactKey: Guid(5fe85f3977b1e9b4f9cf98af79e4ce16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingGreen_4.png using Guid(5fe85f3977b1e9b4f9cf98af79e4ce16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4646a9e9b46631ec2dded1e6ed688386') in 0.026223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.081771 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingRed_2.png
+  artifactKey: Guid(d6eed93b388a25145b2788a23aae0c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingRed_2.png using Guid(d6eed93b388a25145b2788a23aae0c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279a9b4b5b62078e9e86fe9228207d48') in 0.048238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingRed_5.png
+  artifactKey: Guid(0ea3f6cd3191a514c9cf559d519186cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingRed_5.png using Guid(0ea3f6cd3191a514c9cf559d519186cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e791f358cabeb38a8cb59d18a2a935') in 0.039719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.529375 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingYellow_1.png
+  artifactKey: Guid(a10c5fe0423c1fd4f848f35cdd3f0cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingYellow_1.png using Guid(a10c5fe0423c1fd4f848f35cdd3f0cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffd163d10f4a200b13c26a3215ded9e') in 0.047458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingYellow_2.png
+  artifactKey: Guid(ead89a576850d9548bf674d467478f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdParty/KenneySpaceShooter/PNG/Parts/wingYellow_2.png using Guid(ead89a576850d9548bf674d467478f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b4f93e19729849d9f8bb483544bc093') in 0.022101 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
