@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/store-item.uss?fileID=7433441132597879392&amp;guid=90d774bc59fb4684186f8141d6c17612&amp;type=3#store-item" />
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
+    <ui:Button display-tooltip-when-elided="true" class="button">
+        <ui:VisualElement style="height: auto; align-items: center; flex-shrink: 1; flex-grow: 1; justify-content: center; -unity-text-align: upper-center; display: flex;">
+            <ui:Label text="SP1337F" display-tooltip-when-elided="true" style="font-size: 32px; color: rgb(200, 200, 200);" />
+        </ui:VisualElement>
+        <ui:VisualElement style="height: auto; align-items: center; flex-grow: 4; justify-content: center;">
+            <ui:VisualElement style="justify-content: flex-start; align-items: stretch; background-image: url(&apos;project://database/Assets/ThirdParty/KenneySpaceShooterExtension/Ships/spaceShips_004.png?fileID=21300000&amp;guid=8a5add4f89a0b1e4cb2b904f847a02d6&amp;type=3#spaceShips_004&apos;); -unity-background-scale-mode: stretch-to-fill; background-color: rgba(0, 0, 0, 0); height: 128px; flex-grow: 0; flex-shrink: 2; width: 128px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="height: auto; align-items: center; flex-grow: 1; justify-content: center; flex-direction: row;">
+            <ui:Label text="10 000" display-tooltip-when-elided="true" class="price-text" />
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/things_silver.png?fileID=2800000&amp;guid=c1b52e5b613b0b240b5db7311b6bb29d&amp;type=3#things_silver&apos;); width: 24px; height: 24px;" />
+        </ui:VisualElement>
+        <ui:VisualElement class="store-item" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-width: 1px; border-right-width: 3px; border-top-width: 1px; border-bottom-width: 5px; display: none;" />
+    </ui:Button>
+</ui:UXML>
