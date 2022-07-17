@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/store-item.uss?fileID=7433441132597879392&amp;guid=90d774bc59fb4684186f8141d6c17612&amp;type=3#store-item" />
     <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
-    <ui:Button display-tooltip-when-elided="true" class="button">
+    <ui:Button display-tooltip-when-elided="true" class="button store-item">
         <ui:VisualElement style="height: auto; align-items: center; flex-shrink: 1; flex-grow: 1; justify-content: center; -unity-text-align: upper-center; display: flex;">
             <ui:Label text="SP1337F" display-tooltip-when-elided="true" style="font-size: 32px; color: rgb(200, 200, 200);" />
         </ui:VisualElement>

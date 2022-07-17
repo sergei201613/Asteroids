@@ -2,7 +2,7 @@
     <ui:Template name="StoreItem" src="project://database/Assets/Asteroids/VisualTreeAssets/StoreItem.uxml?fileID=9197481963319205126&amp;guid=5b98021be0c32c84284fba3bca7107ad&amp;type=3#StoreItem" />
     <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
     <ui:VisualElement style="justify-content: flex-start; align-items: stretch; flex-grow: 1; background-color: rgb(56, 56, 56);">
-        <ui:VisualElement>
+        <ui:VisualElement style="margin-bottom: 25px;">
             <ui:Label text="Магазин" class="header-big" />
         </ui:VisualElement>
         <ui:ScrollView style="border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">
@@ -21,6 +21,6 @@
                 <ui:Instance template="StoreItem" name="StoreItem" />
             </ui:VisualElement>
         </ui:ScrollView>
-        <ui:Button text="X  " display-tooltip-when-elided="true" name="close-button" class="close-button" />
+        <ui:Button text="X  " display-tooltip-when-elided="true" name="close-button" class="close-button button text-white" style="top: 5px; right: 5px;" />
     </ui:VisualElement>
 </ui:UXML>
