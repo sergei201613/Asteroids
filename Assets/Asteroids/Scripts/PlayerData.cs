@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace TeaGames.Asteroids
@@ -8,12 +9,22 @@ namespace TeaGames.Asteroids
         [field: SerializeField]
         public int Coins { get; private set; }
 
+        public IEnumerator<Product> Products => _products.GetEnumerator();
+
+        [SerializeField]
+        private List<Product> _products = new();
+
         public void AddCoins(int value)
         {
             if (value <= 0)
                 return;
 
             Coins += value;
+        }
+
+        public bool HasProduct(Product product)
+        {
+            return _products.Contains(product);
         }
     }
 }

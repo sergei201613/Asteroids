@@ -61,3 +61,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65b065de2abd5a4db4860215b2a75a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerData: {fileID: 11400000, guid: 86207a3200c019a408cf7c85ec24254b, type: 2}
+  _storeData: {fileID: 11400000, guid: 20ceb1fff7b1e614f8fb643c2363cd9c, type: 2}
+  _storeItemVta: {fileID: 9197481963319205126, guid: 5b98021be0c32c84284fba3bca7107ad, type: 3}
