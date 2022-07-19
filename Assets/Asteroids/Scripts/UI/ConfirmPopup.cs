@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace TeaGames.Asteroids.UI
@@ -21,7 +20,7 @@ namespace TeaGames.Asteroids.UI
 
         private void OnCancle()
         {
-            Destroy(gameObject);
+            UIHelper.ClosePopup(this);
         }
 
         private void OnConfirm()

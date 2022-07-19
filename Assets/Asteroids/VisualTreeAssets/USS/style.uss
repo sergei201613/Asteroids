@@ -42,3 +42,37 @@ VisualElement {
     color: rgb(108, 237, 237);
     -unity-font-definition: url('project://database/Assets/Asteroids/Fonts/RobotoMono-Bold%20SDF.asset?fileID=11400000&guid=e4b8a94a15852fa4599aa2d97f2c3590&type=2#RobotoMono-Bold SDF');
 }
+
+.popup {
+    background-color: rgb(111, 29, 92);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-color: rgb(46, 10, 48);
+    border-right-color: rgb(46, 10, 48);
+    border-top-color: rgb(46, 10, 48);
+    border-bottom-color: rgb(46, 10, 48);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    transition-duration: 1s;
+    scale: 1 1;
+}
+
+.popup-show {
+    scale: 1 1;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in;
+}
+
+.popup-hide {
+    transition-duration: 350ms;
+    scale: 0.01 0.01;
+    transition-timing-function: ease-out;
+}

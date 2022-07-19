@@ -11,17 +11,22 @@ namespace TeaGames.Asteroids.UI
 
         public static void ClosePanel(Panel panel)
         {
-            Destroy(panel);
+            Destroy(panel.gameObject);
         }
 
         public static Popup OpenPopup(Popup popupPrefab)
         {
-            return Instantiate(popupPrefab);
+            var popup = Instantiate(popupPrefab);
+            popup.Show();
+            return popup;
         }
 
         public static void ClosePopup(Popup popup)
         {
-            Destroy(popup);
+            popup.Hide(() =>
+            {
+                Destroy(popup.gameObject);
+            });
         }
     }
 }

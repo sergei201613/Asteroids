@@ -11,6 +11,7 @@ namespace TeaGames.Asteroids.UI
         [SerializeField] private Popup _confirmPopupPrefab;
 
         private Button _closeButton;
+        private Popup _confirmPopup;
 
         private void Awake()
         {
@@ -49,12 +50,12 @@ namespace TeaGames.Asteroids.UI
         {
             print("Click " + idx);
 
-            UIHelper.OpenPopup(_confirmPopupPrefab);
+            _confirmPopup = UIHelper.OpenPopup(_confirmPopupPrefab);
         }
 
         private void OnCloseButtonClicked()
         {
-            Destroy(gameObject);
+            UIHelper.ClosePanel(this);
         }
     }
 }
