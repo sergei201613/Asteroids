@@ -6,7 +6,7 @@ VisualElement {
 }
 
 .button {
-    background-color: rgb(70, 96, 124);
+    background-color: rgb(110, 81, 129);
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 15px;
@@ -15,18 +15,16 @@ VisualElement {
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-bottom-width: 8px;
-    border-right-width: 5px;
-    border-left-color: rgb(50, 75, 101);
-    border-right-color: rgb(50, 75, 101);
-    border-top-color: rgb(50, 75, 101);
-    border-bottom-color: rgb(50, 75, 101);
+    border-left-color: rgb(46, 10, 48);
+    border-right-color: rgb(46, 10, 48);
+    border-top-color: rgb(46, 10, 48);
+    border-bottom-color: rgb(46, 10, 48);
 }
 
 .header-big {
     font-size: 48px;
     color: rgb(200, 200, 200);
-    -unity-font-style: bold;
+    -unity-font-style: normal;
     -unity-text-align: upper-center;
 }
 
@@ -34,12 +32,13 @@ VisualElement {
     position: absolute;
     right: 15px;
     top: 15px;
-    font-size: 28px;
+    font-size: 24px;
     -unity-font-style: bold;
     min-width: 64px;
     min-height: 64px;
 }
 
 .text-white {
-    color: rgba(200, 200, 200, 255);
+    color: rgb(108, 237, 237);
+    -unity-font-definition: url('project://database/Assets/Asteroids/Fonts/RobotoMono-Bold%20SDF.asset?fileID=11400000&guid=e4b8a94a15852fa4599aa2d97f2c3590&type=2#RobotoMono-Bold SDF');
 }
