@@ -8,14 +8,17 @@ namespace TeaGames.Asteroids.UI
         [SerializeField] private PlayerData _playerData;
         [SerializeField] private StoreData _storeData;
         [SerializeField] private VisualTreeAsset _storeItemVta;
-        [SerializeField] private Popup _confirmPopupPrefab;
+        [SerializeField] private PurchaseConfirmPopup _purchaseConfirmPopupPrefab;
+        [SerializeField] private InfoPopup _infoPopupPrefab;
+        [SerializeField] private string _itemPurchasedText;
+        [SerializeField] private string _notEnoughCoinsText;
 
         private Button _closeButton;
-        private Popup _confirmPopup;
+        private PurchaseConfirmPopup _confirmPurchasePopup;
 
-        private void Awake()
+        protected override void Awake()
         {
-            var root = GetComponent<UIDocument>().rootVisualElement;
+            base.Awake();
 
             _closeButton = root.Q<Button>("close-button");
             _closeButton.RegisterCallback<ClickEvent>(e => OnCloseButtonClicked());
@@ -29,28 +32,55 @@ namespace TeaGames.Asteroids.UI
             for (int i = 0; i < _storeData.Products.Count; i++)
             {
                 var item = _storeItemVta.Instantiate();
-
-                var button = item.Q<Button>("button");
-                var name = item.Q<Label>("label");
-                var price = item.Q<Label>("price");
-                var icon = item.Q<VisualElement>("icon");
-
-                name.text = _storeData.Products[i].Name;
-                price.text = _storeData.Products[i].Price.ToString("N0");
-                var iconSprite = _storeData.Products[i].Icon;
-                icon.style.backgroundImage = new StyleBackground(iconSprite);
-
-                int idx = i;
-                button.RegisterCallback<ClickEvent>(evt => OnItemClicked(idx));
+                ConfigureItem(i, item);
                 itemsParent.Add(item);
             }
         }
 
+        private void ConfigureItem(int i, TemplateContainer item)
+        {
+            var button = item.Q<Button>("button");
+            var name = item.Q<Label>("label");
+            var price = item.Q<Label>("price");
+            var icon = item.Q<VisualElement>("icon");
+            var priceIcon = item.Q<VisualElement>("price-icon");
+
+            name.text = _storeData.Products[i].Name;
+            price.text = _storeData.Products[i].Price.ToString("N0");
+            var iconSprite = _storeData.Products[i].Icon;
+            icon.style.backgroundImage = new StyleBackground(iconSprite);
+
+            var product = _storeData.Products[i];
+            bool hasProduct = _playerData.HasProduct(product);
+
+            priceIcon.style.display = hasProduct ? 
+                DisplayStyle.None : DisplayStyle.Flex;
+
+            price.text = hasProduct ? _itemPurchasedText : price.text;
+
+            int idx = i;
+            button.RegisterCallback<ClickEvent>(evt => OnItemClicked(idx));
+        }
+
         private void OnItemClicked(int idx)
         {
-            print("Click " + idx);
+            var product = _storeData.Products[idx];
+            string name = product.Name;
+            string price = product.Price.ToString("N0");
 
-            _confirmPopup = UIHelper.OpenPopup(_confirmPopupPrefab);
+            if (_playerData.CanBuy(product))
+            {
+                _confirmPurchasePopup = UIHelper.OpenPopup(_purchaseConfirmPopupPrefab);
+                _confirmPurchasePopup.Init(name, price).OnConfirm(() =>
+                {
+                    _playerData.AddProduct(product);
+                });
+            }
+            else
+            {
+                UIHelper.OpenPopup(_infoPopupPrefab)
+                    .SetText(_notEnoughCoinsText);
+            }
         }
 
         private void OnCloseButtonClicked()

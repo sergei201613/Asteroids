@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0046de96adb8df14cba5ede2d0f2660d, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  <Coins>k__BackingField: 0
+  <Coins>k__BackingField: 12345
   _products:
   - {fileID: 11400000, guid: 338182e9e40cbac40a9210864a1ddac9, type: 2}
-  - {fileID: 11400000, guid: fc01b25d1bef2c54fa0a3fc8230bb506, type: 2}

@@ -14,7 +14,7 @@ namespace TeaGames.Asteroids.UI
             Destroy(panel.gameObject);
         }
 
-        public static Popup OpenPopup(Popup popupPrefab)
+        public static T OpenPopup<T>(T popupPrefab) where T : Popup
         {
             var popup = Instantiate(popupPrefab);
             popup.Show();

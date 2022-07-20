@@ -9,36 +9,43 @@ namespace TeaGames.Asteroids.UI
         private const string hideStyle = "popup-hide";
         private const string showStyle = "popup-show";
 
-        private VisualElement _root;
-        private VisualElement _popup;
+        protected VisualElement popup;
+        protected Label label;
 
-        private void OnEnable()
+        protected override void Awake()
         {
-            _root = GetComponent<UIDocument>().rootVisualElement;
-            _popup = _root.Q("popup");
+            base.Awake();
+
+            popup = root.Q("popup");
+            label = root.Q<Label>("text");
+        }
+
+        public void SetText(string text)
+        {
+            label.text = text;
         }
 
         public void Show(System.Action onComplete = null)
         {
-            _popup.RegisterCallback<TransitionEndEvent>(e => onComplete?.Invoke());
+            popup.RegisterCallback<TransitionEndEvent>(e => onComplete?.Invoke());
             StartCoroutine(ShowCoroutine());
         }
 
         public void Hide(System.Action onComplete = null)
         {
-            _popup.RegisterCallback<TransitionEndEvent>(e => onComplete?.Invoke());
-            _popup.RemoveFromClassList(showStyle);
-            _popup.AddToClassList(hideStyle);
+            popup.RegisterCallback<TransitionEndEvent>(e => onComplete?.Invoke());
+            popup.RemoveFromClassList(showStyle);
+            popup.AddToClassList(hideStyle);
         }
 
         private IEnumerator ShowCoroutine()
         {
-            _popup.AddToClassList(hideStyle);
+            popup.AddToClassList(hideStyle);
 
             yield return new WaitForEndOfFrame();
 
-            _popup.RemoveFromClassList(hideStyle);
-            _popup.AddToClassList(showStyle);
+            popup.RemoveFromClassList(hideStyle);
+            popup.AddToClassList(showStyle);
         }
     }
 }

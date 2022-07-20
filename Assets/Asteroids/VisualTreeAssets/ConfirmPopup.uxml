@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/store-item.uss?fileID=7433441132597879392&amp;guid=90d774bc59fb4684186f8141d6c17612&amp;type=3#store-item" />
+    <ui:VisualElement style="align-items: center; flex-grow: 1; justify-content: center;">
+        <ui:VisualElement name="popup" class="popup">
+            <ui:Label text="Lorem ipsum?" display-tooltip-when-elided="true" name="text" class="text-white" style="font-size: 24px; flex-grow: 0; margin-bottom: 8px;" />
+            <ui:VisualElement style="flex-direction: row; justify-content: space-around;">
+                <ui:Button text="Подтвердить" display-tooltip-when-elided="true" name="confirm" class="button text-white" style="font-size: 24px;" />
+                <ui:Button text="Отмена" display-tooltip-when-elided="true" name="cancle" class="button text-white" style="font-size: 24px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
