@@ -13,5 +13,9 @@ namespace TeaGames.Asteroids
 
         [field: SerializeField]
         public Sprite Icon { get; private set; }
+
+        // TODO: Not every Product should have prefab
+        [field: SerializeField]
+        public Player Prefab { get; private set; }
     }
 }

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: StoreData
   m_EditorClassIdentifier: 
   _products:
+  - {fileID: 11400000, guid: 0084ba3cb5dd81b4b8feff57332cfd3e, type: 2}
   - {fileID: 11400000, guid: 338182e9e40cbac40a9210864a1ddac9, type: 2}
   - {fileID: 11400000, guid: fc01b25d1bef2c54fa0a3fc8230bb506, type: 2}

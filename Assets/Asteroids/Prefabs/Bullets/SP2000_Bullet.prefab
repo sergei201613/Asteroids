@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1466852761734928752, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aebb749e779ee9146b596d8d63a3883b, type: 3}
     - target: {fileID: 4942121267479637420, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58,22 +62,6 @@ PrefabInstance:
     - target: {fileID: 4942121267479637422, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}
       propertyPath: m_Name
       value: SP2000_Bullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152884974975801990, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}
-      propertyPath: m_Size.x
-      value: 0.19334596
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152884974975801990, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}
-      propertyPath: m_Size.y
-      value: 0.5402278
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152884974975801990, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152884974975801990, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3b98f26b2e3e54eaccc5f487df29db, type: 3}

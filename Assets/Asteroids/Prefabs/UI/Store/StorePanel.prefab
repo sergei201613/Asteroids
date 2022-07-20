@@ -67,5 +67,6 @@ MonoBehaviour:
   _purchaseConfirmPopupPrefab: {fileID: 3978586169562409955, guid: f76c0c7c48ac7a640b03d19759716aef, type: 3}
   _infoPopupPrefab: {fileID: -1760923214579328187, guid: 0730029bb2921124bb5c7ab0084c7192, type: 3}
   _itemPurchasedText: "\u041A\u0443\u043F\u043B\u0435\u043D\u043E"
+  _itemSelectedText: "\u0412\u044B\u0431\u0440\u0430\u043D\u043E"
   _notEnoughCoinsText: "\u041D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E
     \u043C\u043E\u043D\u0435\u0442"

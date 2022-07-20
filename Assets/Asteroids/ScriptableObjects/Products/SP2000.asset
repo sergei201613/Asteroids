@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8da94f3686ca1da4e9ff0b61b3adcae9, type: 3}
-  m_Name: SP3000
+  m_Name: SP2000
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: SP3000
-  <Price>k__BackingField: 50000
-  <Icon>k__BackingField: {fileID: 21300000, guid: 6b79d37311b77f4488212d1f618e77e6, type: 3}
-  <Prefab>k__BackingField: {fileID: 3495271220853858236, guid: d24b35b5f7abf214f8bb125b65d1b9c9, type: 3}
+  <Name>k__BackingField: SP2000
+  <Price>k__BackingField: 5000
+  <Icon>k__BackingField: {fileID: 21300000, guid: 1f8a099ae97013f4b8add7697c69e614, type: 3}
+  <Prefab>k__BackingField: {fileID: 2636246999549082153, guid: 983e1951602534f4c99a27796071f481, type: 3}

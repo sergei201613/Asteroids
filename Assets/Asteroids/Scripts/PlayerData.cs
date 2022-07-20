@@ -9,6 +9,9 @@ namespace TeaGames.Asteroids
         [field: SerializeField]
         public int Coins { get; private set; }
 
+        [field: SerializeField]
+        public Product CurrentSpaceship { get; private set; }
+
         public IReadOnlyList<Product> Products => _products.AsReadOnly();
 
         [SerializeField]
@@ -46,6 +49,19 @@ namespace TeaGames.Asteroids
                 return false;
 
             return Coins >= product.Price;
+        }
+
+        // TODO: not every product can be selected
+        public bool IsProductSelected(Product product)
+        {
+            // TODO: product is not always a spaceship
+            return product == CurrentSpaceship;
+        }
+
+        // TODO: not every product can be selected
+        public void SelectProduct(Product product)
+        {
+            CurrentSpaceship = product;
         }
     }
 }

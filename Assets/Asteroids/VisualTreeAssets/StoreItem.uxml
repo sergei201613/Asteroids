@@ -1,12 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/store-item.uss?fileID=7433441132597879392&amp;guid=90d774bc59fb4684186f8141d6c17612&amp;type=3#store-item" />
     <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
-    <ui:Button display-tooltip-when-elided="true" name="button" class="button store-item" style="background-color: rgb(111, 29, 92); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+    <ui:Button display-tooltip-when-elided="true" name="button" class="button store-item" style="background-color: rgb(111, 29, 92);">
         <ui:VisualElement style="height: auto; align-items: center; flex-shrink: 1; flex-grow: 1; justify-content: center; -unity-text-align: upper-center; display: flex;">
             <ui:Label text="SP1337F" display-tooltip-when-elided="true" name="label" class="text-white" style="font-size: 32px;" />
         </ui:VisualElement>
         <ui:VisualElement style="height: auto; align-items: center; flex-grow: 4; justify-content: center;">
-            <ui:VisualElement name="icon" style="justify-content: flex-start; align-items: stretch; background-image: url(&apos;project://database/Assets/ThirdParty/KenneySpaceShooterExtension/Ships/spaceShips_004.png?fileID=21300000&amp;guid=8a5add4f89a0b1e4cb2b904f847a02d6&amp;type=3#spaceShips_004&apos;); -unity-background-scale-mode: stretch-to-fill; background-color: rgba(0, 0, 0, 0); height: 128px; flex-grow: 0; flex-shrink: 2; width: 128px;" />
+            <ui:VisualElement name="icon" style="justify-content: flex-start; align-items: stretch; background-image: url(&apos;project://database/Assets/ThirdParty/KenneySpaceShooterExtension/Ships/spaceShips_009.png?fileID=21300000&amp;guid=1f8a099ae97013f4b8add7697c69e614&amp;type=3#spaceShips_009&apos;); -unity-background-scale-mode: scale-to-fit; background-color: rgba(0, 0, 0, 0); flex-grow: 0; flex-shrink: 2; width: 148px; height: 148px;" />
         </ui:VisualElement>
         <ui:VisualElement style="height: auto; align-items: center; flex-grow: 1; justify-content: center; flex-direction: row;">
             <ui:Label text="10 000" display-tooltip-when-elided="true" name="price" class="price-text text-white" />

@@ -6,7 +6,6 @@ using TeaGames.Asteroids;
 public class GameMode : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D _field;
-    [SerializeField] private Player _playerPrefab;
     [SerializeField] private PlayerData _playerData;
     [SerializeField] private Hud _hud;
     [SerializeField] private MainMenu _menu;
@@ -29,7 +28,7 @@ public class GameMode : MonoBehaviour
 
     private void Awake()
     {
-        _player = FindObjectOfType<Player>();
+        SpawnPlayer();
     }
 
     private void Update()
@@ -43,7 +42,7 @@ public class GameMode : MonoBehaviour
         this.Delay(2f, () =>
         {
             if (_lives > 0)
-                RespawnPlayer();
+                SpawnPlayer();
             else
                 SceneManager.LoadScene("MainMenu");
         });
@@ -119,13 +118,14 @@ public class GameMode : MonoBehaviour
         ScoreUpdated?.Invoke(_score);
     }
 
-    private void RespawnPlayer()
+    private void SpawnPlayer()
     {
         Vector2 position = Vector2.zero;
 
         position.x = _field.bounds.center.x;
         position.y = _field.bounds.center.y;
 
-        _player = Instantiate(_playerPrefab, position, Quaternion.identity);
+        var prefab = _playerData.CurrentSpaceship.Prefab;
+        _player = Instantiate(prefab, position, Quaternion.identity);
     }
 }
