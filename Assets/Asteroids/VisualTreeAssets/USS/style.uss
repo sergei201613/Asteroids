@@ -7,10 +7,10 @@ VisualElement {
 
 .button {
     background-color: rgb(110, 81, 129);
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -75,4 +75,9 @@ VisualElement {
     transition-duration: 350ms;
     scale: 0.01 0.01;
     transition-timing-function: ease-out;
+}
+
+.main-menu-button {
+    min-width: 300px;
+    font-size: 36px;
 }

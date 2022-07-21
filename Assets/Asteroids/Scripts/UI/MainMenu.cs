@@ -1,8 +1,10 @@
+using System;
 using TeaGames.Asteroids;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[Obsolete]
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Text _recordText;

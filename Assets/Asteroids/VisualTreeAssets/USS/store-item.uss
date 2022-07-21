@@ -8,10 +8,10 @@
 .store-item {
     flex-grow: 1;
     background-color: rgb(77, 77, 77);
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     min-width: 200px;
     min-height: 300px;
     border-left-width: 0;
@@ -21,10 +21,10 @@
 }
 
 .item-selected {
-    border-left-color: rgba(46, 10, 48, 255);
-    border-right-color: rgba(46, 10, 48, 255);
-    border-top-color: rgba(46, 10, 48, 255);
-    border-bottom-color: rgba(46, 10, 48, 255);
+    border-left-color: rgb(46, 10, 48);
+    border-right-color: rgb(46, 10, 48);
+    border-top-color: rgb(46, 10, 48);
+    border-bottom-color: rgb(46, 10, 48);
     border-left-width: 2px;
     border-right-width: 2px;
     border-top-width: 2px;

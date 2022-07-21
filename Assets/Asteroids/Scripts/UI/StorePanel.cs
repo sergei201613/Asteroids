@@ -13,13 +13,15 @@ namespace TeaGames.Asteroids.UI
         [SerializeField] private string _itemPurchasedText;
         [SerializeField] private string _itemSelectedText;
         [SerializeField] private string _notEnoughCoinsText;
-
+        private UIHelper _ui;
         private Button _closeButton;
         private PurchaseConfirmPopup _confirmPurchasePopup;
 
         protected override void Awake()
         {
             base.Awake();
+
+            _ui = FindObjectOfType<UIHelper>();
 
             _closeButton = root.Q<Button>("close-button");
             _closeButton.RegisterCallback<ClickEvent>(e => OnCloseButtonClicked());
@@ -88,12 +90,16 @@ namespace TeaGames.Asteroids.UI
             var product = _storeData.Products[idx];
 
             if (!_playerData.HasProduct(product))
+            {
                 TryBuyProduct(product);
+            }
             else
+            {
                 // TODO: Not all product can be selected
                 _playerData.SelectProduct(product);
+                RefreshProductItems();
+            }
 
-            RefreshProductItems();
         }
 
         private void TryBuyProduct(Product product)
@@ -103,22 +109,23 @@ namespace TeaGames.Asteroids.UI
 
             if (_playerData.CanBuy(product))
             {
-                _confirmPurchasePopup = UIHelper.OpenPopup(_purchaseConfirmPopupPrefab);
+                _confirmPurchasePopup = _ui.OpenPopup(_purchaseConfirmPopupPrefab);
                 _confirmPurchasePopup.Init(name, price).OnConfirm(() =>
                 {
                     _playerData.AddProduct(product);
+                    RefreshProductItems();
                 });
             }
             else
             {
-                UIHelper.OpenPopup(_infoPopupPrefab)
+                _ui.OpenPopup(_infoPopupPrefab)
                     .SetText(_notEnoughCoinsText);
             }
         }
 
         private void OnCloseButtonClicked()
         {
-            UIHelper.ClosePanel(this);
+            _ui.Back();
         }
     }
 }

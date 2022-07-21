@@ -4,29 +4,59 @@ namespace TeaGames.Asteroids.UI
 {
     public class UIHelper : MonoBehaviour
     {
-        public static Panel OpenPanel(Panel panelPrefab)
+        public Panel CurrentPanel { get; private set; }
+
+        [SerializeField]
+        private Panel _startPanelPrefab;
+
+        private Panel _panelPrefab;
+        private Panel _prevPanelPrefab;
+
+        private void Awake()
         {
-            return Instantiate(panelPrefab);
+            CurrentPanel = OpenPanel(_startPanelPrefab);
         }
 
-        public static void ClosePanel(Panel panel)
+        public T OpenPanel<T>(T panelPrefab) where T : Panel
+        {
+            if (CurrentPanel != null)
+                ClosePanel(CurrentPanel);
+
+            _prevPanelPrefab = _panelPrefab;
+            _panelPrefab = panelPrefab;
+
+            var pnl = Instantiate(panelPrefab);
+            CurrentPanel = pnl;
+
+            return pnl;
+        }
+
+        public void ClosePanel(Panel panel)
         {
             Destroy(panel.gameObject);
         }
 
-        public static T OpenPopup<T>(T popupPrefab) where T : Popup
+        public T OpenPopup<T>(T popupPrefab) where T : Popup
         {
             var popup = Instantiate(popupPrefab);
             popup.Show();
             return popup;
         }
 
-        public static void ClosePopup(Popup popup)
+        public void ClosePopup(Popup popup)
         {
             popup.Hide(() =>
             {
                 Destroy(popup.gameObject);
             });
+        }
+
+        public void Back()
+        {
+            if (_prevPanelPrefab == null)
+                return;
+
+            OpenPanel(_prevPanelPrefab);
         }
     }
 }
