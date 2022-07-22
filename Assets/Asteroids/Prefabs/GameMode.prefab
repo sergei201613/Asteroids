@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _field: {fileID: 0}
-  _playerPrefab: {fileID: 4305145773380930769, guid: 87b5ae3e4c00d2a4dbd6437c88cfa1bf, type: 3}
   _playerData: {fileID: 11400000, guid: 86207a3200c019a408cf7c85ec24254b, type: 2}
   _hud: {fileID: 0}
   _menu: {fileID: 0}
+  _menuPrefab: {fileID: 1673970384221593661, guid: 5d046f6053fe5c14dbd03a2b0ad7d48c, type: 3}
   _ufoSpawner: {fileID: 0}
   _asteroidSpawner: {fileID: 0}
   _inputData: {fileID: 11400000, guid: 8f80f08efcfe6224e900f2e1777874b5, type: 2}

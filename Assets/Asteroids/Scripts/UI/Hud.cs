@@ -31,7 +31,10 @@ public class Hud : MonoBehaviour
         _lives.Refresh(lives);
 
         if (lives == 0 && isRecord)
+        {
+            _newRecordText.gameObject.SetActive(true);
             _newRecordText.text = "Новый рекорд: " + score + "!";
+        }
     }
 
     private void OnScoreUpdated(int score)

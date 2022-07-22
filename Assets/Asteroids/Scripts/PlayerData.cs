@@ -14,6 +14,8 @@ namespace TeaGames.Asteroids
 
         public IReadOnlyList<Product> Products => _products.AsReadOnly();
 
+        public int Record { get; set; }
+
         [SerializeField]
         private List<Product> _products = new();
 

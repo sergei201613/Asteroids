@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4006049923609110867}
   - component: {fileID: 1673970384221593661}
   m_Layer: 5
-  m_Name: MainMenuPanel
+  m_Name: IngameMainMenuPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: b5fd1bd71b7ade843af22ee42e634d56, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 5a1119ecd458de84f8b5a997f6ca6b65, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: a330105d2dcd55a4789ce9e9c5faee73, type: 3}
   m_SortingOrder: 0
 --- !u!114 &1673970384221593661
 MonoBehaviour:
@@ -64,3 +64,4 @@ MonoBehaviour:
   _storePanelPrefab: {fileID: 5527087141328900375, guid: 80a9bc1ed6e67004e9ac9cf75e163d7b, type: 3}
   _playerData: {fileID: 11400000, guid: 86207a3200c019a408cf7c85ec24254b, type: 2}
   _recordTextFormat: "\u0420\u0435\u043A\u043E\u0440\u0434: {0}"
+  _isIngame: 1

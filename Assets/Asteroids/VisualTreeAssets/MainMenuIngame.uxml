@@ -1,16 +1,17 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
-    <ui:VisualElement name="header" style="flex-grow: 1; flex-basis: 100px; padding-top: 15px;">
-        <ui:Label text="Рекорд: 123" display-tooltip-when-elided="true" name="record" class="text-white" style="font-size: 36px; margin-left: 15px;" />
-        <ui:VisualElement style="flex-direction: row;">
+    <ui:VisualElement name="header" style="flex-grow: 1; flex-basis: 100px; align-items: flex-end;">
+        <ui:VisualElement style="flex-direction: row; margin-left: 25px; margin-right: 25px; margin-top: 25px; margin-bottom: 25px;">
             <ui:Label text="12345" display-tooltip-when-elided="true" name="coins" class="text-white" style="font-size: 36px; margin-left: 15px;" />
             <ui:VisualElement style="background-image: url(&apos;project://database/Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/things_silver.png?fileID=2800000&amp;guid=c1b52e5b613b0b240b5db7311b6bb29d&amp;type=3#things_silver&apos;); width: 32px; height: auto; -unity-background-scale-mode: scale-to-fit; flex-grow: 0; margin-left: 15px;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="content" style="flex-grow: 4; align-items: center; justify-content: center;">
-        <ui:Button text="Начать игру" display-tooltip-when-elided="true" name="play" class="button text-white main-menu-button" />
-        <ui:Button text="Настройки" display-tooltip-when-elided="true" name="settings" class="button text-white main-menu-button" />
-        <ui:Button text="Магазин" display-tooltip-when-elided="true" name="store" class="button text-white main-menu-button" />
+        <ui:Button text="Продолжить" display-tooltip-when-elided="true" name="continue" class="button text-white main-menu-button" />
+        <ui:Button text="Новая игра" display-tooltip-when-elided="true" name="new-game" class="button text-white main-menu-button" />
+        <ui:Button text="Выйти в меню" display-tooltip-when-elided="true" name="main-menu" class="button text-white main-menu-button" />
     </ui:VisualElement>
-    <ui:VisualElement name="footer" style="flex-grow: 1; flex-basis: 100px;" />
+    <ui:VisualElement name="footer" style="flex-grow: 1; flex-basis: 100px; justify-content: flex-end;">
+        <ui:Label text="Рекорд: 123" display-tooltip-when-elided="true" name="record" class="text-white" style="font-size: 36px; margin-left: 25px; margin-right: 25px; margin-top: 25px; margin-bottom: 25px;" />
+    </ui:VisualElement>
 </ui:UXML>

@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using MonoBehaviourExtensions;
 using TeaGames.Asteroids;
+using TeaGames.Asteroids.UI;
 
 public class GameMode : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D _field;
     [SerializeField] private PlayerData _playerData;
     [SerializeField] private Hud _hud;
-    [SerializeField] private MainMenu _menu;
+    [SerializeField] private MainMenuPanel _menuPrefab;
     [SerializeField] private UfoSpawner _ufoSpawner;
     [SerializeField] private AsteroidSpawner _asteroidSpawner;
     [SerializeField] private PlayerInputData _inputData;
@@ -25,9 +26,13 @@ public class GameMode : MonoBehaviour
     private Player _player;
     private int _score = 0;
     private GameState _gameState = GameState.Playing;
+    private UIHelper _ui;
+    private MainMenuPanel _menu;
 
     private void Awake()
     {
+        _ui = FindObjectOfType<UIHelper>();
+
         SpawnPlayer();
     }
 
@@ -53,20 +58,14 @@ public class GameMode : MonoBehaviour
         });
 
         // TODO: Record to PlayerData.cs
-        bool isRecord = !PlayerPrefs.HasKey("Record") || 
-            _score > PlayerPrefs.GetInt("Record");
+        bool isRecord = _score > _playerData.Record;
 
-        SavePlayerData();
+        _playerData.AddCoins(_score);
 
         if (isRecord && _lives == 1)
-            PlayerPrefs.SetInt("Record", _score);
+            _playerData.Record = _score;
 
         PlayerDied?.Invoke(--_lives, _score, isRecord);
-    }
-
-    private void SavePlayerData()
-    {
-        _playerData.AddCoins(_score);
     }
 
     public void TogglePause()
@@ -76,7 +75,10 @@ public class GameMode : MonoBehaviour
         Time.timeScale = isPaused ? 0 : 1;
         _gameState = isPaused ? GameState.Paused : GameState.Playing;
 
-        _menu.gameObject.SetActive(isPaused);
+        if (isPaused)
+            _menu = _ui.OpenPanel(_menuPrefab);
+        else
+            _ui.ClosePanel(_menu);
     }
 
     public int AddScoreForAsteroid(Asteroid ast)

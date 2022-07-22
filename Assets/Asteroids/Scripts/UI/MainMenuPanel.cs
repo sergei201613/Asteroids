@@ -8,37 +8,78 @@ namespace TeaGames.Asteroids.UI
     {
         [SerializeField]
         private StorePanel _storePanelPrefab;
+        [SerializeField]
+        private PlayerData _playerData;
+        [SerializeField]
+        private string _recordTextFormat;
+        [SerializeField]
+        private bool _isIngame;
 
-        private Button _playBtn;
-        private Button _settingsBtn;
-        private Button _storeBtn;
         private UIHelper _ui;
+        private GameMode _gm;
 
         protected override void Awake()
         {
             base.Awake();
 
             _ui = FindObjectOfType<UIHelper>();
+            _gm = FindObjectOfType<GameMode>();
 
-            _playBtn = root.Q<Button>("play");
-            _settingsBtn = root.Q<Button>("settings");
-            _storeBtn = root.Q<Button>("store");
+            var _recordLbl = root.Q<Label>("record");
+            var _coinsLbl = root.Q<Label>("coins");
 
-            _playBtn.RegisterCallback<ClickEvent>(OnPlay);
-            _settingsBtn.RegisterCallback<ClickEvent>(OnSettings);
-            _storeBtn.RegisterCallback<ClickEvent>(OnStore);
+            string record = _playerData.Record.ToString();
+            _recordLbl.text = string.Format(_recordTextFormat, record);
+            _coinsLbl.text = _playerData.Coins.ToString();
+
+            if (_isIngame)
+                InitIngame();
+            else
+                InitDefault();
         }
 
-        private void OnStore(ClickEvent evt)
+        private void InitIngame()
+        {
+            var continueBtn = root.Q<Button>("continue");
+            var newGameBtn = root.Q<Button>("new-game");
+            var mainMenuBtn = root.Q<Button>("main-menu");
+
+            continueBtn.RegisterCallback<ClickEvent>(ContinueGame);
+            newGameBtn.RegisterCallback<ClickEvent>(Play);
+            mainMenuBtn.RegisterCallback<ClickEvent>(OpenMainMenu);
+        }
+
+        private void InitDefault()
+        {
+            var playBtn = root.Q<Button>("play");
+            var settingsBtn = root.Q<Button>("settings");
+            var storeBtn = root.Q<Button>("store");
+
+            playBtn.RegisterCallback<ClickEvent>(Play);
+            settingsBtn.RegisterCallback<ClickEvent>(OpenSettings);
+            storeBtn.RegisterCallback<ClickEvent>(OpenStore);
+        }
+
+        private void OpenMainMenu(ClickEvent evt)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
+        private void ContinueGame(ClickEvent evt)
+        {
+            _gm.TogglePause();
+        }
+
+        private void OpenStore(ClickEvent evt)
         {
             _ui.OpenPanel(_storePanelPrefab);
         }
 
-        private void OnSettings(ClickEvent evt)
+        private void OpenSettings(ClickEvent evt)
         {
         }
 
-        private void OnPlay(ClickEvent evt)
+        private void Play(ClickEvent evt)
         {
             SceneManager.LoadScene("Game");
         }

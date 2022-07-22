@@ -14,7 +14,8 @@ namespace TeaGames.Asteroids.UI
 
         private void Awake()
         {
-            CurrentPanel = OpenPanel(_startPanelPrefab);
+            if (_startPanelPrefab != null)
+                CurrentPanel = OpenPanel(_startPanelPrefab);
         }
 
         public T OpenPanel<T>(T panelPrefab) where T : Panel
