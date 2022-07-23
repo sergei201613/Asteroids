@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 3379717407427363585}
   - component: {fileID: 2519945856367947326}
   - component: {fileID: 9129201856298111793}
+  - component: {fileID: 233003341494501707}
   m_Layer: 0
   m_Name: PlayerSpaceshipBase
   m_TagString: Untagged
@@ -491,6 +492,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &233003341494501707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863118754813046811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3e01c5e984d0941b21b51b7897286c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2323985145756570436
 PrefabInstance:
   m_ObjectHideFlags: 0

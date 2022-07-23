@@ -9,6 +9,7 @@
     <ui:VisualElement name="content" style="flex-grow: 4; align-items: center; justify-content: center;">
         <ui:Button text="Продолжить" display-tooltip-when-elided="true" name="continue" class="button text-white main-menu-button" />
         <ui:Button text="Новая игра" display-tooltip-when-elided="true" name="new-game" class="button text-white main-menu-button" />
+        <ui:Button text="Настройки" display-tooltip-when-elided="true" name="settings" class="button text-white main-menu-button" />
         <ui:Button text="Выйти в меню" display-tooltip-when-elided="true" name="main-menu" class="button text-white main-menu-button" />
     </ui:VisualElement>
     <ui:VisualElement name="footer" style="flex-grow: 1; flex-basis: 100px; justify-content: flex-end;">

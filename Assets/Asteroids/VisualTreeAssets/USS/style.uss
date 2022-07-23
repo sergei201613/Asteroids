@@ -81,3 +81,8 @@ VisualElement {
     min-width: 300px;
     font-size: 36px;
 }
+
+.option {
+    font-size: 36px;
+    min-width: 500px;
+}

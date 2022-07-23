@@ -40,4 +40,8 @@ public class UfoInput : MonoBehaviour, ISpaceshipInput
 
         return false;
     }
+
+    public void Init(Transform ownerTransform)
+    {
+    }
 }

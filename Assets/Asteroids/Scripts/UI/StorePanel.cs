@@ -13,18 +13,11 @@ namespace TeaGames.Asteroids.UI
         [SerializeField] private string _itemPurchasedText;
         [SerializeField] private string _itemSelectedText;
         [SerializeField] private string _notEnoughCoinsText;
-        private UIHelper _ui;
-        private Button _closeButton;
         private PurchaseConfirmPopup _confirmPurchasePopup;
 
         protected override void Awake()
         {
             base.Awake();
-
-            _ui = FindObjectOfType<UIHelper>();
-
-            _closeButton = root.Q<Button>("close-button");
-            _closeButton.RegisterCallback<ClickEvent>(e => OnCloseButtonClicked());
 
             CreateProductItems(root);
         }
@@ -109,7 +102,9 @@ namespace TeaGames.Asteroids.UI
 
             if (_playerData.CanBuy(product))
             {
-                _confirmPurchasePopup = _ui.OpenPopup(_purchaseConfirmPopupPrefab);
+                _confirmPurchasePopup = UIHelper.Instance
+                    .OpenPopup(_purchaseConfirmPopupPrefab);
+
                 _confirmPurchasePopup.Init(name, price).OnConfirm(() =>
                 {
                     _playerData.AddProduct(product);
@@ -118,14 +113,9 @@ namespace TeaGames.Asteroids.UI
             }
             else
             {
-                _ui.OpenPopup(_infoPopupPrefab)
+                UIHelper.Instance.OpenPopup(_infoPopupPrefab)
                     .SetText(_notEnoughCoinsText);
             }
-        }
-
-        private void OnCloseButtonClicked()
-        {
-            _ui.Back();
         }
     }
 }

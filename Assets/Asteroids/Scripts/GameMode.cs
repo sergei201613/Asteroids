@@ -26,13 +26,10 @@ public class GameMode : MonoBehaviour
     private Player _player;
     private int _score = 0;
     private GameState _gameState = GameState.Playing;
-    private UIHelper _ui;
     private MainMenuPanel _menu;
 
     private void Awake()
     {
-        _ui = FindObjectOfType<UIHelper>();
-
         SpawnPlayer();
     }
 
@@ -76,9 +73,9 @@ public class GameMode : MonoBehaviour
         _gameState = isPaused ? GameState.Paused : GameState.Playing;
 
         if (isPaused)
-            _menu = _ui.OpenPanel(_menuPrefab);
+            _menu = UIHelper.Instance.OpenPanel(_menuPrefab);
         else
-            _ui.ClosePanel(_menu);
+            UIHelper.Instance.CloseCurrentPanel();
     }
 
     public int AddScoreForAsteroid(Asteroid ast)

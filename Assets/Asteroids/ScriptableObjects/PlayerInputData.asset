@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205a0563f01f8944daa8cb4e7a3e76f1, type: 3}
   m_Name: PlayerInputData
   m_EditorClassIdentifier: 
+  _inputTypes: 0000000001000000
+  _inputNames:
+  - "\u041A\u043B\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u0430"
+  - "\u041A\u043B\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u0430 \u0438 \u043C\u044B\u0448\u044C"
   Type: 1
   PauseKey: 27

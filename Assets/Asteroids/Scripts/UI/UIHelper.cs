@@ -4,6 +4,8 @@ namespace TeaGames.Asteroids.UI
 {
     public class UIHelper : MonoBehaviour
     {
+        public static UIHelper Instance { get; private set; }
+
         public Panel CurrentPanel { get; private set; }
 
         [SerializeField]
@@ -14,6 +16,8 @@ namespace TeaGames.Asteroids.UI
 
         private void Awake()
         {
+            Instance = this;
+
             if (_startPanelPrefab != null)
                 CurrentPanel = OpenPanel(_startPanelPrefab);
         }
@@ -35,6 +39,11 @@ namespace TeaGames.Asteroids.UI
         public void ClosePanel(Panel panel)
         {
             Destroy(panel.gameObject);
+        }
+
+        public void CloseCurrentPanel()
+        {
+            Destroy(CurrentPanel.gameObject);
         }
 
         public T OpenPopup<T>(T popupPrefab) where T : Popup

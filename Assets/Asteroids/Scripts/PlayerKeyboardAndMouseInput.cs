@@ -1,12 +1,14 @@
 using UnityEngine;
 
-public class PlayerKeyboardAndMouseInput : MonoBehaviour, ISpaceshipInput
+public class PlayerKeyboardAndMouseInput : ISpaceshipInput
 {
     private Camera _camera;
+    private Transform _owner;
 
-    private void Awake()
+    public void Init(Transform owner)
     {
         _camera = Camera.main;
+        _owner = owner;
     }
 
     public float GetDeltaMovement()
@@ -17,9 +19,9 @@ public class PlayerKeyboardAndMouseInput : MonoBehaviour, ISpaceshipInput
     public float GetDeltaRotation()
     {
         Vector3 mouseWorldPosition = _camera.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 dir = mouseWorldPosition - transform.position;
+        Vector3 dir = mouseWorldPosition - _owner.position;
 
-        return Mathf.Clamp(Vector3.Dot(transform.right, dir.normalized) * -4, -1, 1);
+        return Mathf.Clamp(Vector3.Dot(_owner.right, dir.normalized) * -4, -1, 1);
     }
 
     public bool IsFire()

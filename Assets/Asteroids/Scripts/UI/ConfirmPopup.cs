@@ -6,15 +6,12 @@ namespace TeaGames.Asteroids.UI
     {
         private System.Action _onConfirm;
         private System.Action _onCancle;
-        private UIHelper _ui;
         protected Button cancleButton;
         protected Button confirmButton;
 
         protected override void Awake()
         {
             base.Awake();
-
-            _ui = FindObjectOfType<UIHelper>();
 
             cancleButton = root.Q<Button>("cancle");
             confirmButton = root.Q<Button>("confirm");
@@ -37,13 +34,13 @@ namespace TeaGames.Asteroids.UI
 
         private void OnCancle()
         {
-            _ui.ClosePopup(this);
+            UIHelper.Instance.ClosePopup(this);
             _onCancle?.Invoke();
         }
 
         private void OnConfirm()
         {
-            _ui.ClosePopup(this);
+            UIHelper.Instance.ClosePopup(this);
             _onConfirm?.Invoke();
         }
     }

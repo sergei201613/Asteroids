@@ -11,7 +11,7 @@ public class ToggleControlButton : MonoBehaviour
 
     private void Awake()
     {
-        _inputType = (int)_inputData.Type;
+        _inputType = (int)_inputData.GetInputType();
 
         UpdateText();
     }
@@ -23,14 +23,14 @@ public class ToggleControlButton : MonoBehaviour
         _inputType++;
         _inputType %= inputTypesArray.Length;
 
-        _inputData.Type = (InputType)_inputType;
+        //_inputData.GetInputType() = (InputType)_inputType;
 
         UpdateText();
     }
 
     private void UpdateText()
     {
-        switch (_inputData.Type)
+        switch (_inputData.GetInputType())
         {
             case InputType.Keyboard:
                 _text.text = "Управление: клавиатура";

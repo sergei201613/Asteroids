@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerKeyboardInput : MonoBehaviour, ISpaceshipInput
+public class PlayerKeyboardInput : ISpaceshipInput
 {
     public float GetDeltaMovement()
     {
@@ -15,6 +15,10 @@ public class PlayerKeyboardInput : MonoBehaviour, ISpaceshipInput
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) deltaRotation -= 1;
         
         return deltaRotation;
+    }
+
+    public void Init(Transform ownerTransform)
+    {
     }
 
     public bool IsFire()

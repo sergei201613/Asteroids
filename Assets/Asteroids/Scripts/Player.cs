@@ -1,5 +1,6 @@
 using UnityEngine;
 using MonoBehaviourExtensions;
+using TeaGames.Asteroids;
 
 // This script adds a component to the object,
 // other components can get it, so the component must be added before that.
@@ -12,23 +13,15 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _explosionSoundPrefab;
 
     private GameMode _gameMode;
+    private SpaceshipInput _input;
     private bool _isInvulnerable = true;
 
     private void Awake()
     {
         _gameMode = FindObjectOfType<GameMode>();
+        _input = GetComponent<SpaceshipInput>();
 
-        switch (_inputData.Type)
-        {
-            case InputType.Keyboard:
-                gameObject.AddComponent<PlayerKeyboardInput>();
-                break;
-            case InputType.KeyboardAndMouse:
-                gameObject.AddComponent<PlayerKeyboardAndMouseInput>();
-                break;
-            default:
-                break;
-        }
+        UpdateInput(_inputData.GetInputType());
 
         gameObject.AddComponent<Flashing>().Init(_sprites, _invulnerableFlashingRate);
 
@@ -45,12 +38,21 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
+        _inputData.InputChanged += UpdateInput;
         _gameMode.PlayerDied += OnPlayerDied;
     }
 
     private void OnDisable()
     {
+        _inputData.InputChanged -= UpdateInput;
         _gameMode.PlayerDied -= OnPlayerDied;
+    }
+
+    private void UpdateInput(InputType type)
+    {
+        var input = _inputData.GetInput(type);
+        input.Init(transform);
+        _input.SetInput(input);
     }
 
     private void OnPlayerDied(int lives, int score, bool isRecord)

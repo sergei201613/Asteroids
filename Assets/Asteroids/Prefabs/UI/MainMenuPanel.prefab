@@ -62,5 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storePanelPrefab: {fileID: 5527087141328900375, guid: 80a9bc1ed6e67004e9ac9cf75e163d7b, type: 3}
+  _settingsPanelPrefab: {fileID: 2285343245857778246, guid: f5a22a2572146ab4789a244223f9fbf5, type: 3}
   _playerData: {fileID: 11400000, guid: 86207a3200c019a408cf7c85ec24254b, type: 2}
   _recordTextFormat: "\u0420\u0435\u043A\u043E\u0440\u0434: {0}"
+  _isIngame: 0
