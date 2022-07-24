@@ -10,7 +10,7 @@
                     <ui:VisualElement name="items-parent" style="flex-direction: row; flex-wrap: wrap;">
                         <ui:VisualElement>
                             <ui:Slider picking-mode="Ignore" label="Звуки" value="42" name="volume" high-value="1" class="text-white option" />
-                            <ui:DropdownField label="Управление" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="input-mode" class="text-white option" />
+                            <ui:DropdownField label="Управление" index="-1" name="input-mode" class="text-white option" />
                         </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:ScrollView>

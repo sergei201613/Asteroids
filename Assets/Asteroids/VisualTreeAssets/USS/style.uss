@@ -86,3 +86,28 @@ VisualElement {
     font-size: 36px;
     min-width: 500px;
 }
+
+.unity-base-field__input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -unity-font-definition: url('project://database/Assets/Asteroids/Fonts/RobotoMono-Bold%20SDF.asset?fileID=11400000&guid=e4b8a94a15852fa4599aa2d97f2c3590&type=2#RobotoMono-Bold SDF');
+    color: rgba(108, 237, 237, 255);
+}
+
+.unity-base-popup-field__input {
+    background-color: rgb(110, 81, 129);
+    border-left-color: rgba(46, 10, 48, 255);
+    border-right-color: rgba(46, 10, 48, 255);
+    border-top-color: rgba(46, 10, 48, 255);
+    border-bottom-color: rgba(46, 10, 48, 255);
+}
+
+.unity-base-popup-field__arrow {
+    -unity-background-image-tint-color: rgb(108, 237, 237);
+}
+
+.unity-base-popup-field__text {
+    font-size: 24px;
+}
