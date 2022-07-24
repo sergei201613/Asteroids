@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4006049923609110866
+--- !u!1 &2735284466110890761
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4006049923609110864}
-  - component: {fileID: 4006049923609110867}
-  - component: {fileID: 1673970384221593661}
+  - component: {fileID: 2735284466110890763}
+  - component: {fileID: 2735284466110890760}
+  - component: {fileID: 4343630661813659350}
   m_Layer: 5
-  m_Name: MainMenuPanel
+  m_Name: GameSelectionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4006049923609110864
+--- !u!4 &2735284466110890763
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4006049923609110866}
+  m_GameObject: {fileID: 2735284466110890761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4006049923609110867
+--- !u!114 &2735284466110890760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4006049923609110866}
+  m_GameObject: {fileID: 2735284466110890761}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
@@ -47,23 +47,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: b5fd1bd71b7ade843af22ee42e634d56, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 5a1119ecd458de84f8b5a997f6ca6b65, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 5fc088187f9c93b48a2b21b1194d2596, type: 3}
   m_SortingOrder: 0
---- !u!114 &1673970384221593661
+--- !u!114 &4343630661813659350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4006049923609110866}
+  m_GameObject: {fileID: 2735284466110890761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c92c724f856ae844b566f7df00501ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bcb674c1d51029438594c355211c244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _storePanelPrefab: {fileID: 5527087141328900375, guid: 80a9bc1ed6e67004e9ac9cf75e163d7b, type: 3}
-  _settingsPanelPrefab: {fileID: 2285343245857778246, guid: f5a22a2572146ab4789a244223f9fbf5, type: 3}
-  _gameSelectionPanelPrefab: {fileID: 4343630661813659350, guid: 976dbce3913eda24da6109cd8b184785, type: 3}
-  _playerData: {fileID: 11400000, guid: 86207a3200c019a408cf7c85ec24254b, type: 2}
-  _recordTextFormat: "\u0420\u0435\u043A\u043E\u0440\u0434: {0}"
-  _isIngame: 0

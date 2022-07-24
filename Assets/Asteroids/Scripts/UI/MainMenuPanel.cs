@@ -11,6 +11,8 @@ namespace TeaGames.Asteroids.UI
         [SerializeField]
         private SettingsPanel _settingsPanelPrefab;
         [SerializeField]
+        private GameSelectionPanel _gameSelectionPanelPrefab;
+        [SerializeField]
         private PlayerData _playerData;
         [SerializeField]
         private string _recordTextFormat;
@@ -57,7 +59,7 @@ namespace TeaGames.Asteroids.UI
             var settingsBtn = root.Q<Button>("settings");
             var storeBtn = root.Q<Button>("store");
 
-            playBtn.RegisterCallback<ClickEvent>(Play);
+            playBtn.RegisterCallback<ClickEvent>(SelectGame);
             settingsBtn.RegisterCallback<ClickEvent>(OpenSettings);
             storeBtn.RegisterCallback<ClickEvent>(OpenStore);
         }
@@ -85,6 +87,11 @@ namespace TeaGames.Asteroids.UI
         private void Play(ClickEvent evt)
         {
             SceneManager.LoadScene("Game");
+        }
+
+        private void SelectGame(ClickEvent evt)
+        {
+            UIHelper.Instance.OpenPanel(_gameSelectionPanelPrefab);
         }
     }
 }

@@ -8,7 +8,7 @@
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="content" style="flex-grow: 4; align-items: center; justify-content: center;">
-        <ui:Button text="Начать игру" display-tooltip-when-elided="true" name="play" class="button text-white main-menu-button" />
+        <ui:Button text="Играть" display-tooltip-when-elided="true" name="play" class="button text-white main-menu-button" />
         <ui:Button text="Настройки" display-tooltip-when-elided="true" name="settings" class="button text-white main-menu-button" />
         <ui:Button text="Магазин" display-tooltip-when-elided="true" name="store" class="button text-white main-menu-button" />
     </ui:VisualElement>

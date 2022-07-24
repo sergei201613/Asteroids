@@ -93,15 +93,15 @@ VisualElement {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     -unity-font-definition: url('project://database/Assets/Asteroids/Fonts/RobotoMono-Bold%20SDF.asset?fileID=11400000&guid=e4b8a94a15852fa4599aa2d97f2c3590&type=2#RobotoMono-Bold SDF');
-    color: rgba(108, 237, 237, 255);
+    color: rgb(108, 237, 237);
 }
 
 .unity-base-popup-field__input {
     background-color: rgb(110, 81, 129);
-    border-left-color: rgba(46, 10, 48, 255);
-    border-right-color: rgba(46, 10, 48, 255);
-    border-top-color: rgba(46, 10, 48, 255);
-    border-bottom-color: rgba(46, 10, 48, 255);
+    border-left-color: rgb(46, 10, 48);
+    border-right-color: rgb(46, 10, 48);
+    border-top-color: rgb(46, 10, 48);
+    border-bottom-color: rgb(46, 10, 48);
 }
 
 .unity-base-popup-field__arrow {
@@ -110,4 +110,8 @@ VisualElement {
 
 .unity-base-popup-field__text {
     font-size: 24px;
+}
+
+.game-item-selected {
+    scale: 1.1 1.1;
 }

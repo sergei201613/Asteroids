@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GameModeItem" src="project://database/Assets/Asteroids/VisualTreeAssets/GameModeItem.uxml?fileID=9197481963319205126&amp;guid=2df15f2fdd2ddac4cbb2422c023de4e5&amp;type=3#GameModeItem" />
+    <ui:Template name="GameModeItemSoon" src="project://database/Assets/Asteroids/VisualTreeAssets/GameModeItemSoon.uxml?fileID=9197481963319205126&amp;guid=7e85e8b30eddc8d4b8c1d0c3bae37c6b&amp;type=3#GameModeItemSoon" />
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
+    <ui:VisualElement name="Panel" style="flex-grow: 1;">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement style="justify-content: flex-start; align-items: stretch; flex-grow: 1; background-color: rgba(79, 20, 70, 0.86); margin-left: 100px; margin-right: 100px; margin-top: 100px; margin-bottom: 100px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-color: rgb(46, 10, 48); border-right-color: rgb(46, 10, 48); border-top-color: rgb(46, 10, 48); border-bottom-color: rgb(46, 10, 48); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;">
+                <ui:VisualElement style="margin-bottom: 25px; border-left-color: rgb(46, 10, 48); border-right-color: rgb(46, 10, 48); border-top-color: rgb(46, 10, 48); border-bottom-color: rgb(46, 10, 48); border-bottom-width: 2px;">
+                    <ui:Label text="Выбор режима" name="title" class="header-big text-white" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-color: rgb(111, 29, 92); border-top-left-radius: 20px; border-bottom-left-radius: 0; border-top-right-radius: 20px; border-bottom-right-radius: 0;" />
+                </ui:VisualElement>
+                <ui:ScrollView style="border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">
+                    <ui:VisualElement name="items-parent" style="flex-direction: row; flex-wrap: wrap; padding-left: 25px; padding-right: 25px; padding-top: 25px; padding-bottom: 25px;">
+                        <ui:Instance template="GameModeItem" name="item-free-flight" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;" />
+                        <ui:Instance template="GameModeItemSoon" name="item-soon" />
+                    </ui:VisualElement>
+                </ui:ScrollView>
+                <ui:VisualElement name="footer" style="flex-grow: 1; align-items: center; justify-content: center;">
+                    <ui:Button text="Играть" display-tooltip-when-elided="true" name="play" class="button text-white header-big" />
+                </ui:VisualElement>
+                <ui:Button text="X  " display-tooltip-when-elided="true" name="close-button" class="close-button button text-white" style="top: 0; right: 0; min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px; margin-left: 12px; margin-right: 12px; margin-top: 12px; margin-bottom: 12px; background-color: rgb(110, 81, 129); border-left-color: rgb(46, 10, 48); border-right-color: rgb(46, 10, 48); border-top-color: rgb(46, 10, 48); border-bottom-color: rgb(46, 10, 48); font-size: 28px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

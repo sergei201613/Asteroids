@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/store-item.uss?fileID=7433441132597879392&amp;guid=90d774bc59fb4684186f8141d6c17612&amp;type=3#store-item" />
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
+    <ui:Button display-tooltip-when-elided="true" name="button" class="button store-item" style="background-color: rgb(111, 29, 92); margin-left: 15px; margin-right: 15px; margin-top: 5px; margin-bottom: 5px; max-width: 256px; max-height: 485px; min-height: 448px; background-image: url(&apos;project://database/Assets/Asteroids/Sprites/FreeFlight.png?fileID=2800000&amp;guid=74b4a33703ae2a545ae4e97e9f61d9d4&amp;type=3#FreeFlight&apos;); min-width: 256px; -unity-background-scale-mode: scale-and-crop;">
+        <ui:VisualElement style="height: auto; align-items: center; flex-shrink: 1; flex-grow: 0; justify-content: center; -unity-text-align: upper-center; display: flex;">
+            <ui:Label text="Свободный полет" display-tooltip-when-elided="true" name="label" class="text-white" style="font-size: 32px; white-space: normal;" />
+        </ui:VisualElement>
+    </ui:Button>
+</ui:UXML>
