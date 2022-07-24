@@ -4,6 +4,11 @@ using System.Collections.Generic;
 public class SpaceshipGun : MonoBehaviour
 {
     [Tooltip("Shots per second.")]
+
+    [field: SerializeField] 
+    public bool FireForceEnabled { get; set; } = true;
+
+    [SerializeField] private float _fireForce = 1f;
     [SerializeField] private float _fireRate = 3f;
     [SerializeField] private float _bulletSpeed = 20f;
     [SerializeField] private GameObject _bulletPrefab;
@@ -18,11 +23,14 @@ public class SpaceshipGun : MonoBehaviour
     private float MinDelayBetweenFires => (1 / _fireRate);
     private bool CanFire => Time.timeSinceLevelLoad > _lastTimeFired 
         + MinDelayBetweenFires;
+
     private Pool _bulletPool;
+    private SpaceshipMovement _movement;
 
     private void Awake()
     {
         _input = GetComponent<ISpaceshipInput>();
+        _movement = GetComponent<SpaceshipMovement>();
 
         // When fire first time, we dont need wait.
         _lastTimeFired = -MinDelayBetweenFires;
@@ -50,6 +58,11 @@ public class SpaceshipGun : MonoBehaviour
 
         _fireSound.Play();
         _fires++;
+
+        if (_movement && FireForceEnabled)
+        {
+            _movement.Force = _fireForce * -transform.up;
+        }
     }
 
     private Vector2 GetNextBulletPosition()

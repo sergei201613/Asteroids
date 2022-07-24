@@ -13,6 +13,9 @@ scopes = {
 	"last_search.785D90A9" = ""
 	"InspectorPreview.785D90A9" = "0"
 	"currentGroup.785D90A9" = "all"
+	"last_search.8040E7BB" = "enabled"
+	"OpenInspectorPreview.8040E7BB" = "0"
+	"currentGroup.8040E7BB" = "all"
 }
 providers = {
 	asset = {
@@ -50,6 +53,16 @@ providers = {
 		priority = 100
 		defaultAction = null
 	}
+	adb = {
+		active = false
+		priority = 2500
+		defaultAction = null
+	}
+	performance = {
+		active = false
+		priority = 100
+		defaultAction = null
+	}
 }
 recentSearches = [
 	"asteroid"
@@ -58,3 +71,9 @@ searchItemFavorites = [
 ]
 savedSearchesSortOrder = 0
 showSavedSearchPanel = false
+expandedQueries = [
+]
+queryBuilder = false
+ignoredProperties = "id;name;classname;imagecontentshash"
+helperWidgetCurrentArea = "all"
+disabledIndexers = ""

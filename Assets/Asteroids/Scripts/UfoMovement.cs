@@ -19,6 +19,6 @@ public class UfoMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.position += _dir * _speed * Time.fixedDeltaTime;
+        _rb.position += _speed * Time.fixedDeltaTime * _dir;
     }
 }

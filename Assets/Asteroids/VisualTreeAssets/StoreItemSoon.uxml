@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/store-item.uss?fileID=7433441132597879392&amp;guid=90d774bc59fb4684186f8141d6c17612&amp;type=3#store-item" />
+    <Style src="project://database/Assets/Asteroids/VisualTreeAssets/USS/style.uss?fileID=7433441132597879392&amp;guid=9ddc1123fce1b084bbc9b8e4e9d3ce64&amp;type=3#style" />
+    <ui:Button display-tooltip-when-elided="true" name="button" class="button store-item" style="background-color: rgb(111, 29, 92); margin-left: 15px; margin-right: 15px; margin-top: 5px; margin-bottom: 5px;">
+        <ui:VisualElement style="height: auto; align-items: center; flex-shrink: 1; flex-grow: 1; justify-content: center; -unity-text-align: upper-center; display: flex;">
+            <ui:Label text="Скоро" display-tooltip-when-elided="true" name="label" class="text-white" style="font-size: 32px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="height: auto; align-items: center; flex-grow: 4; justify-content: center;">
+            <ui:VisualElement name="icon" style="justify-content: flex-start; align-items: stretch; background-image: url(&apos;project://database/Assets/ThirdParty/KenneySpaceShooterExtension/Ships/spaceShips_003.png?fileID=21300000&amp;guid=ce1edb6a18b032049b1259f7a7f80fea&amp;type=3#spaceShips_003&apos;); -unity-background-scale-mode: scale-to-fit; background-color: rgba(0, 0, 0, 0); flex-grow: 0; flex-shrink: 2; width: 148px; height: 148px; -unity-background-image-tint-color: rgb(0, 0, 0);" />
+        </ui:VisualElement>
+        <ui:VisualElement style="height: auto; align-items: center; flex-grow: 1; justify-content: center; flex-direction: row;">
+            <ui:Label text="?????" display-tooltip-when-elided="true" name="price" class="price-text text-white" />
+            <ui:VisualElement name="price-icon" style="background-image: url(&apos;project://database/Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/things_silver.png?fileID=2800000&amp;guid=c1b52e5b613b0b240b5db7311b6bb29d&amp;type=3#things_silver&apos;); width: 24px; height: 24px;" />
+        </ui:VisualElement>
+        <ui:VisualElement class="store-item" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-width: 1px; border-right-width: 3px; border-top-width: 1px; border-bottom-width: 5px; display: none;" />
+    </ui:Button>
+</ui:UXML>

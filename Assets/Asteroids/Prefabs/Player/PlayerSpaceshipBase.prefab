@@ -304,6 +304,7 @@ MonoBehaviour:
   _rotationSpeed: 300
   _maxMovementSpeed: 7.5
   _acceleration: 12
+  _forceDeceleration: 5
 --- !u!114 &5574512113667714139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,9 +317,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a6f3c15335cba4bb322711af0ee103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fireForce: 1
   _fireRate: 3
   _bulletSpeed: 20
   _bulletPrefab: {fileID: 570334635514157637, guid: fbcb3dc8fc38c814f8294de3a311805b, type: 3}
+  _movement: {fileID: 5074667063563673296}
   _bulletSpawnPositions:
   - {fileID: 5206027890242937485}
   - {fileID: 2105508857659570956}

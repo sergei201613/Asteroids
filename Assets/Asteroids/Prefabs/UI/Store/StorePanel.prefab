@@ -64,6 +64,7 @@ MonoBehaviour:
   _playerData: {fileID: 11400000, guid: 86207a3200c019a408cf7c85ec24254b, type: 2}
   _storeData: {fileID: 11400000, guid: 20ceb1fff7b1e614f8fb643c2363cd9c, type: 2}
   _storeItemVta: {fileID: 9197481963319205126, guid: 5b98021be0c32c84284fba3bca7107ad, type: 3}
+  _storeItemSoonVta: {fileID: 9197481963319205126, guid: 694cba31bbad1b445acf565ccf2538cd, type: 3}
   _purchaseConfirmPopupPrefab: {fileID: 3978586169562409955, guid: f76c0c7c48ac7a640b03d19759716aef, type: 3}
   _infoPopupPrefab: {fileID: -1760923214579328187, guid: 0730029bb2921124bb5c7ab0084c7192, type: 3}
   _itemPurchasedText: "\u041A\u0443\u043F\u043B\u0435\u043D\u043E"
