@@ -381,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundBlack
       objectReference: {fileID: 0}
+    - target: {fileID: 5246177682431600436, guid: 7dca267e04751864a8f2c19568f17cc7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 15fb93a9f0c6fa145b0ec476309d1459, type: 3}
     - target: {fileID: 5246177682431600437, guid: 7dca267e04751864a8f2c19568f17cc7, type: 3}
       propertyPath: m_RootOrder
       value: 6

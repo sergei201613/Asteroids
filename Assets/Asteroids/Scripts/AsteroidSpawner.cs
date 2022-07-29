@@ -1,5 +1,5 @@
 using UnityEngine;
-using MonoBehaviourExtensions;
+using TeaGames.MonoBehaviourExtensions;
 using System.Collections.Generic;
 using UnityEngine.Serialization;
 using System;

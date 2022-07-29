@@ -1,4 +1,4 @@
-using MonoBehaviourExtensions;
+using TeaGames.MonoBehaviourExtensions;
 using TMPro;
 using UnityEngine;
 

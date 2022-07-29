@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -8,7 +7,6 @@ public class Bullet : MonoBehaviour
     private Vector2 _velocity;
     private Rigidbody2D _rb;
     private PoolObject _poolObj;
-    private Vector2 _prevPos;
     private Vector2 _dir;
 
     private void Awake()
@@ -21,7 +19,6 @@ public class Bullet : MonoBehaviour
         Owner = owner;
         transform.position = position;
 
-        _prevPos = transform.position;
         _velocity = velocity;
         _dir = _velocity.normalized;
 
@@ -36,8 +33,6 @@ public class Bullet : MonoBehaviour
         _rb.position += _velocity * Time.fixedDeltaTime;
 
         UpdateRotation();
-
-        _prevPos = transform.position;
     }
 
     private void UpdateRotation()
@@ -55,7 +50,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<Asteroid>(out var asteroid))
+        if (collision.TryGetComponent<Asteroid>(out _))
         {
             if (_poolObj != null)
                 _poolObj.ReturnToPool();

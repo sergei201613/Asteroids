@@ -8,6 +8,7 @@ namespace TeaGames.Asteroids.UI
 
         public Panel CurrentPanel { get; private set; }
 
+        // TODO: move start panel logic to something like MenuGameMode.cs
         [SerializeField]
         private Panel _startPanelPrefab;
 

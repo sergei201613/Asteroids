@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using MonoBehaviourExtensions;
+using TeaGames.MonoBehaviourExtensions;
 using TeaGames.Asteroids;
 using TeaGames.Asteroids.UI;
+using TeaGames.ServiceLocator;
 
 public class GameMode : MonoBehaviour
 {
@@ -24,13 +25,15 @@ public class GameMode : MonoBehaviour
     public event System.Action<int> ScoreUpdated;
     
     private Player _player;
+    private YandexGamesInteraction _yandex;
     private int _score = 0;
     private GameState _gameState = GameState.Playing;
-    private MainMenuPanel _menu;
 
     private void Awake()
     {
         SpawnPlayer();
+
+        _yandex = GlobalServiceLocator.GetService<YandexGamesInteraction>();
     }
 
     private void OnDisable()
@@ -54,15 +57,19 @@ public class GameMode : MonoBehaviour
                 SceneManager.LoadScene("MainMenu");
         });
 
-        // TODO: Record to PlayerData.cs
         bool isRecord = _score > _playerData.Record;
 
-        _playerData.AddCoins(_score);
-
         if (isRecord && _lives == 1)
-            _playerData.Record = _score;
+            SaveRecord();
 
         PlayerDied?.Invoke(--_lives, _score, isRecord);
+    }
+
+    private void SaveRecord()
+    {
+        _playerData.AddCoins(_score);
+        _playerData.Record = _score;
+        _yandex.SetRecord(_score);
     }
 
     public void TogglePause()
@@ -73,7 +80,7 @@ public class GameMode : MonoBehaviour
         _gameState = isPaused ? GameState.Paused : GameState.Playing;
 
         if (isPaused)
-            _menu = UIHelper.Instance.OpenPanel(_menuPrefab);
+            UIHelper.Instance.OpenPanel(_menuPrefab);
         else
             UIHelper.Instance.CloseCurrentPanel();
     }

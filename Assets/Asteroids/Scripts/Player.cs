@@ -1,5 +1,5 @@
 using UnityEngine;
-using MonoBehaviourExtensions;
+using TeaGames.MonoBehaviourExtensions;
 using TeaGames.Asteroids;
 
 // This script adds a component to the object,
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<Asteroid>(out var asteroid))
+        if (collision.TryGetComponent<Asteroid>(out _))
         {
             if (_isInvulnerable) return;
 
@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
                 _gameMode.GameOver();
         }
 
-        if (collision.TryGetComponent<Ufo>(out var ufo))
+        if (collision.TryGetComponent<Ufo>(out _))
         {
             if (_isInvulnerable) return;
 

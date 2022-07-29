@@ -3,8 +3,6 @@ using System.Collections.Generic;
 
 public class SpaceshipGun : MonoBehaviour
 {
-    [Tooltip("Shots per second.")]
-
     [field: SerializeField] 
     public bool FireForceEnabled { get; set; } = true;
 
@@ -19,21 +17,22 @@ public class SpaceshipGun : MonoBehaviour
 
     private ISpaceshipInput _input;
     private float _lastTimeFired;
-    private int _fires = 0;
-    private float MinDelayBetweenFires => (1 / _fireRate);
-    private bool CanFire => Time.timeSinceLevelLoad > _lastTimeFired 
-        + MinDelayBetweenFires;
-
     private Pool _bulletPool;
     private SpaceshipMovement _movement;
+    private int _fires = 0;
+
+    private float FireCooldown => 1 / _fireRate;
+
+    private float CooldownEndTime => _lastTimeFired + FireCooldown;
+
+    private bool CanFire => Time.time > CooldownEndTime;
 
     private void Awake()
     {
         _input = GetComponent<ISpaceshipInput>();
         _movement = GetComponent<SpaceshipMovement>();
 
-        // When fire first time, we dont need wait.
-        _lastTimeFired = -MinDelayBetweenFires;
+        _lastTimeFired = -FireCooldown;
         _bulletPool = new Pool(_bulletPrefab, _bulletPoolSize);
     }
 
@@ -42,7 +41,7 @@ public class SpaceshipGun : MonoBehaviour
         if (_input.IsFire() && CanFire)
         {
             Fire();
-            _lastTimeFired = Time.timeSinceLevelLoad;
+            _lastTimeFired = Time.time;
         }
     }
 
@@ -52,8 +51,8 @@ public class SpaceshipGun : MonoBehaviour
 
         if (bulletObj.TryGetComponent<Bullet>(out var bullet))
         {
-            var pos = GetNextBulletPosition();
-            bullet.Init(pos, _bulletSpeed * transform.up, _owner);
+            var position = GetNextBulletPosition();
+            bullet.Init(position, _bulletSpeed * transform.up, _owner);
         }
 
         _fireSound.Play();
@@ -70,7 +69,7 @@ public class SpaceshipGun : MonoBehaviour
         if (_bulletSpawnPositions.Count == 0)
             return transform.position;
 
-        int idx = _fires % _bulletSpawnPositions.Count;
-        return _bulletSpawnPositions[idx].position;
+        int index = _fires % _bulletSpawnPositions.Count;
+        return _bulletSpawnPositions[index].position;
     }
 }
