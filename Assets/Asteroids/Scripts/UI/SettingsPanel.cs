@@ -1,8 +1,8 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UIElements;
+using TeaGames.UIFramework;
 
 namespace TeaGames.Asteroids.UI
 {
@@ -13,9 +13,9 @@ namespace TeaGames.Asteroids.UI
         [SerializeField]
         private PlayerInputData _inputData;
 
-        protected override void Awake()
+        public override void Init(UIManager uiManager)
         {
-            base.Awake();
+            base.Init(uiManager);
 
             SetupVolumeOption();
             SetupInputOption();

@@ -1,6 +1,10 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+using TeaGames.UIFramework;
+using TeaGames.ServiceLocator;
+using static UnityEngine.SceneManagement.SceneManager;
+using TeaGames.Utils;
 
 namespace TeaGames.Asteroids.UI
 {
@@ -19,13 +23,20 @@ namespace TeaGames.Asteroids.UI
         [SerializeField]
         private bool _isIngame;
 
-        private GameMode _gm;
+        private const string FreeFlightScene = "Game";
+        private const string MainMenuScene = "MainMenu";
 
-        protected override void Awake()
+        private FreeFlightGameMode _gm;
+
+        public override void Init(UIManager uiManager)
         {
-            base.Awake();
+            base.Init(uiManager);
 
-            _gm = FindObjectOfType<GameMode>();
+            if (_isIngame)
+            {
+                // TODO: main menu shouldn't know about FreeFlightGameMode
+                _gm = SceneServices.Get<FreeFlightGameMode>();
+            }
 
             var _recordLbl = root.Q<Label>("record");
             var _coinsLbl = root.Q<Label>("coins");
@@ -66,7 +77,7 @@ namespace TeaGames.Asteroids.UI
 
         private void OpenMainMenu(ClickEvent evt)
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneHelper.ChangeSceneAsync(MainMenuScene);
         }
 
         private void ContinueGame(ClickEvent evt)
@@ -76,22 +87,22 @@ namespace TeaGames.Asteroids.UI
 
         private void OpenStore(ClickEvent evt)
         {
-            UIHelper.Instance.OpenPanel(_storePanelPrefab);
+            uiManager.OpenPanel(_storePanelPrefab);
         }
 
         private void OpenSettings(ClickEvent evt)
         {
-            UIHelper.Instance.OpenPanel(_settingsPanelPrefab);
+            uiManager.OpenPanel(_settingsPanelPrefab);
         }
 
         private void Play(ClickEvent evt)
         {
-            SceneManager.LoadScene("Game");
+            SceneHelper.ChangeSceneAsync(FreeFlightScene);
         }
 
         private void SelectGame(ClickEvent evt)
         {
-            UIHelper.Instance.OpenPanel(_gameSelectionPanelPrefab);
+            uiManager.OpenPanel(_gameSelectionPanelPrefab);
         }
     }
 }

@@ -1,20 +1,23 @@
 using UnityEngine.UIElements;
 
-namespace TeaGames.Asteroids.UI
+namespace TeaGames.UIFramework
 {
     public class Panel : Widget
     {
-        protected override void Awake()
-        {
-            base.Awake();
+        // TODO: use ui elements naming convention
+        private const string CloseButton = "close-button";
 
-            var closeBtn = root.Q<Button>("close-button");
-            closeBtn?.RegisterCallback<ClickEvent>(e => Close());
+        public override void Init(UIManager uiManager)
+        {
+            base.Init(uiManager);
+
+            var closeBtn = root.Q<Button>(CloseButton);
+            closeBtn?.RegisterCallback<ClickEvent>(e => Back());
         }
 
-        private void Close()
+        private void Back()
         {
-            UIHelper.Instance.Back();
+            uiManager.Back();
         }
     }
 }

@@ -1,44 +1,48 @@
+using TeaGames.ServiceLocator;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Hud : MonoBehaviour
+namespace TeaGames.Asteroids
 {
-    [SerializeField] private Text _scoreText;
-    [SerializeField] private PlayerLivesPanel _lives;
-    [SerializeField] private Text _newRecordText;
-
-    private GameMode _gameMode;
-
-    private void Awake()
+    public class Hud : MonoBehaviour
     {
-        _gameMode = FindObjectOfType<GameMode>();
-    }
+        [SerializeField] private Text _scoreText;
+        [SerializeField] private PlayerLivesPanel _lives;
+        [SerializeField] private Text _newRecordText;
 
-    private void OnEnable()
-    {
-        _gameMode.ScoreUpdated += OnScoreUpdated;
-        _gameMode.PlayerDied += OnPlayerDied;
-    }
+        private FreeFlightGameMode _gameMode;
 
-    private void OnDisable()
-    {
-        _gameMode.ScoreUpdated -= OnScoreUpdated;
-        _gameMode.PlayerDied -= OnPlayerDied;
-    }
-
-    private void OnPlayerDied(int lives, int score, bool isRecord)
-    {
-        _lives.Refresh(lives);
-
-        if (lives == 0 && isRecord)
+        private void Awake()
         {
-            _newRecordText.gameObject.SetActive(true);
-            _newRecordText.text = "Новый рекорд: " + score + "!";
+            _gameMode = SceneServices.Get<FreeFlightGameMode>();
         }
-    }
 
-    private void OnScoreUpdated(int score)
-    {
-        _scoreText.text = score.ToString();
+        private void OnEnable()
+        {
+            _gameMode.ScoreUpdated += OnScoreUpdated;
+            _gameMode.PlayerDied += OnPlayerDied;
+        }
+
+        private void OnDisable()
+        {
+            _gameMode.ScoreUpdated -= OnScoreUpdated;
+            _gameMode.PlayerDied -= OnPlayerDied;
+        }
+
+        private void OnPlayerDied(int lives, int score, bool isRecord)
+        {
+            _lives.Refresh(lives);
+
+            if (lives == 0 && isRecord)
+            {
+                _newRecordText.gameObject.SetActive(true);
+                _newRecordText.text = "Новый рекорд: " + score + "!";
+            }
+        }
+
+        private void OnScoreUpdated(int score)
+        {
+            _scoreText.text = score.ToString();
+        }
     }
 }

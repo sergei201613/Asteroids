@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
+using TeaGames.MonoBehaviourExtensions;
 
-namespace TeaGames.Asteroids.UI
+namespace TeaGames.UIFramework
 {
+    [RequireComponent(typeof(UIDocument))]
     public class Widget : MonoBehaviour
     {
         protected VisualElement root;
+        protected UIManager uiManager;
 
-        protected virtual void Awake()
+        public virtual void Init(UIManager uiManager)
         {
-            root = GetComponent<UIDocument>().rootVisualElement;
+            this.uiManager = uiManager;
+            root = this.RequireComponent<UIDocument>().rootVisualElement;
         }
     }
 }

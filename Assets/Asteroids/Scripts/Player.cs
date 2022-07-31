@@ -12,13 +12,13 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerInputData _inputData;
     [SerializeField] private GameObject _explosionSoundPrefab;
 
-    private GameMode _gameMode;
+    private FreeFlightGameMode _gameMode;
     private SpaceshipInput _input;
     private bool _isInvulnerable = true;
 
     private void Awake()
     {
-        _gameMode = FindObjectOfType<GameMode>();
+        _gameMode = FindObjectOfType<FreeFlightGameMode>();
         _input = GetComponent<SpaceshipInput>();
 
         UpdateInput(_inputData.GetInputType());

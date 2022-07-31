@@ -1,37 +1,25 @@
 using UnityEngine;
 
-namespace TeaGames.Asteroids.UI
+namespace TeaGames.UIFramework
 {
-    public class UIHelper : MonoBehaviour
+    public class UIManager : MonoBehaviour
     {
-        public static UIHelper Instance { get; private set; }
-
         public Panel CurrentPanel { get; private set; }
 
-        // TODO: move start panel logic to something like MenuGameMode.cs
-        [SerializeField]
-        private Panel _startPanelPrefab;
-
-        private Panel _panelPrefab;
-        private Panel _prevPanelPrefab;
-
-        private void Awake()
-        {
-            Instance = this;
-
-            if (_startPanelPrefab != null)
-                CurrentPanel = OpenPanel(_startPanelPrefab);
-        }
+        private Panel _currentPanelPrefab;
+        private Panel _previousPanelPrefab;
 
         public T OpenPanel<T>(T panelPrefab) where T : Panel
         {
             if (CurrentPanel != null)
                 ClosePanel(CurrentPanel);
 
-            _prevPanelPrefab = _panelPrefab;
-            _panelPrefab = panelPrefab;
+            _previousPanelPrefab = _currentPanelPrefab;
+            _currentPanelPrefab = panelPrefab;
 
             var pnl = Instantiate(panelPrefab);
+            pnl.Init(this);
+
             CurrentPanel = pnl;
 
             return pnl;
@@ -50,6 +38,7 @@ namespace TeaGames.Asteroids.UI
         public T OpenPopup<T>(T popupPrefab) where T : Popup
         {
             var popup = Instantiate(popupPrefab);
+            popup.Init(this);
             popup.Show();
             return popup;
         }
@@ -64,10 +53,10 @@ namespace TeaGames.Asteroids.UI
 
         public void Back()
         {
-            if (_prevPanelPrefab == null)
+            if (_previousPanelPrefab == null)
                 return;
 
-            OpenPanel(_prevPanelPrefab);
+            OpenPanel(_previousPanelPrefab);
         }
     }
 }

@@ -1,75 +1,78 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class SpaceshipGun : MonoBehaviour
+namespace TeaGames.Asteroids
 {
-    [field: SerializeField] 
-    public bool FireForceEnabled { get; set; } = true;
-
-    [SerializeField] private float _fireForce = 1f;
-    [SerializeField] private float _fireRate = 3f;
-    [SerializeField] private float _bulletSpeed = 20f;
-    [SerializeField] private GameObject _bulletPrefab;
-    [SerializeField] private List<Transform> _bulletSpawnPositions = new();
-    [SerializeField] private GameObject _owner;
-    [SerializeField] private int _bulletPoolSize = 10;
-    [SerializeField] private AudioSource _fireSound;
-
-    private ISpaceshipInput _input;
-    private float _lastTimeFired;
-    private Pool _bulletPool;
-    private SpaceshipMovement _movement;
-    private int _fires = 0;
-
-    private float FireCooldown => 1 / _fireRate;
-
-    private float CooldownEndTime => _lastTimeFired + FireCooldown;
-
-    private bool CanFire => Time.time > CooldownEndTime;
-
-    private void Awake()
+    public class SpaceshipGun : MonoBehaviour
     {
-        _input = GetComponent<ISpaceshipInput>();
-        _movement = GetComponent<SpaceshipMovement>();
+        [field: SerializeField] 
+        public bool FireForceEnabled { get; set; } = true;
 
-        _lastTimeFired = -FireCooldown;
-        _bulletPool = new Pool(_bulletPrefab, _bulletPoolSize);
-    }
+        [SerializeField] private float _fireForce = 1f;
+        [SerializeField] private float _fireRate = 3f;
+        [SerializeField] private float _bulletSpeed = 20f;
+        [SerializeField] private GameObject _bulletPrefab;
+        [SerializeField] private List<Transform> _bulletSpawnPositions = new();
+        [SerializeField] private GameObject _owner;
+        [SerializeField] private int _bulletPoolSize = 10;
+        [SerializeField] private AudioSource _fireSound;
 
-    private void Update()
-    {
-        if (_input.IsFire() && CanFire)
+        private ISpaceshipInput _input;
+        private float _lastTimeFired;
+        private Pool _bulletPool;
+        private SpaceshipMovement _movement;
+        private int _fires = 0;
+
+        private float FireCooldown => 1 / _fireRate;
+
+        private float CooldownEndTime => _lastTimeFired + FireCooldown;
+
+        private bool CanFire => Time.time > CooldownEndTime;
+
+        private void Awake()
         {
-            Fire();
-            _lastTimeFired = Time.time;
-        }
-    }
+            _input = GetComponent<ISpaceshipInput>();
+            _movement = GetComponent<SpaceshipMovement>();
 
-    private void Fire()
-    {
-        var bulletObj = _bulletPool.GetObject();
-
-        if (bulletObj.TryGetComponent<Bullet>(out var bullet))
-        {
-            var position = GetNextBulletPosition();
-            bullet.Init(position, _bulletSpeed * transform.up, _owner);
+            _lastTimeFired = -FireCooldown;
+            _bulletPool = new Pool(_bulletPrefab, _bulletPoolSize);
         }
 
-        _fireSound.Play();
-        _fires++;
-
-        if (_movement && FireForceEnabled)
+        private void Update()
         {
-            _movement.Force = _fireForce * -transform.up;
+            if (_input.IsFire() && CanFire)
+            {
+                Fire();
+                _lastTimeFired = Time.time;
+            }
         }
-    }
 
-    private Vector2 GetNextBulletPosition()
-    {
-        if (_bulletSpawnPositions.Count == 0)
-            return transform.position;
+        private void Fire()
+        {
+            var bulletObj = _bulletPool.GetObject();
 
-        int index = _fires % _bulletSpawnPositions.Count;
-        return _bulletSpawnPositions[index].position;
+            if (bulletObj.TryGetComponent<Bullet>(out var bullet))
+            {
+                var position = GetNextBulletPosition();
+                bullet.Init(position, _bulletSpeed * transform.up, _owner);
+            }
+
+            _fireSound.Play();
+            _fires++;
+
+            if (_movement && FireForceEnabled)
+            {
+                _movement.Force = _fireForce * -transform.up;
+            }
+        }
+
+        private Vector2 GetNextBulletPosition()
+        {
+            if (_bulletSpawnPositions.Count == 0)
+                return transform.position;
+
+            int index = _fires % _bulletSpawnPositions.Count;
+            return _bulletSpawnPositions[index].position;
+        }
     }
 }

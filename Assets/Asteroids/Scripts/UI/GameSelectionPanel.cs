@@ -1,17 +1,14 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using TeaGames.UIFramework;
+using TeaGames.Utils;
 
 namespace TeaGames.Asteroids.UI
 {
     public class GameSelectionPanel : Panel
     {
-        protected override void Awake()
+        public override void Init(UIManager uiManager)
         {
-            base.Awake();
+            base.Init(uiManager);
 
             root.Q("item-soon").SetEnabled(false);
 
@@ -24,7 +21,7 @@ namespace TeaGames.Asteroids.UI
 
         private void OnPlay(ClickEvent evt)
         {
-            SceneManager.LoadScene("Game");
+            SceneHelper.ChangeSceneAsync("Game");
         }
     }
 }

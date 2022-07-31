@@ -1,47 +1,39 @@
 using UnityEngine.UIElements;
 
-namespace TeaGames.Asteroids.UI
+namespace TeaGames.UIFramework
 {
     public class ConfirmPopup : Popup
     {
-        private System.Action _onConfirm;
-        private System.Action _onCancle;
+        public event System.Action Confirmed;
+        public event System.Action Cancled;
+
         protected Button cancleButton;
         protected Button confirmButton;
 
-        protected override void Awake()
+        private const string ConfirmButtonQuery = "confirm";
+        private const string CancleButtonQuery = "cancle";
+
+        public override void Init(UIManager uiManager)
         {
-            base.Awake();
+            base.Init(uiManager);
 
-            cancleButton = root.Q<Button>("cancle");
-            confirmButton = root.Q<Button>("confirm");
+            confirmButton = root.Q<Button>(ConfirmButtonQuery);
+            cancleButton = root.Q<Button>(CancleButtonQuery);
 
-            cancleButton.RegisterCallback<ClickEvent>(e => OnCancle());
-            confirmButton.RegisterCallback<ClickEvent>(e => OnConfirm());
+            confirmButton.RegisterCallback<ClickEvent>(e => OnConfirmed());
+            cancleButton.RegisterCallback<ClickEvent>(e => OnCancled());
         }
 
-        public ConfirmPopup OnConfirm(System.Action action)
+        private void OnConfirmed()
         {
-            _onConfirm = action;
-            return this;
+            Confirmed?.Invoke();
+            uiManager.ClosePopup(this);
         }
 
-        public ConfirmPopup OnCancle(System.Action action)
+        private void OnCancled()
         {
-            _onCancle = action;
-            return this;
-        }
-
-        private void OnCancle()
-        {
-            UIHelper.Instance.ClosePopup(this);
-            _onCancle?.Invoke();
-        }
-
-        private void OnConfirm()
-        {
-            UIHelper.Instance.ClosePopup(this);
-            _onConfirm?.Invoke();
+            Cancled?.Invoke();
+            uiManager.ClosePopup(this);
         }
     }
 }

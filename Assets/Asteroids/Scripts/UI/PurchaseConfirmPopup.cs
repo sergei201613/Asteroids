@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace TeaGames.Asteroids.UI
+namespace TeaGames.UIFramework
 {
     public class PurchaseConfirmPopup : ConfirmPopup
     {
-        [SerializeField]
-        private string text;
+        [FormerlySerializedAs("text")]
+        [SerializeField] private string _textFormat;
 
-        public ConfirmPopup Init(string name, string price)
+        public void Init(UIManager uiManager, string name, string price)
         {
-            label.text = string.Format(text, name, price);
-            return this;
+            base.Init(uiManager);
+            label.text = string.Format(_textFormat, name, price);
         }
     }
 }

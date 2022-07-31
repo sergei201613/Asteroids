@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using TeaGames.UIFramework;
 
 namespace TeaGames.Asteroids.UI
 {
@@ -16,10 +17,9 @@ namespace TeaGames.Asteroids.UI
         [SerializeField] private string _notEnoughCoinsText;
         private PurchaseConfirmPopup _confirmPurchasePopup;
 
-        protected override void Awake()
+        public override void Init(UIManager uiManager)
         {
-            base.Awake();
-
+            base.Init(uiManager);
             CreateProductItems(root);
         }
 
@@ -107,19 +107,19 @@ namespace TeaGames.Asteroids.UI
 
             if (_playerData.CanBuy(product))
             {
-                _confirmPurchasePopup = UIHelper.Instance
-                    .OpenPopup(_purchaseConfirmPopupPrefab);
+                _confirmPurchasePopup = uiManager.OpenPopup(_purchaseConfirmPopupPrefab);
 
-                _confirmPurchasePopup.Init(name, price).OnConfirm(() =>
+                _confirmPurchasePopup.Init(uiManager, name, price);
+                _confirmPurchasePopup.Confirmed += () =>
                 {
                     _playerData.AddProduct(product);
                     RefreshProductItems();
-                });
+                };
             }
             else
             {
-                UIHelper.Instance.OpenPopup(_infoPopupPrefab)
-                    .SetText(_notEnoughCoinsText);
+                var popup = uiManager.OpenPopup(_infoPopupPrefab);
+                popup.Text = _notEnoughCoinsText;
             }
         }
     }

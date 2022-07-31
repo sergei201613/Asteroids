@@ -2,27 +2,30 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace TeaGames.Asteroids.UI
+namespace TeaGames.UIFramework
 {
     public class Popup : Widget
     {
-        private const string hideStyle = "popup-hide";
-        private const string showStyle = "popup-show";
+        public string Text
+        {
+            get => label.text;
+            set => label.text = value;
+        }
 
         protected VisualElement popup;
         protected Label label;
 
-        protected override void Awake()
-        {
-            base.Awake();
+        private const string HideStyle = "popup-hide";
+        private const string ShowStyle = "popup-show";
+        private const string PopupQuery = "popup";
+        private const string TextQuery = "text";
 
-            popup = root.Q("popup");
-            label = root.Q<Label>("text");
-        }
-
-        public void SetText(string text)
+        public override void Init(UIManager uiManager)
         {
-            label.text = text;
+            base.Init(uiManager);
+
+            popup = root.Q(PopupQuery);
+            label = root.Q<Label>(TextQuery);
         }
 
         public void Show(System.Action onComplete = null)
@@ -34,18 +37,18 @@ namespace TeaGames.Asteroids.UI
         public void Hide(System.Action onComplete = null)
         {
             popup.RegisterCallback<TransitionEndEvent>(e => onComplete?.Invoke());
-            popup.RemoveFromClassList(showStyle);
-            popup.AddToClassList(hideStyle);
+            popup.RemoveFromClassList(ShowStyle);
+            popup.AddToClassList(HideStyle);
         }
 
         private IEnumerator ShowCoroutine()
         {
-            popup.AddToClassList(hideStyle);
+            popup.AddToClassList(HideStyle);
 
             yield return new WaitForEndOfFrame();
 
-            popup.RemoveFromClassList(hideStyle);
-            popup.AddToClassList(showStyle);
+            popup.RemoveFromClassList(HideStyle);
+            popup.AddToClassList(ShowStyle);
         }
     }
 }

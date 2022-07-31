@@ -1,32 +1,35 @@
 using UnityEngine;
 
-public class HitScoreAddition : MonoBehaviour
+namespace TeaGames.Asteroids
 {
-    [SerializeField] ScoreAddingEffect _scoreAddingEffect;
-
-    private GameMode _gameMode;
-
-    private void Awake()
+    public class HitScoreAddition : MonoBehaviour
     {
-        _gameMode = FindObjectOfType<GameMode>();
-    }
+        [SerializeField] ScoreAddingEffect _scoreAddingEffect;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.TryGetComponent<Asteroid>(out var asteroid))
+        private FreeFlightGameMode _gameMode;
+
+        private void Awake()
         {
-            int scoreAdded = _gameMode.AddScoreForAsteroid(asteroid);
-
-            Instantiate(_scoreAddingEffect, transform.position, 
-                Quaternion.identity).Init(scoreAdded);
+            _gameMode = FindObjectOfType<FreeFlightGameMode>();
         }
 
-        if (collision.TryGetComponent<Ufo>(out var ufo))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            int scoreAdded = _gameMode.AddScoreForUfo();
+            if (collision.TryGetComponent<Asteroid>(out var asteroid))
+            {
+                int scoreAdded = _gameMode.AddScoreForAsteroid(asteroid);
 
-            Instantiate(_scoreAddingEffect, transform.position, 
-                Quaternion.identity).Init(scoreAdded);
+                Instantiate(_scoreAddingEffect, transform.position, 
+                    Quaternion.identity).Init(scoreAdded);
+            }
+
+            if (collision.TryGetComponent<Ufo>(out var ufo))
+            {
+                int scoreAdded = _gameMode.AddScoreForUfo();
+
+                Instantiate(_scoreAddingEffect, transform.position, 
+                    Quaternion.identity).Init(scoreAdded);
+            }
         }
     }
 }

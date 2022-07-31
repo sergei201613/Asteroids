@@ -1,47 +1,50 @@
 using UnityEngine;
 
-public class UfoInput : MonoBehaviour, ISpaceshipInput
+namespace TeaGames.Asteroids
 {
-    [SerializeField] private float _minFireDelay = 2f;
-    [SerializeField] private float _maxFireDelay = 5f;
-
-    private float _fireDelay;
-    private float _lastTimeFired;
-    private GameMode _gameMode;
-
-    private void Awake()
+    public class UfoInput : MonoBehaviour, ISpaceshipInput
     {
-        _gameMode = FindObjectOfType<GameMode>();
+        [SerializeField] private float _minFireDelay = 2f;
+        [SerializeField] private float _maxFireDelay = 5f;
 
-        _fireDelay = Random.Range(_minFireDelay, _maxFireDelay);
-        _lastTimeFired = Time.timeSinceLevelLoad;
-    }
+        private float _fireDelay;
+        private float _lastTimeFired;
+        private FreeFlightGameMode _gameMode;
 
-    public float GetDeltaMovement()
-    {
-        return 0f;
-    }
-
-    public float GetDeltaRotation()
-    {
-        return 0f;
-    }
-
-    public bool IsFire()
-    {
-        if (Time.timeSinceLevelLoad > _lastTimeFired + _fireDelay 
-            && _gameMode.Player != null)
+        private void Awake()
         {
+            _gameMode = FindObjectOfType<FreeFlightGameMode>();
+
             _fireDelay = Random.Range(_minFireDelay, _maxFireDelay);
             _lastTimeFired = Time.timeSinceLevelLoad;
-
-            return true;
         }
 
-        return false;
-    }
+        public float GetDeltaMovement()
+        {
+            return 0f;
+        }
 
-    public void Init(Transform ownerTransform)
-    {
+        public float GetDeltaRotation()
+        {
+            return 0f;
+        }
+
+        public bool IsFire()
+        {
+            if (Time.timeSinceLevelLoad > _lastTimeFired + _fireDelay 
+                && _gameMode.Player != null)
+            {
+                _fireDelay = Random.Range(_minFireDelay, _maxFireDelay);
+                _lastTimeFired = Time.timeSinceLevelLoad;
+
+                return true;
+            }
+
+            return false;
+        }
+
+        public void Init(Transform ownerTransform)
+        {
+        }
     }
 }

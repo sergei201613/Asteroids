@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6944734136499211741
+--- !u!1 &5740585680737621797
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6944734136499211742}
-  - component: {fileID: 1037429181}
-  - component: {fileID: 4310007381411902235}
-  - component: {fileID: 5746279996671582504}
+  - component: {fileID: 5740585680737621798}
+  - component: {fileID: 1125093395693238363}
+  - component: {fileID: -969034091694062397}
   m_Layer: 0
-  m_Name: GlobalServiceLocator
+  m_Name: FreeFlightServices
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6944734136499211742
+--- !u!4 &5740585680737621798
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6944734136499211741}
+  m_GameObject: {fileID: 5740585680737621797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,40 +33,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1037429181
+--- !u!114 &1125093395693238363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6944734136499211741}
+  m_GameObject: {fileID: 5740585680737621797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2637932965518c44a9cf963494dbc19c, type: 3}
+  m_Script: {fileID: 11500000, guid: da8b8516003d31f4fa0b17f569c66ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4310007381411902235
+--- !u!114 &-969034091694062397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6944734136499211741}
+  m_GameObject: {fileID: 5740585680737621797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b149fce918c400848a9cd243d94a77d5, type: 3}
+  m_Script: {fileID: 11500000, guid: c06d4307e2f452d45af9e5fb96aa7e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5746279996671582504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6944734136499211741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f19ac3e1489f0d49ac9cc0c5d394dc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _startPanelPrefab: {fileID: 1673970384221593661, guid: cc4f4d361a4280d4a988c5ec0c19f5a5, type: 3}
+  _field: {fileID: 0}
+  _playerData: {fileID: 11400000, guid: 86207a3200c019a408cf7c85ec24254b, type: 2}
+  _hud: {fileID: 0}
+  _menuPrefab: {fileID: 1673970384221593661, guid: 5d046f6053fe5c14dbd03a2b0ad7d48c, type: 3}
+  _ufoSpawner: {fileID: 0}
+  _asteroidSpawner: {fileID: 0}
+  _inputData: {fileID: 11400000, guid: 8f80f08efcfe6224e900f2e1777874b5, type: 2}
+  _lives: 4

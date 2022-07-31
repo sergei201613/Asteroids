@@ -1,5 +1,5 @@
-﻿using TeaGames.MonoBehaviourExtensions;
-using UnityEngine;
+﻿using UnityEngine;
+using TeaGames.MonoBehaviourExtensions;
 
 namespace TeaGames.ServiceLocator
 {
@@ -8,11 +8,7 @@ namespace TeaGames.ServiceLocator
     {
         public static T Instance { get; private set; }
 
-        public bool IsInitialized { get; private set; } = true;
-
-        public event System.Action Initialized;
-
-        public static TS GetService<TS>() where TS : Component
+        public static TS Get<TS>() where TS : Component
         {
             return Instance.RequireComponent<TS>();
         }
@@ -25,9 +21,6 @@ namespace TeaGames.ServiceLocator
                 throw new System.Exception($"More than one instance of {typeof(T).FullName}!");
 
             Instance = instances[0];
-
-            if (IsInitialized)
-                Initialized?.Invoke();
         }
     }
 }
