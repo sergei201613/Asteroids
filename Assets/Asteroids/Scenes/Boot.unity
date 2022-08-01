@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6944734136499211741, guid: 8d34fc7bff5448940a303b4135371bb0, type: 3}
       propertyPath: m_Name
-      value: GlobalServiceLocator
+      value: GlobalServices
       objectReference: {fileID: 0}
     - target: {fileID: 6944734136499211742, guid: 8d34fc7bff5448940a303b4135371bb0, type: 3}
       propertyPath: m_RootOrder

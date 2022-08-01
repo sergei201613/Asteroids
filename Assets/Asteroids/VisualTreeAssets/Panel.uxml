@@ -8,7 +8,7 @@
             <ui:ScrollView style="border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">
                 <ui:VisualElement name="items-parent" style="flex-direction: row; flex-wrap: wrap;" />
             </ui:ScrollView>
-            <ui:Button text="X  " display-tooltip-when-elided="true" name="close-button" class="close-button button text-white" style="top: 0; right: 0; min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px; margin-left: 12px; margin-right: 12px; margin-top: 12px; margin-bottom: 12px; background-color: rgb(110, 81, 129); border-left-color: rgb(46, 10, 48); border-right-color: rgb(46, 10, 48); border-top-color: rgb(46, 10, 48); border-bottom-color: rgb(46, 10, 48); font-size: 28px;" />
+            <ui:Button text="X  " display-tooltip-when-elided="true" name="panel__close-button" class="panel__close-button button text-white" style="top: 0; right: 0; min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px; margin-left: 12px; margin-right: 12px; margin-top: 12px; margin-bottom: 12px; background-color: rgb(110, 81, 129); border-left-color: rgb(46, 10, 48); border-right-color: rgb(46, 10, 48); border-top-color: rgb(46, 10, 48); border-bottom-color: rgb(46, 10, 48); font-size: 28px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

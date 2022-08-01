@@ -11,6 +11,9 @@
         <ui:Button text="Играть" display-tooltip-when-elided="true" name="play" class="button text-white main-menu-button" />
         <ui:Button text="Настройки" display-tooltip-when-elided="true" name="settings" class="button text-white main-menu-button" />
         <ui:Button text="Магазин" display-tooltip-when-elided="true" name="store" class="button text-white main-menu-button" />
+        <ui:Button text="получить 4000" display-tooltip-when-elided="true" name="reward-button" class="button text-white main-menu-button" style="font-size: 36px; min-height: 75px;">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/ThirdParty/KenneySpaceShooter/PNG/Power-ups/things_silver.png?fileID=2800000&amp;guid=c1b52e5b613b0b240b5db7311b6bb29d&amp;type=3#things_silver&apos;); width: 48px; height: 48px; position: absolute; right: 12px; top: 12px;" />
+        </ui:Button>
     </ui:VisualElement>
     <ui:VisualElement name="footer" style="flex-grow: 1; flex-basis: 100px;" />
 </ui:UXML>

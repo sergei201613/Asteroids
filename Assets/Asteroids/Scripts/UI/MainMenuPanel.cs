@@ -5,6 +5,7 @@ using TeaGames.UIFramework;
 using TeaGames.ServiceLocator;
 using static UnityEngine.SceneManagement.SceneManager;
 using TeaGames.Utils;
+using System;
 
 namespace TeaGames.Asteroids.UI
 {
@@ -27,6 +28,7 @@ namespace TeaGames.Asteroids.UI
         private const string MainMenuScene = "MainMenu";
 
         private FreeFlightGameMode _gm;
+        private YandexGamesInteraction _yandex;
 
         public override void Init(UIManager uiManager)
         {
@@ -36,6 +38,10 @@ namespace TeaGames.Asteroids.UI
             {
                 // TODO: main menu shouldn't know about FreeFlightGameMode
                 _gm = SceneServices.Get<FreeFlightGameMode>();
+            }
+            else
+            {
+                _yandex = GlobalServices.Get<YandexGamesInteraction>();
             }
 
             var _recordLbl = root.Q<Label>("record");
@@ -69,10 +75,17 @@ namespace TeaGames.Asteroids.UI
             var playBtn = root.Q<Button>("play");
             var settingsBtn = root.Q<Button>("settings");
             var storeBtn = root.Q<Button>("store");
+            var rewardBtn = root.Q<Button>("reward-button");
 
             playBtn.RegisterCallback<ClickEvent>(SelectGame);
             settingsBtn.RegisterCallback<ClickEvent>(OpenSettings);
             storeBtn.RegisterCallback<ClickEvent>(OpenStore);
+            rewardBtn.RegisterCallback<ClickEvent>(OpenRewardVideo);
+        }
+
+        private void OpenRewardVideo(ClickEvent evt)
+        {
+            _yandex.ShowRewarded();
         }
 
         private void OpenMainMenu(ClickEvent evt)

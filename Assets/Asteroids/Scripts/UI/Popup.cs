@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 
 namespace TeaGames.UIFramework
 {
-    public class Popup : Widget
+    public class Popup : Panel
     {
         public string Text
         {
@@ -15,6 +15,7 @@ namespace TeaGames.UIFramework
         protected VisualElement popup;
         protected Label label;
 
+        // TODO: make BEM naming
         private const string HideStyle = "popup-hide";
         private const string ShowStyle = "popup-show";
         private const string PopupQuery = "popup";

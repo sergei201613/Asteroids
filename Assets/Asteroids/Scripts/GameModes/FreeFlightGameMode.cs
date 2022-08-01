@@ -56,9 +56,14 @@ namespace TeaGames.Asteroids
             this.Delay(2f, () =>
             {
                 if (_lives > 0)
+                {
                     SpawnPlayer();
+                }
                 else
+                {
                     SceneManager.LoadScene("MainMenu");
+                    _yandex.ShowInterstitial();
+                }
             });
 
             bool isRecord = _score > _playerData.Record;

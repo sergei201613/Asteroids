@@ -28,7 +28,7 @@ VisualElement {
     -unity-text-align: upper-center;
 }
 
-.close-button {
+.panel__close-button {
     position: absolute;
     right: 15px;
     top: 15px;
@@ -78,7 +78,7 @@ VisualElement {
 }
 
 .main-menu-button {
-    min-width: 300px;
+    min-width: 450px;
     font-size: 36px;
 }
 

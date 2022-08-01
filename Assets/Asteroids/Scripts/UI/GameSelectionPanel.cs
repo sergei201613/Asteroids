@@ -10,8 +10,6 @@ namespace TeaGames.Asteroids.UI
         {
             base.Init(uiManager);
 
-            root.Q("item-soon").SetEnabled(false);
-
             var itemFreeFlight = root.Q("item-free-flight");
             itemFreeFlight.AddToClassList("game-item-selected");
 

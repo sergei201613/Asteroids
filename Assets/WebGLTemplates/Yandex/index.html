@@ -115,11 +115,13 @@
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
+      var gameInstance = null
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
+          gameInstance = unityInstance;
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
@@ -142,6 +144,41 @@
             .then(lb => {
               lb.setLeaderboardScore('freeFlightLeaderboard', value);
             });
+        }
+
+        function showInterstitial() {
+            console.log("Trying to show interstitial...")
+            ysdk.adv.showFullscreenAdv({
+                callbacks: {
+                    onClose: function (wasShown) {
+                        console.log("Interstitial shown.");
+                    },
+                    onError: function (error) {
+                        console.log("Interstitial error!");
+                    }
+                }
+            })
+        }
+
+        function showRewarded() {
+            console.log('Trying to show rewarded video...');
+            ysdk.adv.showRewardedVideo({
+                callbacks: {
+                    onOpen: () => {
+                        console.log('Video ad open.');
+                    },
+                    onRewarded: () => {
+                        console.log('Rewarded!');
+                        gameInstance.SendMessage('GlobalServices', 'OnRewarded');
+                    },
+                    onClose: () => {
+                        console.log('Video ad closed.');
+                    },
+                    onError: (e) => {
+                        console.log('Error while open video ad:', e);
+                    }
+                }
+            })
         }
     </script>
 </body>

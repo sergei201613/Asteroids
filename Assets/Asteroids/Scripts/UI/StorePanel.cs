@@ -9,7 +9,6 @@ namespace TeaGames.Asteroids.UI
         [SerializeField] private PlayerData _playerData;
         [SerializeField] private StoreData _storeData;
         [SerializeField] private VisualTreeAsset _storeItemVta;
-        [SerializeField] private VisualTreeAsset _storeItemSoonVta;
         [SerializeField] private PurchaseConfirmPopup _purchaseConfirmPopupPrefab;
         [SerializeField] private InfoPopup _infoPopupPrefab;
         [SerializeField] private string _itemPurchasedText;
@@ -37,10 +36,6 @@ namespace TeaGames.Asteroids.UI
 
                 itemsParent.Add(item);
             }
-
-            var itemSoon = _storeItemSoonVta.Instantiate();
-            itemSoon.SetEnabled(false);
-            itemsParent.Add(itemSoon);
         }
 
         private void RefreshProductItems()

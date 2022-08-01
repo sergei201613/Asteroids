@@ -7,4 +7,12 @@ mergeInto(LibraryManager.library, {
     setRecord(value);
   },
 
+  showInterstitial: function () {
+    showInterstitial();
+  },
+
+  showRewarded: function () {
+    showRewarded();
+  },
+
 });

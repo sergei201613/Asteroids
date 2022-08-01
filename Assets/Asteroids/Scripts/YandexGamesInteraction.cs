@@ -9,12 +9,13 @@ namespace TeaGames.Asteroids
 
         public bool IsWebGL => Application.platform == RuntimePlatform.WebGLPlayer;
 
+        [SerializeField] private PlayerData _playerData;
+
         private void Awake()
         {
             Instance = this;
 
             Loaded();
-            SetRecord(123);
         }
 
         public void Loaded()
@@ -33,10 +34,37 @@ namespace TeaGames.Asteroids
             }
         }
 
+        public void ShowInterstitial()
+        {
+            if (IsWebGL)
+            {
+                showInterstitial();
+            }
+        }
+
+        public void ShowRewarded()
+        {
+            if (IsWebGL)
+            {
+                showRewarded();
+            }
+        }
+
+        public void OnRewarded()
+        {
+            _playerData.AddCoins(4000);
+        }
+
         [DllImport("__Internal")]
         private static extern void loaded();
 
         [DllImport("__Internal")]
         private static extern void setRecord(int value);
+
+        [DllImport("__Internal")]
+        private static extern void showInterstitial();
+
+        [DllImport("__Internal")]
+        private static extern void showRewarded();
     }
 }

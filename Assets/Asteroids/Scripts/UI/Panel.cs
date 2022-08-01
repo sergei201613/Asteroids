@@ -4,18 +4,18 @@ namespace TeaGames.UIFramework
 {
     public class Panel : Widget
     {
-        // TODO: use ui elements naming convention
-        private const string CloseButton = "close-button";
+        // TODO: rename in visual tree assets
+        private const string CloseButtonQuery = "panel__close-button";
 
         public override void Init(UIManager uiManager)
         {
             base.Init(uiManager);
 
-            var closeBtn = root.Q<Button>(CloseButton);
-            closeBtn?.RegisterCallback<ClickEvent>(e => Back());
+            var closeBtn = root.Q<Button>(CloseButtonQuery);
+            closeBtn?.RegisterCallback<ClickEvent>(e => OnCloseButtonClicked());
         }
 
-        private void Back()
+        protected virtual void OnCloseButtonClicked()
         {
             uiManager.Back();
         }
